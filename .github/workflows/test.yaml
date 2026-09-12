@@ -1,0 +1,147 @@
+name: 更新订阅文件并刷新 README
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # 每2小时自动更新
+  workflow_dispatch:      # 支持手动触发
+
+jobs:
+  update-subscription:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: 环境准备
+        run: |
+          if ! command -v yq &> /dev/null; then
+            sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
+          fi
+
+      - name: 执行下载与验证
+        # 将 Secrets 映射为环境变量 (出于安全考虑，避免直接拼接变量)
+        env:
+          URL_ALL: ${{ secrets.URL_ALL }}
+          URL_MIHOMO: ${{ secrets.URL_MIHOMO }}
+          URL_BASE64: ${{ secrets.URL_BASE64 }}
+          URL_XIAOXI: ${{ secrets.URL_XIAOXI }}
+          URL_KOOKER: ${{ secrets.URL_KOOKER }}
+        run: |
+          download_and_verify() {
+            local url=$1
+            local target=$2
+            local type=$3
+            local tmp="tmp_${target}"
+            if curl -sL -f -m 30 -o "$tmp" "$url" && [ $(stat -c%s "$tmp") -gt 100 ]; then
+              if [ "$type" == "yaml" ] && ! yq eval '.' "$tmp" > /dev/null 2>&1; then
+                rm -f "$tmp"; return 1
+              fi
+              mv "$tmp" "$target"
+              return 0
+            fi
+            return 1
+          }
+
+          # 下载原有文件，使用环境变量替换硬编码的 URL
+          download_and_verify "$URL_ALL" "all.yaml" "yaml" || true
+          download_and_verify "$URL_MIHOMO" "mihomo.yaml" "yaml" || true
+          download_and_verify "$URL_BASE64" "base64.txt" "text" || true
+          download_and_verify "$URL_XIAOXI" "byxiaoxi.txt" "text" || true
+          download_and_verify "$URL_KOOKER" "kooker.jp.txt" "text" || true
+
+      - name: 判断变更状态并生成 README
+        run: |
+          # 检查是否有任何订阅文件变动
+          if git diff --exit-code all.yaml mihomo.yaml base64.txt byxiaoxi.txt kooker.jp.txt > /dev/null 2>&1; then
+            CHANGE_STATUS="⏸️ 节点内容与上次运行一致，未发现更新"
+          else
+            CHANGE_STATUS="✅ 节点已成功同步并更新"
+          fi
+
+          # 统计逻辑
+          SUBSCHECK_COUNT=$(yq '.proxies | length' mihomo.yaml 2>/dev/null || echo "0")
+          XIAOXI_COUNT=$(grep -c '[^[:space:]]' byxiaoxi.txt 2>/dev/null || echo "0")
+          KOOKER_COUNT=$(grep -c '[^[:space:]]' kooker.jp.txt 2>/dev/null || echo "0")
+          UPDATE_TIME=$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')
+
+          cat << EOF > README.md
+          # 🌐 订阅自动更新
+
+          ![Update](https://img.shields.io/badge/更新频率-每2小时-blue)
+          ![SubsCheck](https://img.shields.io/badge/SubsCheck-${SUBSCHECK_COUNT}-green)
+          ![XiaoXi](https://img.shields.io/badge/XiaoXi-${XIAOXI_COUNT}-orange)
+          ![kooker.jp](https://img.shields.io/badge/kooker.jp-${KOOKER_COUNT}-purple)
+
+          > **最后同步时间**：\`${UPDATE_TIME}\` (北京时间)  
+          > **更新状态**：${CHANGE_STATUS}
+
+          ### 📊 节点统计
+          - **SubsCheck 节点数**：\`${SUBSCHECK_COUNT}\`
+          - **XiaoXi 节点数**：\`${XIAOXI_COUNT}\`
+          - **kooker.jp 节点数**：\`${KOOKER_COUNT}\`
+
+          ### 🚀 订阅链接
+          | 类型 | 订阅地址 |
+          | :--- | :--- |
+          | **Mihomo / Clash Meta** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/mihomo.yaml\` |
+          | **Clash / Standard** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/all.yaml\` |
+          | **Base64 (通用)** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/base64.txt\` |
+          | **通用TXT (XiaoXi)** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/byxiaoxi.txt\` |
+          | **通用TXT (kooker.jp)** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/kooker.jp.txt\` |
+
+          ---
+
+          ## ⚖️ 免责声明 (Disclaimer)
+
+          ### 1. 权利归属及性质
+          本仓库（下称“本项目”）仅为个人学习 **GitHub Actions** 自动化流程及 **YAML** 数据处理的技术演示。项目内分享的所有资源（包括但不限于订阅链接、节点数据）均搜集自互联网公开渠道，本项目不存储、不分发、不产生任何实质性的加密通信流量。
+
+          ### 2. 法律合规性
+          * **合规义务**：用户在下载、安装或使用本项目涉及的任何资源时，必须确保其行为符合所在国家/地区的法律法规。
+          * **禁止违规**：严禁将本项目提供的技术方案或资源用于任何形式的非法用途。因用户违规使用产生的任何行政或刑事责任，由用户本人独立承担，与本项目及其贡献者无关。
+
+          ### 3. 风险提示与担保限制
+          * **无保证声明**：本项目不对资源的稳定性、有效性、安全性作任何形式的保证。节点可能随时失效、被封锁或存在安全隐患。
+          * **隐私风险**：第三方节点可能存在流量审计或日志记录行为。建议用户避免通过本项目提供的节点传输任何涉及个人隐私、财务安全或敏感信息的数据。
+
+          ### 4. 责任免除
+          本项目贡献者不对因使用本项目而导致的任何直接、间接、附带或惩罚性损害（包括但不限于设备损坏、数据丢失、法律纠纷）承担法律责任。
+
+          ---
+          **数据来源**: [blog.kooker.jp](https://blog.kooker.jp/)
+          *由 [beck-8/subs-check](https://github.com/beck-8/subs-check) & GitHub Actions 提供自动引擎强力驱动*
+          EOF
+
+      - name: 调试并提交
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 1. 尝试提交 XiaoXi (byxiaoxi.txt)
+          git add byxiaoxi.txt
+          if ! git diff --cached --quiet; then
+            X_VAL=$(grep -c '[^[:space:]]' byxiaoxi.txt 2>/dev/null || echo 0)
+            git commit -m "chore: 同步最新节点 (XiaoXi: $X_VAL)"
+          fi
+
+          # 2. 尝试提交 Kooker (kooker.jp.txt) - 独立提交
+          git add kooker.jp.txt
+          if ! git diff --cached --quiet; then
+            K_VAL=$(grep -c '[^[:space:]]' kooker.jp.txt 2>/dev/null || echo 0)
+            git commit -m "chore: 同步最新节点 (Kooker: $K_VAL)"
+          fi
+
+          # 3. 尝试提交 SubsCheck 相关的及 README
+          git add all.yaml mihomo.yaml base64.txt README.md
+          if ! git diff --cached --quiet; then
+            S_VAL=$(yq '.proxies | length' mihomo.yaml 2>/dev/null || echo 0)
+            git commit -m "chore: 同步最新节点 (SubsCheck: $S_VAL)"
+          fi
+
+          # 4. 统一推送所有 Commits
+          git push origin HEAD:main || echo "No changes to push"
