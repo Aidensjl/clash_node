@@ -2,7 +2,7 @@ name: 更新订阅文件并刷新 README
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # 每2小时自动更新
+    - cron: '*/5 * * * *'  # 每2小时自动更新
   workflow_dispatch:      # 支持手动触发
 
 jobs:
@@ -88,11 +88,11 @@ jobs:
           ### 🚀 订阅链接
           | 类型 | 订阅地址 |
           | :--- | :--- |
-          | **Mihomo / Clash Meta** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/mihomo.yaml\` |
-          | **Clash / Standard** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/all.yaml\` |
-          | **Base64 (通用)** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/base64.txt\` |
-          | **通用TXT (XiaoXi)** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/byxiaoxi.txt\` |
-          | **通用TXT (kooker.jp)** | \`https://raw.githubusercontent.com/${{ github.repository }}/main/kooker.jp.txt\` |
+          | **Mihomo / Clash Meta** | \`https://raw.githubusercontent.com/${{ github.repository }}/master/mihomo.yaml\` |
+          | **Clash / Standard** | \`https://raw.githubusercontent.com/${{ github.repository }}/master/all.yaml\` |
+          | **Base64 (通用)** | \`https://raw.githubusercontent.com/${{ github.repository }}/master/base64.txt\` |
+          | **通用TXT (XiaoXi)** | \`https://raw.githubusercontent.com/${{ github.repository }}/master/byxiaoxi.txt\` |
+          | **通用TXT (kooker.jp)** | \`https://raw.githubusercontent.com/${{ github.repository }}/master/kooker.jp.txt\` |
 
           ---
 
@@ -144,4 +144,4 @@ jobs:
           fi
 
           # 4. 统一推送所有 Commits
-          git push origin HEAD:main || echo "No changes to push"
+          git push origin HEAD:master || echo "No changes to push"
