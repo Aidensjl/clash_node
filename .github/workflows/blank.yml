@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-      - cron: '*/5 * * * *'  # 每2小时自动更新
+      - cron: '0 */2 * * *'  # 每2小时自动更新
   workflow_dispatch:
 
 jobs:
@@ -73,6 +73,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "没有文件变化"
           else
-            git commit -m "同步 FreeSubsCheck [skip ci]"
-            git push
+            SYNC_TIME=$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')
+            git commit -m " 北京时间(${SYNC_TIME} 同步 FreeSubsCheck [skip ci]"
+            git push origin HEAD:master
           fi
