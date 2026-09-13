@@ -20,6 +20,6 @@
 *由 [beck-8/subs-check](https://github.com/beck-8/subs-check) & GitHub Actions 提供自动引擎强力驱动*
 
 ---
-**工具来源**: [urlclash-converter](https://github.com/siiway/urlclash-converter)&[学习来源](https://github.com/kooker/FreeSubsCheck)
+**工具来源**: [urlclash-converter](https://github.com/siiway/urlclash-converter)&[学习来源](https://github.com/kooker/FreeSubsCheck)&[hulink](https://github.com/silasxbt/hulink)
 
 
