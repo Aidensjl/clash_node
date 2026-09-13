@@ -23,12 +23,13 @@ jobs:
       # 1. 获取自己的仓库
       - name: Checkout 当前仓库
         uses: actions/checkout@v6
-        
-      - name: 环境准备
-        run: |
-          if ! command -v yq &> /dev/null; then
-            sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
-          fi
+      
+      # 1.1 python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          
 
       # 2. 获取 FreeSubsCheck https://github.com/kooker/FreeSubsCheck  到临时目录
       - name: 获取 FreeSubsCheck
@@ -41,6 +42,7 @@ jobs:
       # 3. 删除原来的 FreeSubsCheck
       - name: 准备同步目录
         run: |
+          pip install pyyaml
           rm -rf MyNode
           mkdir -p MyNode
 
@@ -63,6 +65,43 @@ jobs:
           echo "===== MyNode 文件 ====="
           find MyNode -type f | sort
 
+      # 6.1 查看最终文件
+      - name: 转换 base64.txt
+        if: ${{ hashFiles('base64.txt') != '' }}
+        run: |
+          python python_tool/test01.py to-clash ./MyNode/base64.txt -o ./MyNode/base64.yaml \
+            || echo "::warning::base64.txt 转换失败"
+
+      - name: 转换 byxiaoxi.txt
+        if: ${{ hashFiles('byxiaoxi.txt') != '' }}
+        run: |
+          python python_tool/test01.py to-clash ./MyNode/byxiaoxi.txt -o ./MyNode/byxiaoxi.yaml \
+            || echo "::warning::byxiaoxi.txt 转换失败"
+
+      - name: 转换 kooker.jp.txt
+        if: ${{ hashFiles('kooker.jp.txt') != '' }}
+        run: |
+          python python_tool/test01.py to-clash ./MyNode/kooker.jp.txt -o ./MyNode/kooker.yaml \
+            || echo "::warning::kooker.jp.txt 转换失败"
+      # 6.2. 查看转换结果
+      - name: 查看 MyNode 转换结果
+        run: |
+          echo "===== MyNode 内容 ====="
+          ls -la MyNode/
+          echo "===== 各文件节点数 ====="
+          for f in MyNode/*.yaml; do
+            [ -f "$f" ] || continue
+            n=$(python -c "import yaml,sys; d=yaml.safe_load(open('$f')); print(len(d.get('proxies') or []))" 2>/dev/null || echo 0)
+            echo "  $f: $n"
+          done
+      # 6.3 合并所有 yaml
+      - name: 合并 MyNode 下所有 yaml
+        run: |
+          python python_tool/test02.py MyNode \
+            -o merged.yml \
+            --exclude merged.yml 
+
+      
       # 7. 提交更新
       - name: 提交
         run: |
@@ -75,6 +114,7 @@ jobs:
 
           # 重新作为普通文件添加
           git add MyNode
+          git add merged.yml 
 
           if git diff --cached --quiet; then
             echo "没有文件变化"
