@@ -22,6 +22,7 @@ jobs:
           if ! command -v yq &> /dev/null; then
             sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
           fi
+          
 
       - name: 执行下载与验证
         # 将 Secrets 映射为环境变量 (出于安全考虑，避免直接拼接变量)

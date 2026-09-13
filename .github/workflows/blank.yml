@@ -29,6 +29,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - name: 安装依赖
+        run: python -m pip install --upgrade pip pyyaml
           
 
       # 2. 获取 FreeSubsCheck https://github.com/kooker/FreeSubsCheck  到临时目录
@@ -67,19 +69,25 @@ jobs:
 
       # 6.1 查看最终文件
       - name: 转换 base64.txt
-        if: ${{ hashFiles('base64.txt') != '' }}
+        if: ${{ hashFiles('MyNode/base64.txt') != '' }}
+        env:
+          PYTHONPATH: ${{ github.workspace }}/python_tool
         run: |
           python python_tool/test01.py to-clash ./MyNode/base64.txt -o ./MyNode/base64.yaml \
             || echo "::warning::base64.txt 转换失败"
 
       - name: 转换 byxiaoxi.txt
-        if: ${{ hashFiles('byxiaoxi.txt') != '' }}
+        if: ${{ hashFiles('MyNode/byxiaoxi.txt') != '' }}
+        env:
+          PYTHONPATH: ${{ github.workspace }}/python_tool
         run: |
           python python_tool/test01.py to-clash ./MyNode/byxiaoxi.txt -o ./MyNode/byxiaoxi.yaml \
             || echo "::warning::byxiaoxi.txt 转换失败"
 
       - name: 转换 kooker.jp.txt
-        if: ${{ hashFiles('kooker.jp.txt') != '' }}
+        if: ${{ hashFiles('MyNode/kooker.jp.txt') != '' }}
+        env:
+          PYTHONPATH: ${{ github.workspace }}/python_tool
         run: |
           python python_tool/test01.py to-clash ./MyNode/kooker.jp.txt -o ./MyNode/kooker.yaml \
             || echo "::warning::kooker.jp.txt 转换失败"
@@ -98,8 +106,8 @@ jobs:
       - name: 合并 MyNode 下所有 yaml
         run: |
           python python_tool/test02.py MyNode \
-            -o merged.yml \
-            --exclude merged.yml 
+            -o MyNode/merged.yml \
+            --exclude merged.yml
 
       
       # 7. 提交更新
@@ -120,6 +128,6 @@ jobs:
             echo "没有文件变化"
           else
             SYNC_TIME=$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')
-            git commit -m " 北京时间(${SYNC_TIME} 同步 FreeSubsCheck [skip ci]"
+            git commit -m " 北京时间(${SYNC_TIME}) 同步 FreeSubsCheck [skip ci]"
             git push origin HEAD:master
           fi
