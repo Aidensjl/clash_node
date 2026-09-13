@@ -9,36 +9,69 @@ on:
 
 jobs:
   sync:
+    # 防止 Actions 自己 push 后再次触发
+    if: github.actor != 'github-actions[bot]'
+
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
     steps:
+
+      # 1. 获取自己的仓库
       - name: Checkout 当前仓库
         uses: actions/checkout@v6
 
+      # 2. 获取 FreeSubsCheck 到临时目录
       - name: 获取 FreeSubsCheck
         uses: actions/checkout@v6
         with:
           repository: kooker/FreeSubsCheck
           ref: main
-          path: FreeSubsCheck
+          path: external/FreeSubsCheck
 
+      # 3. 删除原来的 FreeSubsCheck
+      - name: 准备同步目录
+        run: |
+          rm -rf FreeSubsCheck
+          mkdir -p FreeSubsCheck
+
+      # 4. 复制 FreeSubsCheck 内容
+      - name: 复制文件
+        run: |
+          cp -a external/FreeSubsCheck/. FreeSubsCheck/
+
+          # 删除外部仓库的 Git 信息
+          rm -rf FreeSubsCheck/.git
+
+      # 5. 删除临时目录
+      - name: 清理临时文件
+        run: |
+          rm -rf external
+
+      # 6. 查看最终文件
       - name: 查看文件
         run: |
-          find FreeSubsCheck -maxdepth 2 -type f | sort
+          echo "===== FreeSubsCheck 文件 ====="
+          find FreeSubsCheck -type f | sort
 
+      # 7. 提交更新
       - name: 提交
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # 如果之前 FreeSubsCheck 已经被错误地记录成子模块，
+          # 先从 Git 索引中删除这个 gitlink
+          git rm --cached -r --ignore-unmatch FreeSubsCheck
+
+          # 重新作为普通文件添加
           git add FreeSubsCheck
 
           if git diff --cached --quiet; then
             echo "没有文件变化"
           else
-            git commit -m "同步 FreeSubsCheck  [skip ci]"
+            git commit -m "同步 FreeSubsCheck [skip ci]"
             git push
           fi
