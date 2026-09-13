@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+  schedule:
+      - cron: '*/5 * * * *'  # 每2小时自动更新
   workflow_dispatch:
 
 jobs:
@@ -23,7 +24,7 @@ jobs:
       - name: Checkout 当前仓库
         uses: actions/checkout@v6
 
-      # 2. 获取 FreeSubsCheck 到临时目录
+      # 2. 获取 FreeSubsCheck https://github.com/kooker/FreeSubsCheck  到临时目录
       - name: 获取 FreeSubsCheck
         uses: actions/checkout@v6
         with:
