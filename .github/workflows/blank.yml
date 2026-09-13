@@ -35,16 +35,16 @@ jobs:
       # 3. 删除原来的 FreeSubsCheck
       - name: 准备同步目录
         run: |
-          rm -rf FreeSubsCheck
-          mkdir -p FreeSubsCheck
+          rm -rf MyNode
+          mkdir -p MyNode
 
       # 4. 复制 FreeSubsCheck 内容
       - name: 复制文件
         run: |
-          cp -a external/FreeSubsCheck/. FreeSubsCheck/
+          cp -a external/FreeSubsCheck/. MyNode/
 
           # 删除外部仓库的 Git 信息
-          rm -rf FreeSubsCheck/.git
+          rm -rf MyNode/.git
 
       # 5. 删除临时目录
       - name: 清理临时文件
@@ -54,8 +54,8 @@ jobs:
       # 6. 查看最终文件
       - name: 查看文件
         run: |
-          echo "===== FreeSubsCheck 文件 ====="
-          find FreeSubsCheck -type f | sort
+          echo "===== MyNode 文件 ====="
+          find MyNode -type f | sort
 
       # 7. 提交更新
       - name: 提交
@@ -63,12 +63,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # 如果之前 FreeSubsCheck 已经被错误地记录成子模块，
+          # 如果之前 MyNode 已经被错误地记录成子模块，
           # 先从 Git 索引中删除这个 gitlink
-          git rm --cached -r --ignore-unmatch FreeSubsCheck
+          git rm --cached -r --ignore-unmatch MyNode
 
           # 重新作为普通文件添加
-          git add FreeSubsCheck
+          git add MyNode
 
           if git diff --cached --quiet; then
             echo "没有文件变化"
