@@ -1,58 +1,44 @@
-name: 更新订阅
+name: 同步 FreeSubsCheck
 
 on:
   push:
     branches:
-      - master            # ← 换成你的默认分支（main 或 master）
-  schedule:
-    - cron: '0 */2 * * *'
+      - master
+
   workflow_dispatch:
 
-concurrency:
-  group: update-subscription-${{ github.ref }}
-  cancel-in-progress: false
-
 jobs:
-  update:
+  sync:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout 当前仓库
+        uses: actions/checkout@v6
 
       - name: 获取 FreeSubsCheck
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: kooker/FreeSubsCheck
           ref: main
-          path: ${{ runner.temp }}/FreeSubsCheck
+          path: FreeSubsCheck
 
       - name: 查看文件
         run: |
-          find "${{ runner.temp }}/FreeSubsCheck" -maxdepth 2 -type f | sort
+          find FreeSubsCheck -maxdepth 2 -type f | sort
 
-      - name: 运行更新程序
-        env:
-          FREESUBSCHECK_DIR: ${{ runner.temp }}/FreeSubsCheck
-        run: python3 scripts/update.py
-
-      - name: 提交更新
-        shell: bash
+      - name: 提交
         run: |
-          set -uo pipefail
-
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add all.yaml mihomo.yaml base64.txt byxiaoxi.txt kooker.jp.txt README.md 2>/dev/null || true
+          git add .
 
           if git diff --cached --quiet; then
-            echo "无变更，跳过提交"
-            exit 0
+            echo "没有文件变化"
+          else
+            git commit -m "同步 FreeSubsCheck  [skip ci]"
+            git push
           fi
-
-          # ⚠️ 关键：加 [skip ci] 防止自己触发自己
-          git commit -m "自动更新订阅 [skip ci]"
-          git push origin HEAD:${{ github.ref_name }}
