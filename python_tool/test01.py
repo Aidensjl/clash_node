@@ -166,7 +166,8 @@ def parse_uri(uri: str) -> Optional[Dict[str, Any]]:
     }
     fn = mapping.get(head)
     if not fn:
-        raise ValueError(f"Unknown uri type: {head}")
+        pass
+        # raise ValueError(f"Unknown uri type: {head}")
     return fn(uri)
 
 
@@ -687,7 +688,8 @@ def uri_hysteria2(line: str) -> Dict[str, Any]:
 
     colon_idx = addr.rfind(":")
     if colon_idx == -1:
-        raise ValueError("No port found in hysteria2 link")
+        pass
+        # raise ValueError("No port found in hysteria2 link")
     server = addr[:colon_idx]
     try:
         port = int(addr[colon_idx + 1:])

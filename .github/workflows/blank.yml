@@ -23,6 +23,12 @@ jobs:
       # 1. 获取自己的仓库
       - name: Checkout 当前仓库
         uses: actions/checkout@v6
+        
+      - name: 环境准备
+        run: |
+          if ! command -v yq &> /dev/null; then
+            sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
+          fi
 
       # 2. 获取 FreeSubsCheck https://github.com/kooker/FreeSubsCheck  到临时目录
       - name: 获取 FreeSubsCheck
