@@ -1,145 +1,155 @@
 proxies:
-- name: 🇫🇷FR_1|628KB/s
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷FR_2|1017KB/s
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  alpn:
-  - http/1.1
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸US_1|1.6MB/s
-  type: hysteria2
-  server: gta.internet-card.sbs
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  skip-cert-verify: true
-  sni: gta.internet-card.sbs
-  servername: gta.internet-card.sbs
-- name: 🇫🇷FR_3|1.0MB/s
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷FR_4|1.1MB/s
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷FR_5|1.3MB/s
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇰🇷KR_1|606KB/s
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  servername: 152-69-231-175.liao.kdns.fr
-- name: 🇸🇬SG_1|3.2MB/s
-  type: hysteria2
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  skip-cert-verify: true
-  sni: sg1.xiaoliyu.cyou
-  servername: sg1.xiaoliyu.cyou
-- name: 🇬🇧GB_1|2.0MB/s
+- name: 🇬🇧GB_1|867KB/s
   type: ss
   server: 158.173.221.214
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
-- name: 🇺🇸US_2|562KB/s
+- name: 🇵🇱PL_1|781KB/s
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  tls: true
+  servername: rusbid.de
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  network: tcp
+- name: 🇹🇷TR_1|547KB/s
+  type: vless
+  server: 13.143.137.164
+  port: 9443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  tls: true
+  servername: plaincanvas.videoclothing.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  network: tcp
+- name: 🇬🇧GB_2|2.2MB/s
+  type: vless
+  server: 172.67.131.114
+  port: 2086
+  uuid: 9ef1d60d-9e38-49c5-9405-131e11be1f9c
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: muddy-shadow-8905.qara-atayi-1.workers.dev
+    path: /eyJqdW5rIjoiVGtvRGR4TXdHSzdseGpZWCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+- name: 🇰🇷KR_1|4.0MB/s
+  type: vless
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  network: grpc
+- name: 🇺🇸US_1|809KB/s
   type: vless
   server: 170.168.97.8
-  port: 8443
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  port: 443
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
   tls: true
   servername: www.hp.com
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
     public-key: QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo
-  network: grpc
-- name: 🇩🇪DE_1|1.5MB/s
+  network: tcp
+- name: 🇸🇪SE_1|1.5MB/s
   type: vless
-  server: 94.156.179.46
+  server: 170.168.99.8
+  port: 8443
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
+  tls: true
+  servername: cdn.steamstatic.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0
+  network: grpc
+- name: 🇷🇺RU_1|1.2MB/s
+  type: vless
+  server: 170.168.99.8
+  port: 8443
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
+  tls: true
+  servername: www.epson.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
+  network: grpc
+- name: 🇺🇸US_2|677KB/s
+  type: vless
+  server: 170.168.97.8
+  port: 443
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  servername: www.hp.com
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo
+  network: tcp
+- name: 🇺🇸US_3|757KB/s
+  type: vless
+  server: 38.244.20.41
+  port: 443
+  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
+    short-id: 802db6d56acb5d79
+  network: tcp
+- name: 🇺🇸US_4|707KB/s
+  type: vless
+  server: 13.143.143.217
   port: 443
   uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
   tls: true
-  servername: de.pinkmoon.pro
+  servername: pol2.pinkmoon.pro
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
+  client-fingerprint: chrome
+  skip-cert-verify: true
   reality-opts:
     public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
     short-id: 8ffa160e608bf539
   network: tcp
-- name: 🇺🇸US_3|822KB/s
+- name: 🇺🇸US_5|725KB/s
   type: vless
-  server: 172.67.145.113
+  server: 104.21.36.81
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: 6-M16.AYUTThaYA2028.KdNs.fr
+  servername: 4-M16.ChIANG-RaI2036.kdnS.fR
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 6-M16.AYUTThaYA2028.KdNs.fr
+      Host: 4-M16.ChIANG-RaI2036.kdnS.fR
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸US_4|579KB/s
-  type: vless
-  server: 172.67.198.209
-  port: 443
-  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-  tls: true
-  servername: 5-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 5-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-    path: /BzuntJ8qZN0TRKbC8TveMxJ0
-- name: 🇺🇸US_5|1.2MB/s
+- name: 🇺🇸US_6|737KB/s
   type: vless
   server: 172.67.206.64
   port: 443
@@ -153,135 +163,45 @@ proxies:
     headers:
       Host: 3-M16.ayUTthAYa2032.kdNs.FR
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇩🇴DO_1|992KB/s
+- name: 🇺🇸US_7|980KB/s
   type: vless
-  server: 181.36.229.212
+  server: 172.67.169.35
   port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: eded-52n.pages.dev
+  servername: 7-M16.pAttAYa-8.kdnS.fR
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇲🇩MD_1|684KB/s
+      Host: 7-M16.pAttAYa-8.kdnS.fR
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+- name: 🇺🇸US_8|793KB/s
   type: vless
-  server: 193.36.38.222
+  server: 172.67.136.68
   port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: eded-52n.pages.dev
+  servername: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇯🇵JP_1|2.4MB/s
+      Host: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+- name: 🇺🇸US_9|553KB/s
   type: vless
-  server: 43.174.195.1
+  server: 104.21.71.47
   port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: eded-52n.pages.dev
+  servername: 0-M16.CHIaN-mai-x.kDnS.FR
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇺🇸US_6|1.3MB/s
-  type: vless
-  server: lxcl.pages.dev
-  port: 443
-  uuid: 3f2c2a0c-53ea-4bb4-8869-38f52d875d33
-  tls: true
-  servername: lxcl.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: lxcl.pages.dev
-    path: /
-- name: 🇺🇸US_7|1.5MB/s
-  type: vless
-  server: daxiea.pages.dev
-  port: 443
-  uuid: 0a8fcdbd-bf51-41e4-938d-6326706041f9
-  tls: true
-  servername: daxiea.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: daxiea.pages.dev
-    path: /
-- name: 🇺🇸US_8|1.7MB/s
-  type: vless
-  server: bbb12x.pages.dev
-  port: 443
-  uuid: 613a7576-c5b6-4cc8-af9f-86bca4d2a4ff
-  tls: true
-  servername: bbb12x.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: bbb12x.pages.dev
-    path: /
-- name: 🇮🇪IE_1|1.2MB/s
-  type: vless
-  server: 167.160.177.68
-  port: 2096
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇸🇪SE_1|2.0MB/s
-  type: vless
-  server: 170.168.99.8
-  port: 8443
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  tls: true
-  servername: cdn.steamstatic.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0
-  network: grpc
-- name: 🇩🇪DE_2|617KB/s
-  type: vless
-  server: 85.192.26.210
-  port: 2053
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇺🇸US_9|1.9MB/s
-  type: hysteria2
-  server: 31.76.71.252
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  skip-cert-verify: true
-  sni: gta.internet-card.sbs
-  servername: gta.internet-card.sbs
+      Host: 0-M16.CHIaN-mai-x.kDnS.FR
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
