@@ -113,8 +113,8 @@ jobs:
       - name: test02.py合并 MyNode 下所有 yaml
         run: |
           python python_tool/test03.py MyNode \
-            -o MyNode/merged.yml \
-            --exclude merged_no.yml
+            -o MyNode/merged_no.yml \
+            --exclude merged.yml
       
       # 7. 提交更新
       - name: 提交
