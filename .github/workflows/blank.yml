@@ -110,11 +110,17 @@ jobs:
             --exclude merged.yml
             # 6.3 合并所有 yaml
 
-      - name: test02.py合并 MyNode 下所有 yaml
+      - name: test02.py合并 MyNode 下所有 yaml,没有处理名称
         run: |
           python python_tool/test02.py MyNode \
             -o MyNode/merged_no.yml \
-            --exclude merged.yml merged.yml
+            --exclude merged.yml
+
+      - name: test04.py处理 MyNode 下的merged_no.yml为可用
+        run: |
+          python python_tool/test04.py MyNode \
+            -o MyNode/merged_no.yml \
+            --exclude merged.yml
       
       # 7. 提交更新
       - name: 提交
