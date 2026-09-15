@@ -117,9 +117,8 @@ jobs:
 
       - name: test04.py处理 MyNode 下的merged_no.yml为可用merged_done
         run: |
-          python python_tool/test04.py MyNode \
-            -o MyNode/merged_done.yml \
-            --exclude merged.yml
+          python python_tool/test04.py MyNode/merged_no.yml MyNode/merged_done.yml
+          
       
       # 7. 提交更新
       - name: 提交
