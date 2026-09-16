@@ -1,36 +1,41 @@
 proxies:
-- name: 🇺🇸US_1|569KB/s
+- name: 🇺🇸US_1|731KB/s
   type: ss
   server: 3.149.6.228
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇯🇵JP_1|2.0MB/s
+- name: 🇬🇧GB_1|532KB/s
   type: hysteria2
-  server: mszz.mangshe.xyz
-  port: 20561
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
-- name: 🇯🇵JP_2|2.1MB/s
-  type: hysteria2
-  server: mszz.mangshe.xyz
-  port: 20061
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
-- name: ❓Other_1|1.2MB/s
-  type: vless
-  server: 172.67.169.35
+  server: vpn-uk-001.fastervpn.world
   port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 7-M16.pAttAYa-8.kdnS.fR
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   skip-cert-verify: true
+  sni: vpn-uk-001.fastervpn.world
+  servername: vpn-uk-001.fastervpn.world
+- name: 🇹🇼TW_1|2.5MB/s
+  type: vmess
+  server: 82259754d625.oylfmxz.cn
+  port: 443
+  cipher: auto
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  tls: true
+  alterId: 0
+  servername: 82259754d625.oylfmxz.cn
   network: ws
   ws-opts:
+    path: /
     headers:
-      Host: 7-M16.pAttAYa-8.kdnS.fR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+      Host: 82259754d625.oylfmxz.cn
+- name: 🇫🇷FR_1|1.6MB/s
+  type: ss
+  server: 15.237.137.134
+  port: 443
+  cipher: auto
+  password: amazonskr05
+- name: 🇺🇸US_3|1.2MB/s
+  type: ss
+  server: 18.191.174.144
+  port: 443
+  cipher: auto
+  password: amazonskr05
