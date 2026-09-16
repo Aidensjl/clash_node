@@ -1,88 +1,17 @@
 proxies:
-- name: 🇫🇷FR_1|1.2MB/s
-  type: ss
-  server: 15.188.246.220
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇯🇵JP_1|2.3MB/s
+- name: 🇳🇱NL_1|1.8MB/s
   type: vless
-  server: 8.209.248.218
+  server: 178.208.64.57
   port: 443
-  uuid: caab26f1-c2e0-438d-8342-5d2125fb45df
+  uuid: 0c6d8604-b7af-46b4-8382-5c90bf232471
   tls: true
-  servername: www.amazon.com
-  flow: xtls-rprx-vision
+  servername: nl2.lebedvpn.cc
   client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: V94ws5oTIja_a6Hui3rSjomr7hZ-QCtYlsT7BWmxTzk
-    short-id: 973bd4f3d8d217fd
-  network: tcp
-- name: 🇺🇸US_2|2.6MB/s
-  type: vless
-  server: 172.67.169.35
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 7-M16.pAttAYa-8.kdnS.fR
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7-M16.pAttAYa-8.kdnS.fR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇰🇿KZ_1|1.2MB/s
-  type: vless
-  server: 89.106.88.6
-  port: 8443
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  tls: true
-  servername: dest1.cdn-update.rutube.info
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
-    short-id: 08
-  network: grpc
-- name: 🇰🇿KZ_2|1.4MB/s
-  type: vless
-  server: kz.cdn-update.rutube.info
-  port: 8443
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  tls: true
-  servername: dest1.cdn-update.rutube.info
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
-    short-id: 08
-  network: grpc
-- name: 🇱🇹LT_1|1.2MB/s
-  type: vless
-  server: 188.72.103.3
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  tls: true
-  servername: cdnapiv2.streamru10.net
-  client-fingerprint: qq
+  alpn:
+  - h3
   skip-cert-verify: false
   network: tcp
-- name: 🇩🇪DE_1|1.1MB/s
-  type: vless
-  server: ee.cdn-update.rutube.info
-  port: 20443
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  tls: true
-  servername: dest1.cdn-update.rutube.info
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
-    short-id: 08
-  network: tcp
-- name: 🇺🇸US_3|1.8MB/s
+- name: 🇺🇸US_2|1.2MB/s
   type: vless
   server: 172.67.136.68
   port: 443
@@ -96,42 +25,17 @@ proxies:
     headers:
       Host: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸US_4|825KB/s
+- name: 🇺🇸US_3|1.2MB/s
   type: vless
-  server: 104.21.36.81
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  server: 172.64.52.97
+  port: 2053
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
-  servername: 4-M16.ChIANG-RaI2036.kdnS.fR
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 4-M16.ChIANG-RaI2036.kdnS.fR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸US_5|2.0MB/s
-  type: vless
-  server: 104.21.71.47
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 0-M16.CHIaN-mai-x.kDnS.FR
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0-M16.CHIaN-mai-x.kDnS.FR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇬🇧GB_1|1.8MB/s
-  type: vless
-  server: atomic-prase23893.my-vm.work
-  port: 8088
-  uuid: tmp_user
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: queuev4.vk.com
-    path: /api
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /

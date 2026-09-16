@@ -1,37 +1,19 @@
 proxies:
-- name: 🇫🇷FR_1|690KB/s
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  alpn:
-  - http/1.1
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷FR_2|690KB/s
+- name: 🇺🇸US_1|569KB/s
   type: ss
-  server: 15.237.137.134
+  server: 3.149.6.228
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇯🇵JP_1|1.3MB/s
-  type: vless
-  server: 202.144.192.76
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  servername: tesla.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  network: tcp
-- name: 🇯🇵JP_2|2.8MB/s
+- name: 🇯🇵JP_1|2.0MB/s
+  type: hysteria2
+  server: mszz.mangshe.xyz
+  port: 20561
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  servername: www.microsoft.com
+- name: 🇯🇵JP_2|2.1MB/s
   type: hysteria2
   server: mszz.mangshe.xyz
   port: 20061
@@ -39,7 +21,7 @@ proxies:
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: ❓Other_2|1.2MB/s
+- name: ❓Other_1|1.2MB/s
   type: vless
   server: 172.67.169.35
   port: 443
@@ -52,78 +34,3 @@ proxies:
     headers:
       Host: 7-M16.pAttAYa-8.kdnS.fR
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇩🇪DE_1|1.1MB/s
-  type: vless
-  server: 212.16.92.111
-  port: 443
-  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
-  tls: true
-  servername: jobinvest.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- name: ❓Other_3|2.8MB/s
-  type: vless
-  server: 89.106.88.6
-  port: 8443
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  tls: true
-  servername: dest1.cdn-update.rutube.info
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
-    short-id: 08
-  network: grpc
-- name: ❓Other_4|1.7MB/s
-  type: vless
-  server: 188.72.103.3
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  tls: true
-  servername: cdnapiv2.streamru10.net
-  client-fingerprint: qq
-  skip-cert-verify: false
-  network: tcp
-- name: ❓Other_5|961KB/s
-  type: vless
-  server: 172.67.206.64
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 3-M16.ayUTthAYa2032.kdNs.FR
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 3-M16.ayUTthAYa2032.kdNs.FR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸US_2|3.1MB/s
-  type: vless
-  server: 104.21.71.47
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 0-M16.CHIaN-mai-x.kDnS.FR
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0-M16.CHIaN-mai-x.kDnS.FR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇬🇧GB_2|1.9MB/s
-  type: vless
-  server: atomic-prase23893.my-vm.work
-  port: 8088
-  uuid: tmp_user
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: queuev4.vk.com
-    path: /api
