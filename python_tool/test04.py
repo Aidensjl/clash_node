@@ -269,6 +269,13 @@ def process_file(src: Path, dst: Path) -> int:
             fix_ss += 1
 
     fix_dup = fix_duplicate_names(proxies)
+    # 为每个节点的 name 追加 node_<索引> 后缀
+    # 便于对照 Clash 的 "proxy N: ..." 报错，直接定位到具体节点
+    for i, node in enumerate(proxies):
+        if not isinstance(node, dict):
+            continue
+        base = (node.get("name") or "").strip() or "node"
+        node["name"] = f"{base}node_{i}"
 
     print(f"🔧 http-opts/ws-opts/h2-opts/grpc-opts 类型修复: {fix_opts}")
     print(f"🔧 hysteria2 fingerprint 修复: {fix_fp}")
