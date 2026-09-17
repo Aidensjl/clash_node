@@ -1,13 +1,31 @@
 proxies:
-- name: 🇩🇪DE_1|2.1MB/s
+- name: 🇹🇼TW_1|737KB/s
   type: ss
-  server: 3.75.89.244
+  server: 60.249.39.170
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 817aa69.default.nintendo.com:112719
+- name: 🇹🇼TW_2|1.4MB/s
+  type: vmess
+  server: 7dba81fc3a0b.oylfmxz.cn
   port: 443
   cipher: auto
-  password: amazonskr05
-- name: 🇩🇪DE_2|631KB/s
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  tls: true
+  alterId: 0
+  servername: 7dba81fc3a0b.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 7dba81fc3a0b.oylfmxz.cn
+- name: 🇩🇪DE_1|1.4MB/s
   type: vless
-  server: 212.16.92.111
+  server: 212.16.92.112
   port: 443
   uuid: 32721515-985b-4773-9e70-5d2e1b88a060
   tls: true
@@ -18,20 +36,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
-- name: 🇦🇹AT_1|1.2MB/s
-  type: vless
-  server: 212.16.92.121
-  port: 443
-  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
-  tls: true
-  servername: jobinvest.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- name: 🇩🇪DE_3|582KB/s
+- name: 🇩🇪DE_2|1.8MB/s
   type: vless
   server: 188.114.98.0
   port: 443
@@ -49,48 +54,7 @@ proxies:
     headers:
       Host: or.mirikhan.dpdns.org
     path: /xvpnws/
-- name: 🇫🇷FR_1|701KB/s
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷FR_2|523KB/s
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷FR_3|713KB/s
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸US_1|2.1MB/s
-  type: hysteria2
-  server: us2.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  skip-cert-verify: true
-  sni: us2.xiaoliyu.cyou
-  servername: us2.xiaoliyu.cyou
-- name: 🇩🇪DE_5|670KB/s
+- name: 🇩🇪DE_3|549KB/s
   type: hysteria
   server: 5.83.129.90
   port: 54177
@@ -102,32 +66,67 @@ proxies:
   up: '500'
   sni: apple.com
   servername: apple.com
-- name: 🇺🇸US_2|956KB/s
+- name: 🇺🇸US_1|2.3MB/s
+  type: hysteria2
+  server: us2.xiaoliyu.cyou
+  port: 4433
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  skip-cert-verify: true
+  sni: us2.xiaoliyu.cyou
+  servername: us2.xiaoliyu.cyou
+- name: 🇳🇱NL_1|1.2MB/s
   type: vless
-  server: 188.114.97.2
-  port: 2086
-  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
-    path: /vl/ikccafxfZ8tDV11MQjtVmuGhgJbO8?ed=2560
-- name: 🇺🇸US_3|643KB/s
-  type: vless
-  server: 104.21.36.81
+  server: 188.72.103.4
   port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  uuid: eb7805c0-b0c2-4f66-9f0e-2796fd38fe51
   tls: true
-  servername: 4-M16.ChIANG-RaI2036.kdnS.fR
-  client-fingerprint: chrome
+  servername: x1.astrav2.online
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 4-M16.ChIANG-RaI2036.kdnS.fR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇪🇸ES_3|625KB/s
+  network: tcp
+- name: 🇩🇪DE_4|841KB/s
+  type: vless
+  server: 212.16.92.122
+  port: 443
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  tls: true
+  servername: jobinvest.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- name: 🇦🇹AT_1|1.1MB/s
+  type: vless
+  server: 212.16.92.111
+  port: 443
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  tls: true
+  servername: jobinvest.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- name: 🇦🇹AT_2|749KB/s
+  type: vless
+  server: 212.16.92.121
+  port: 443
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  tls: true
+  servername: jobinvest.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- name: 🇪🇸ES_1|651KB/s
   type: vless
   server: 104.19.109.226
   port: 80
@@ -139,291 +138,3 @@ proxies:
     headers:
       Host: web-app-1r4mk.app-qzhgjw.workers.dev
     path: /api/ws
-- name: 🇺🇸US_4|622KB/s
-  type: vless
-  server: 172.67.206.64
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 3-M16.ayUTthAYa2032.kdNs.FR
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 3-M16.ayUTthAYa2032.kdNs.FR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇩🇰DK_1|1.5MB/s
-  type: vless
-  server: 77.37.97.204
-  port: 8443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇦🇲AM_1|792KB/s
-  type: vless
-  server: 2.56.207.67
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇧🇬BG_1|1.8MB/s
-  type: vless
-  server: 104.152.48.248
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-8oc.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kkkk-8oc.pages.dev
-    path: /?ed=2048
-- name: 🇰🇬KG_1|612KB/s
-  type: vless
-  server: 188.240.213.98
-  port: 8443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇩🇴DO_1|587KB/s
-  type: vless
-  server: 181.36.229.212
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇩🇪DE_6|1.1MB/s
-  type: vless
-  server: 5.175.236.53
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇩🇪DE_7|1.5MB/s
-  type: vless
-  server: 89.106.88.6
-  port: 20443
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  tls: true
-  servername: dest1.cdn-update.rutube.info
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
-    short-id: 08
-  network: tcp
-- name: 🇮🇹IT_1|1.1MB/s
-  type: vless
-  server: 89.46.70.144
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇯🇵JP_1|2.2MB/s
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-8oc.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kkkk-8oc.pages.dev
-    path: /?ed=2048
-- name: 🇯🇵JP_2|902KB/s
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇯🇵JP_3|650KB/s
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
-  tls: true
-  servername: kv.074167.xyz
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kv.074167.xyz
-    path: /
-- name: 🇯🇵JP_4|2.1MB/s
-  type: vless
-  server: 45.32.248.233
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  tls: true
-  servername: mia12.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: mia12.pages.dev
-    path: /TG:@MiaChatChannel
-- name: 🇳🇱NL_1|2.3MB/s
-  type: vless
-  server: tl.cdn-ozon.icu
-  port: 8443
-  uuid: 2cbf425a-aed6-4c8f-937f-6265ed13a7fa
-  tls: true
-  servername: r7pcpz5158.cdn-ozon.icu
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
-- name: 🇵🇱PL_1|2.0MB/s
-  type: vless
-  server: 150.251.113.76
-  port: 8443
-  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
-  tls: true
-  servername: kv.074167.xyz
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kv.074167.xyz
-    path: /
-- name: 🇩🇪DE_8|846KB/s
-  type: vless
-  server: 207.180.218.132
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇳🇴NO_1|1.5MB/s
-  type: vless
-  server: 80.78.24.239
-  port: 2053
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇯🇵JP_5|3.4MB/s
-  type: vless
-  server: 74.222.12.199
-  port: 8443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  tls: true
-  servername: mia7.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: mia7.pages.dev
-    path: /TG:@MiaChatChannel
-- name: 🇮🇪IE_1|1.3MB/s
-  type: vless
-  server: 167.160.177.68
-  port: 2096
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  tls: true
-  servername: eded-52n.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: eded-52n.pages.dev
-    path: /
-- name: 🇺🇸US_5|1.1MB/s
-  type: vless
-  server: 80.93.202.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  servername: vms.lifetime02.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime02.workers.dev
-    path: /
-- name: 🇰🇷KR_1|2.5MB/s
-  type: vless
-  server: 119.28.162.39
-  port: 8443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  tls: true
-  servername: mia11.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: mia11.pages.dev
-    path: /TG:@MiaChatChannel
