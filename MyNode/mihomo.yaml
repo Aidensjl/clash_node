@@ -1,23 +1,106 @@
 proxies:
-  - client-fingerprint: chrome
-    ech-opts:
-      enable: true
-      query-server-name: cloudflare-ech.com
-    name: "\U0001F1ED\U0001F1F0HK_1|2.5MB/s"
-    network: ws
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: "\U0001F1F8\U0001F1ECSG_1|2.0MB/s"
+    password: vs2Qe/esGk5HrEHzHYYVz9TuJBN8GtYftFEXDQ7m/ik=
+    port: 56927
+    server: 138.2.94.87
+    type: ss
+  - auth: 9452bb1ca5043e7f7b70430911afb034
+    name: "\U0001F1FA\U0001F1F8US_1|740KB/s"
+    password: 9452bb1ca5043e7f7b70430911afb034
     port: 443
-    server: 8.222.70.238
+    server: 108.59.244.158
     skip-cert-verify: true
+    sni: 5post-gate.x5.ru
+    type: hysteria2
+    udp: true
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: '1000'
+    name: "\U0001F1E9\U0001F1EADE_1|644KB/s"
+    port: 20088
+    protocol: udp
+    server: 5.83.129.153
+    skip-cert-verify: true
+    sni: apple.com
+    type: hysteria
+    up: '500'
+  - alpn:
+      - h3
+    client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F3\U0001F1F1NL_1|734KB/s"
+    network: xhttp
+    port: 443
+    server: 178.208.64.57
     tls: true
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    ws-opts:
-      headers:
-        Host: cdn8848.776676.xyz
-      path: /mall/china/doc
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: cdn8848.776676.xyz
+    udp: true
+    uuid: 0c6d8604-b7af-46b4-8382-5c90bf232471
+    xhttp-opts:
+      host: nl2.lebedvpn.cc
+      mode: stream-up
+      path: /004f70ca233b
+    xudp: true
+    servername: nl2.lebedvpn.cc
+  - name: "\U0001F1EF\U0001F1F5JP_1|1.3MB/s"
+    password: 4a4a34d3-8934-4404-ac35-5317b3ff7169
+    port: 443
+    server: rb.yunshu.life
+    type: anytls
+    udp: true
+    sni: rb.yunshu.life
+  - name: "\U0001F1FA\U0001F1F8US_2|3.0MB/s"
+    password: dc32fa69-c317-41f0-878f-20a1a311584f
+    port: 40022
+    server: us2.catzl.top
+    type: anytls
+    udp: true
+    sni: us2.catzl.top
+  - name: "\U0001F1FA\U0001F1F8US_3|3.3MB/s"
+    password: 4a4a34d3-8934-4404-ac35-5317b3ff7169
+    port: 443
+    server: mg4.yunshu.life
+    type: anytls
+    udp: true
+    sni: mg4.yunshu.life
+  - name: "\U0001F1EF\U0001F1F5JP_2|2.2MB/s"
+    password: dc32fa69-c317-41f0-878f-20a1a311584f
+    port: 40055
+    server: jp5.catzl.top
+    type: anytls
+    udp: true
+    sni: jp5.catzl.top
+  - name: "\U0001F1FA\U0001F1F8US_4|2.4MB/s"
+    password: 4a4a34d3-8934-4404-ac35-5317b3ff7169
+    port: 443
+    server: dg.yunshu.life
+    type: anytls
+    udp: true
+    sni: dg.yunshu.life
+  - name: "\U0001F1FA\U0001F1F8US_5|2.7MB/s"
+    password: 4a4a34d3-8934-4404-ac35-5317b3ff7169
+    port: 443
+    server: mg.l3v1.my
+    skip-cert-verify: true
+    type: anytls
+    udp: true
+    sni: mg.l3v1.my
+  - name: "\U0001F1F9\U0001F1FCTW_1|2.5MB/s"
+    password: dc32fa69-c317-41f0-878f-20a1a311584f
+    port: 40071
+    server: tw1.catzl.top
+    type: anytls
+    udp: true
+    sni: tw1.catzl.top
+  - name: "\U0001F1EF\U0001F1F5JP_3|1.7MB/s"
+    password: 6a561fea-d717-4fd1-93f3-097f3f83ef1c
+    port: 17968
+    server: jjz.jjznodenode.top
+    type: anytls
+    udp: true
+    sni: jjz.jjznodenode.top
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select

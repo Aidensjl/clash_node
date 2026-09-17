@@ -1,13 +1,40 @@
 proxies:
-- name: 🇫🇷FR_1|913KB/s
+- name: 🇹🇼TW_1|984KB/s
   type: ss
-  server: 15.237.137.134
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇺🇸US_1|1.3MB/s
-  type: ss
-  server: 3.149.6.228
-  port: 443
-  cipher: auto
-  password: amazonskr05
+  server: 60.249.39.170
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 817aa69.default.nintendo.com:112719
+- name: 🇷🇺RU_1|722KB/s
+  type: hysteria2
+  server: ru.xiaoliyu.cyou
+  port: 4433
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  skip-cert-verify: true
+  sni: ru.xiaoliyu.cyou
+  servername: ru.xiaoliyu.cyou
+- name: 🇯🇵JP_1|1.3MB/s
+  type: hysteria2
+  server: 45.88.43.116
+  port: 52454
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
+- name: 🇩🇪DE_1|598KB/s
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
