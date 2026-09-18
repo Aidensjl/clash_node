@@ -1,41 +1,5 @@
 proxies:
-- name: 🇳🇱NL_1|1.7MB/s
-  type: hysteria2
-  server: 178.18.147.66
-  port: 29900
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
-- name: 🇫🇮FI_1|535KB/s
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-- name: 🇩🇪DE_1|1.7MB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇩🇪DE_2|2.1MB/s
+- name: 🇩🇪DE_1|1.3MB/s
   type: hysteria
   server: 5.83.129.153
   port: 20088
@@ -48,34 +12,17 @@ proxies:
   up: '500'
   sni: apple.com
   servername: apple.com
-- name: 🇫🇮FI_2|849KB/s
-  type: vless
-  server: a2.arshia-nova.ir
+- name: 🇭🇰HK_1|834KB/s
+  type: hysteria2
+  server: 24.233.8.109
   port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: 🇭🇰HK_1|561KB/s
-  type: vless
-  server: 104.17.123.204
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-    path: /
-- name: 🇫🇷FR_1|630KB/s
+  password: 8294f130408299df8cab08c80bf6f819
+  skip-cert-verify: true
+  sni: www.bing.com
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+  servername: www.bing.com
+- name: 🇫🇷FR_1|526KB/s
   type: trojan
   server: 162.159.136.234
   port: 443
@@ -86,3 +33,17 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇺🇸US_1|516KB/s
+  type: vless
+  server: 172.67.206.64
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: 3-M16.ayUTthAYa2032.kdNs.FR
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3-M16.ayUTthAYa2032.kdNs.FR
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
