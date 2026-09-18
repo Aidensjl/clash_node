@@ -1,29 +1,46 @@
 proxies:
-- name: 🇺🇸US_1|2.4MB/s
+- name: 🇪🇪EE_1|2.2MB/s
   type: vless
-  server: 104.21.11.38
-  port: 443
-  uuid: 31b6c552-ca2e-4f73-bce9-c7ba72737a74
+  server: 89.106.88.6
+  port: 20443
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
   tls: true
-  servername: 2.cs2-2-1.kdNs.fR
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  servername: dest1.cdn-update.rutube.info
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 2.cS2-2-1.kdNS.Fr
-    path: /bxlbR8OSatc0IBpW1S65K
-- name: 🇦🇪AE_1|1.1MB/s
+  reality-opts:
+    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
+    short-id: 08
+  network: tcp
+- name: 🇳🇱NL_1|1.6MB/s
   type: hysteria2
-  server: fl1.xiaoliyu.us
-  port: 2052
-  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
+  server: 178.18.147.66
+  port: 29900
+  password: github.com/Alvin9999-newpac/fanqiang
   skip-cert-verify: true
-  sni: fl1.xiaoliyu.us
-  servername: fl1.xiaoliyu.us
-- name: 🇩🇪DE_1|2.3MB/s
+  sni: www.microsoft.com
+  servername: www.microsoft.com
+- name: 🇳🇱NL_2|670KB/s
+  type: hysteria2
+  server: cdn.fastline-labs.com
+  port: 443
+  password: f89c89df-905c-4df3-ab07-4f1a37a81005
+  sni: cdn.fastline-labs.com
+  servername: cdn.fastline-labs.com
+- name: 🇩🇪DE_2|843KB/s
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  alpn:
+  - h3
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
+- name: 🇩🇪DE_3|1.8MB/s
   type: hysteria
   server: 5.83.129.153
   port: 20088
@@ -36,19 +53,31 @@ proxies:
   up: '500'
   sni: apple.com
   servername: apple.com
-- name: 🇩🇪DE_2|2.4MB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇫🇷FR_1|568KB/s
+- name: 🇦🇹AT_1|1022KB/s
+  type: vless
+  server: g1.haxat.bestvbest.ir
+  port: 20610
+  uuid: d65a82af-a403-405e-8b7b-27a68b830511
+  tls: true
+  servername: doctor-yab.ir
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
+    short-id: 1d1a8f9fefeff5e6
+  network: tcp
+- name: 🇫🇷FR_1|646KB/s
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷FR_2|557KB/s
   type: trojan
   server: 188.114.97.7
   port: 443
@@ -59,9 +88,9 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷FR_2|518KB/s
+- name: 🇫🇷FR_3|806KB/s
   type: trojan
-  server: 104.18.152.210
+  server: 162.159.136.234
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -70,42 +99,3 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇧🇷BR_1|1.6MB/s
-  type: vless
-  server: 206.1.97.61
-  port: 443
-  uuid: 103f65b2-c4a7-4afc-aa00-dd67b6904036
-  tls: true
-  servername: Miro.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
-    short-id: d7397feef49deef9
-  network: tcp
-- name: 🇫🇮FI_1|2.0MB/s
-  type: vless
-  server: n2.fiprotected.com
-  port: 443
-  uuid: 3d53970b-419b-4a27-87b5-e9c99bb02eca
-  tls: true
-  servername: cdn2.fiprotected.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: XBx1PANE_LKfrCRVCsu1LDwd2kywg7iDHW9tYEf2SQ0
-  network: tcp
-- name: 🇺🇸US_3|889KB/s
-  type: vless
-  server: 2.27.244.177
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  tls: true
-  servername: polacondr.ggisopi.su
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  network: tcp
