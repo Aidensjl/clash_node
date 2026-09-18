@@ -1,5 +1,5 @@
 proxies:
-- name: 🇳🇱NL_1|1.2MB/s
+- name: 🇳🇱NL_1|2.6MB/s
   type: hysteria2
   server: 178.18.147.66
   port: 29900
@@ -7,17 +7,143 @@ proxies:
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: ❓Other_1|536KB/s
-  type: hysteria2
-  server: sg1.xiaoliyu.us
-  port: 2052
-  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
+- name: 🇺🇸US_1|696KB/s
+  type: vless
+  server: 195.123.240.65
+  port: 443
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  tls: true
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  network: tcp
+- name: 🇺🇸US_2|899KB/s
+  type: vless
+  server: 64.83.39.176
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  client-fingerprint: chrome
   skip-cert-verify: true
-  sni: sg1.xiaoliyu.us
-  servername: sg1.xiaoliyu.us
-- name: 🇺🇸US_1|569KB/s
-  type: ss
-  server: 121.46.230.139
-  port: 65443
-  cipher: auto
-  password: 7eadc6dbe2ae
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /seller?ed=2560
+- name: ❓Other_1|2.1MB/s
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  alpn:
+  - h3
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
+- name: 🇫🇮FI_1|1.7MB/s
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: c12.com
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
+- name: 🇺🇸US_3|2.1MB/s
+  type: vless
+  server: 172.67.212.195
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 2-m17.KuwAIT-aiRliNE.KDns.Fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 2-m17.KuwAIT-aiRliNE.KDns.Fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇺🇸US_4|587KB/s
+  type: vless
+  server: 172.67.223.26
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 5-m17.KuWaIT-LIne.Kdns.FR
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 5-M17.KUWAIt-LInE.kdNs.FR
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇺🇸US_5|1.5MB/s
+  type: vless
+  server: 172.67.220.58
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 3-M17.Kuwait.kdns.fR
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3-M17.kUWAit.KdNs.fR
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇺🇸US_6|2.0MB/s
+  type: vless
+  server: 172.67.136.68
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+- name: 🇺🇸US_7|1.4MB/s
+  type: vless
+  server: 172.67.133.188
+  port: 443
+  uuid: 8a2ae83c-0327-4703-a847-535a972bc636
+  tls: true
+  servername: 5-M23.e9BC44F2-Fe6D-4B28-b604-2C29B8be1c3e.Kdns.Fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 5-M23.e9BC44F2-Fe6D-4B28-b604-2C29B8be1c3e.Kdns.Fr
+    path: /kXHZ0iPM96r8UDUAsTH2scSHpeWN
+- name: ❓Other_2|1.5MB/s
+  type: vless
+  server: 104.21.71.47
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: 0-M16.CHIaN-mai-x.kDnS.FR
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 0-M16.CHIaN-mai-x.kDnS.FR
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
