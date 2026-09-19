@@ -1,13 +1,15 @@
 proxies:
-- name: 🇩🇪DE_1|555KB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
+- name: 🇯🇵JP_1|664KB/s
+  type: vless
+  server: 8.209.248.218
+  port: 443
+  uuid: caab26f1-c2e0-438d-8342-5d2125fb45df
+  tls: true
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
+  reality-opts:
+    public-key: V94ws5oTIja_a6Hui3rSjomr7hZ-QCtYlsT7BWmxTzk
+    short-id: 973bd4f3d8d217fd
+  network: tcp
