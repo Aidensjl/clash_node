@@ -1,69 +1,91 @@
 proxies:
-- name: 🇳🇱NL_1|2.6MB/s
-  type: hysteria2
-  server: 178.18.147.66
-  port: 29900
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
-- name: 🇺🇸US_1|696KB/s
-  type: vless
-  server: 195.123.240.65
+- name: 🇫🇷FR_1|519KB/s
+  type: trojan
+  server: 104.16.174.101
   port: 443
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇭🇰HK_1|662KB/s
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  password: 8294f130408299df8cab08c80bf6f819
+  skip-cert-verify: true
+  sni: www.bing.com
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+  servername: www.bing.com
+- name: 🇬🇧GB_3|1.5MB/s
+  type: vless
+  server: 36.151.187.225
+  port: 12884
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
   tls: true
-  servername: www.cloudflare.com
+  servername: www.spotify.com
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
+    public-key: PZId4C7clCYYpoK4vHV9hJ7BNEz4J4tHxGicMeasriQ
+    short-id: 1b6028
   network: tcp
-- name: 🇺🇸US_2|899KB/s
+- name: 🇸🇬SG_1|2.9MB/s
   type: vless
-  server: 64.83.39.176
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 36.151.187.225
+  port: 12885
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
   tls: true
-  servername: cdn8848.776676.xyz
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /seller?ed=2560
-- name: ❓Other_1|2.1MB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇫🇮FI_1|1.7MB/s
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
+  servername: www.spotify.com
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-- name: 🇺🇸US_3|2.1MB/s
+  reality-opts:
+    public-key: p3Js5Ly_moYS1waMGNmkTw0qt9BR582kqi4O7P9m1jQ
+    short-id: 4670b4cec8c4569c
+  network: tcp
+- name: 🇯🇵JP_1|1.8MB/s
+  type: vless
+  server: 36.151.187.225
+  port: 12887
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
+  tls: true
+  servername: www.spotify.com
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  skip-cert-verify: false
+  reality-opts:
+    public-key: a3H5ffQkcW4xELeJEGQ8FsaXLG4sGomkB7_ms0d5xzc
+    short-id: b48d22a492
+  network: tcp
+- name: 🇫🇷FR_2|887KB/s
+  type: vless
+  server: 147.45.42.218
+  port: 443
+  uuid: e3ec2866-96cd-4cc3-86c9-e7336ea2fbc2
+  tls: true
+  servername: bz-fra-01.hello-there.ru
+  client-fingerprint: edge
+  skip-cert-verify: false
+  network: tcp
+- name: 🇩🇪DE_1|1.1MB/s
+  type: vless
+  server: 185.126.67.69
+  port: 1932
+  uuid: 8ff62004-b728-4be5-b7e9-5f5c85489921
+  tls: true
+  servername: www.vk.com
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- name: 🇺🇸US_1|560KB/s
   type: vless
   server: 172.67.212.195
   port: 443
@@ -77,63 +99,189 @@ proxies:
     headers:
       Host: 2-m17.KuwAIT-aiRliNE.KDns.Fr
     path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: 🇺🇸US_4|587KB/s
+- name: 🇺🇸US_2|1.9MB/s
   type: vless
-  server: 172.67.223.26
+  server: 104.21.66.232
   port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
   tls: true
-  servername: 5-m17.KuWaIT-LIne.Kdns.FR
+  servername: 4-M11.398f485B-0f8a-470B-BE73-7c65C6307408.kDNs.Fr
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 5-M17.KUWAIt-LInE.kdNs.FR
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: 🇺🇸US_5|1.5MB/s
+      Host: 4-M11.398F485B-0f8A-470b-be73-7c65c6307408.KDNS.fR
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_3|527KB/s
   type: vless
-  server: 172.67.220.58
+  server: 104.21.0.230
   port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
   tls: true
-  servername: 3-M17.Kuwait.kdns.fR
+  servername: 2-m11.pATtAyA2030.kDNs.Fr
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 3-M17.kUWAit.KdNs.fR
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: 🇺🇸US_6|2.0MB/s
+      Host: 2-m11.pATtaYA2030.Kdns.fr
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_4|512KB/s
   type: vless
-  server: 172.67.136.68
+  server: 104.21.4.201
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
+  servername: m16-3.cHiANG-maI2034.kDns.Fr
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: EDgE-RouTINg-m16-1.KazAN.KDNs.fr
+      Host: m16-3.cHiANG-maI2034.kDns.Fr
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸US_7|1.4MB/s
+- name: 🇺🇸US_5|598KB/s
   type: vless
-  server: 172.67.133.188
+  server: 104.21.1.174
   port: 443
-  uuid: 8a2ae83c-0327-4703-a847-535a972bc636
+  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
   tls: true
-  servername: 5-M23.e9BC44F2-Fe6D-4B28-b604-2C29B8be1c3e.Kdns.Fr
+  servername: kkkk.11ww.kdns.fr
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 5-M23.e9BC44F2-Fe6D-4B28-b604-2C29B8be1c3e.Kdns.Fr
-    path: /kXHZ0iPM96r8UDUAsTH2scSHpeWN
-- name: ❓Other_2|1.5MB/s
+      Host: kkkk.11ww.kdns.fr
+    path: /BzuntJ8qZN0TRKbC8TveMxJ0
+- name: 🇺🇸US_6|1.2MB/s
+  type: vless
+  server: 104.21.44.119
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: 7-m11.PaTtAya2027.kDNs.Fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 7-M11.PatTaYA2027.KdnS.FR
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_7|579KB/s
+  type: vless
+  server: 172.67.223.78
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 4-m17.JordaN-LiNk.kdnS.fR
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 4-m17.joRDan-linK.KDnS.FR
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇺🇸US_8|1.1MB/s
+  type: vless
+  server: 104.21.64.237
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: 7-m11.PaTtAYA-5.kdns.Fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 7-M11.PAtTaya-5.Kdns.fR
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_9|539KB/s
+  type: vless
+  server: 104.21.16.137
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 3-M17.kuWait-aiRLinE.KDNS.fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3-m17.kUwaIT-AirLINe.KDnS.fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇺🇸US_10|1.1MB/s
+  type: vless
+  server: 172.67.128.94
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: 3-m11.PaTTaya2030.kDNs.fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3-m11.PAtTAYa2030.KdNS.FR
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_11|1.5MB/s
+  type: vless
+  server: 172.67.131.235
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: Img-EdgE-M10-1.huAnGHE.dpdns.ORg
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: img-EdgE-M10-1.HuAngHe.DpdNs.OrG
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_12|784KB/s
+  type: vless
+  server: 172.67.135.65
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: 3-m11.352A53B7-e5E9-4D6A-B4B4-D4d2106A15ea.kDnS.fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3-M11.352A53b7-E5e9-4D6a-b4b4-d4d2106a15EA.KDns.fR
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_13|1.2MB/s
+  type: vless
+  server: 172.67.134.203
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: IMg-CACHe-M11-2.InDoNEsiA2030.DPDNs.org
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: ImG-CAche-m11-2.IndOnesiA2030.dpdNS.oRG
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_14|1.2MB/s
+  type: vless
+  server: 104.21.46.226
+  port: 443
+  uuid: 79f3fa36-1813-41fa-9a0d-dfacaba96d63
+  tls: true
+  servername: 4-M11.PaTtayA2026.KDns.fR
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 4-M11.pATtAya2026.KDnS.fR
+    path: /dJTMmjUWr7ea4sfg
+- name: 🇺🇸US_15|723KB/s
   type: vless
   server: 104.21.71.47
   port: 443
@@ -147,3 +295,11 @@ proxies:
     headers:
       Host: 0-M16.CHIaN-mai-x.kDnS.FR
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+- name: 🇳🇱NL_1|3.0MB/s
+  type: hysteria2
+  server: 178.18.147.66
+  port: 29900
+  password: github.com/Alvin9999-newpac/fanqiang
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  servername: www.microsoft.com
