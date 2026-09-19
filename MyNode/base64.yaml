@@ -1,27 +1,31 @@
 proxies:
-- name: 🇫🇷FR_1|1.0MB/s
+- name: 🇫🇷FR_1|2.9MB/s
   type: ss
   server: 15.237.210.147
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇨🇭CH_1|2.2MB/s
+- name: 🇷🇺RU_1|2.9MB/s
   type: hysteria2
-  server: 82.38.64.229
-  port: 8443
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  skip-cert-verify: true
-  sni: hopp-swizland-new.mysynology.net
-  servername: hopp-swizland-new.mysynology.net
-- name: 🇫🇮FI_1|1.2MB/s
-  type: hysteria2
-  server: se2.belka.network
+  server: msk.frkn.org
   port: 443
-  password: 192776da-1743-4724-b342-96dafa2eb54e
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  servername: msk.frkn.org
+- name: 🇦🇺AU_1|1.6MB/s
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
   skip-cert-verify: true
-  sni: se2.belka.network
-  servername: se2.belka.network
-- name: 🇩🇪DE_1|1020KB/s
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  network: tcp
+- name: 🇩🇪DE_1|1.5MB/s
   type: hysteria
   server: 5.83.129.90
   port: 54177
@@ -33,42 +37,92 @@ proxies:
   up: '500'
   sni: apple.com
   servername: apple.com
-- name: 🇩🇪DE_2|1.2MB/s
-  type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇱🇹LT_1|2.3MB/s
+- name: 🇩🇪DE_2|3.1MB/s
   type: vless
-  server: lt-vno-3.blook.network
-  port: 443
-  uuid: e230740a-aa30-461a-8bf3-9c8cab6332f7
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   tls: true
-  servername: lt-vno-3.blook.network
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  network: tcp
+- name: 🇺🇸US_3|2.5MB/s
+  type: ss
+  server: 3.148.195.154
+  port: 443
+  cipher: auto
+  password: amazonskr05
+- name: 🇬🇧GB_2|648KB/s
+  type: vless
+  server: 14ang88.snusoed.baby
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  tls: true
+  servername: 14ang88.snusoed.baby
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: XZEwCogwNYSmUTxAvanoSdYCslQJAJcKBewa6-_pWS4
-    short-id: 89c919a1
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
   network: tcp
-- name: 🇬🇧GB_1|2.3MB/s
+- name: 🇪🇪EE_1|2.0MB/s
   type: vless
-  server: comte.farxmode.ir
-  port: 8080
-  uuid: 23ddda0f-6333-493a-839d-f9c8e561f7e4
+  server: 5.181.201.36
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   tls: true
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: ios
+  servername: estomin1.vodniki.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
   skip-cert-verify: false
   reality-opts:
-    public-key: 3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
   network: tcp
+- name: 🇦🇺AU_3|1.3MB/s
+  type: vless
+  server: 34.87.229.148
+  port: 443
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  network: tcp
+- name: 🇸🇪SE_1|1.1MB/s
+  type: vless
+  server: 103.139.51.51
+  port: 443
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  tls: true
+  servername: cloud.figmafound.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  network: tcp
+- name: 🇺🇸US_4|2.8MB/s
+  type: vless
+  server: aws.bossonlineshop.info
+  port: 80
+  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
+  skip-cert-verify: false
+  network: tcp
+- name: 🇸🇬SG_1|6.3MB/s
+  type: hysteria2
+  server: 161.118.253.238
+  port: 443
+  password: 1027576c-c4df-4277-b3ef-38d3213b6574
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
