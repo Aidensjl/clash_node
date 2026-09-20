@@ -1,68 +1,60 @@
 proxies:
-- name: 🇯🇵JP_1|5.6MB/s
-  type: anytls
-  server: jp5.catzl.top
-  port: 40055
-  password: ad932b72-bb05-489f-b378-9c2f516709c7
-  sni: jp5.catzl.top
-  udp: true
-  servername: jp5.catzl.top
-- name: 🇰🇷KR_1|3.4MB/s
-  type: anytls
-  server: kr2.catzl.top
-  port: 40042
-  password: ad932b72-bb05-489f-b378-9c2f516709c7
-  sni: kr2.catzl.top
-  udp: true
-  servername: kr2.catzl.top
-- name: 🇺🇸US_1|2.6MB/s
-  type: anytls
-  server: us1.catzl.top
-  port: 40021
-  password: ad932b72-bb05-489f-b378-9c2f516709c7
-  sni: us1.catzl.top
-  udp: true
-  servername: us1.catzl.top
-- name: 🇺🇸US_2|1.8MB/s
-  type: anytls
-  server: us2.catzl.top
-  port: 40022
-  password: ad932b72-bb05-489f-b378-9c2f516709c7
-  sni: us2.catzl.top
-  udp: true
-  servername: us2.catzl.top
-- name: 🇰🇷KR_2|3.6MB/s
-  type: anytls
-  server: kr1.catzl.top
-  port: 40041
-  password: ad932b72-bb05-489f-b378-9c2f516709c7
-  sni: kr1.catzl.top
-  udp: true
-  servername: kr1.catzl.top
-- name: 🇺🇸US_3|831KB/s
-  type: vless
-  server: 104.21.16.44
+- name: 🇷🇺RU_1|658KB/s
+  type: hysteria2
+  server: msk.frkn.org
   port: 443
-  uuid: cb53f904-c979-454f-bf43-621990008148
-  tls: true
-  servername: 0.aq0.ccwu.cc
-  client-fingerprint: chrome
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0.aq0.ccwu.cc
-    path: /LNbYtR09FXg1AmmjhdiHvR8v
-- name: 🇫🇮FI_1|2.2MB/s
+  sni: msk.frkn.org
+  servername: msk.frkn.org
+- name: 🇹🇼TW_1|512KB/s
+  type: anytls
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  udp: true
+  servername: images.ctfassets.net
+- name: 🇩🇪DE_1|821KB/s
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
+- name: 🇩🇪DE_2|1.6MB/s
+  type: ss
+  server: 35.159.113.215
+  port: 443
+  cipher: auto
+  password: amazonskr05
+- name: 🇸🇬SG_1|2.9MB/s
+  type: hysteria2
+  server: jjz.jjznodenode.top
+  port: 39999
+  password: 1cc5d198-4929-4a21-8ee8-311f81b03497
+  sni: jjz.jjznodenode.top
+  obfs: salamander
+  obfs-password: uqmgFZmVNHNYGxaH
+  servername: jjz.jjznodenode.top
+- name: 🇹🇼TW_2|1.7MB/s
   type: vless
-  server: 31.77.7.122
-  port: 8443
-  uuid: 36cd557b-2b3d-46d3-8071-c77dd9cf7623
+  server: aws-jp.webprovider.top
+  port: 30000
+  uuid: 3180f311-16fb-445c-b129-4d946940c21a
   tls: true
-  servername: www.nokia.com
-  client-fingerprint: ios
+  servername: icloud.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: TqsHQWg0oFULyLiaXe9vuwYXmLR6mRLiL376GJbX2Cs
-    short-id: 407f4d9be75efc56
+    public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
+    short-id: a8
   network: tcp
