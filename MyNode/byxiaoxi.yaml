@@ -1,19 +1,37 @@
 proxies:
-- name: 🇹🇼TW_1|851KB/s
+- name: 🇫🇷FR_1|521KB/s
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸US_1|2.3MB/s
   type: vless
-  server: aws-jp.webprovider.top
-  port: 30000
-  uuid: 3180f311-16fb-445c-b129-4d946940c21a
+  server: 104.21.62.195
+  port: 443
+  uuid: cb53f904-c979-454f-bf43-621990008148
   tls: true
-  servername: icloud.com
-  flow: xtls-rprx-vision
+  servername: 5.qq1-0.kdns.fr
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   skip-cert-verify: false
-  reality-opts:
-    public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
-    short-id: a8
-  network: tcp
-- name: 🇩🇪DE_1|525KB/s
+  network: ws
+  ws-opts:
+    headers:
+      Host: 5.qq1-0.kdns.fr
+    path: /LNbYtR09FXg1AmmjhdiHvR8v
+- name: 🇷🇺RU_1|1.5MB/s
+  type: hysteria2
+  server: msk.frkn.org
+  port: 443
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+- name: 🇩🇪DE_1|1.3MB/s
   type: ss
   server: 63.176.107.205
   port: 443
