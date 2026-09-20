@@ -73,7 +73,43 @@ proxies:
   password: bdb313adf74c2ede
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.152.50
+  server: 104.16.174.185
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.161
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vip.868068.xyz
+    path: /proxyip=us.xiabibi.cf
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.12.149
   port: 443
   password: humanity
   fingerprint: chrome
@@ -84,7 +120,7 @@ proxies:
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.12.149
+  server: 172.67.149.60
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -98,76 +134,69 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 伊朗
+- name: 保加利亚
   type: vless
-  server: srv-waw.kintecolas.com
+  server: 194.93.63.246
   port: 443
-  uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   tls: true
-  servername: srv-waw.kintecolas.com
+  servername: pl.bubahero.com
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU
-    short-id: 22f534c530d37170
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
   network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.21.37.55
+- name: 🇷🇺 俄罗斯 21
+  type: hysteria2
+  server: msk.frkn.org
   port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 6-m16.cHiaN-MAI-8.kDnS.Fr
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6-M16.chian-mAI-8.KdNs.fR
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.152.246
+  server: 104.16.174.72
   port: 443
   password: humanity
-  fingerprint: chrome
   sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 19
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
   fingerprint: chrome
-  network: ws
-  sni: www.ignitelimit.com
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.152.108
+  server: 104.16.174.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.71
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -175,44 +204,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.ignitelimit.com
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.21.62.195
-  port: 443
-  uuid: cb53f904-c979-454f-bf43-621990008148
-  tls: true
-  servername: 5.qq1-0.kdns.fr
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 5.qq1-0.kdns.fr
-    path: /LNbYtR09FXg1AmmjhdiHvR8v
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
@@ -231,44 +222,7 @@ proxies:
     path: /
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.21.8.107
-  port: 443
-  password: humanity
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  fingerprint: ios
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.109
+  server: 104.18.22.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -280,7 +234,7 @@ proxies:
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.152.159
+  server: 104.21.8.107
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -289,31 +243,60 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇺🇸 美国 得克萨斯州达拉斯Cloudflare+Warp节点
+- name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 8.6.112.0
+  server: www.speedtest.org
   port: 443
   password: humanity
-  fingerprint: chrome
   sni: www.ignitelimit.com
+  fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 巴西圣保罗+CloudFlare节点
-  type: vless
-  server: 188.114.97.6
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: unsafe
-  skip-cert-verify: false
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.230
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
+      Host: www.ignitelimit.com
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 172.67.188.109
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: ip.myip2.qzz.io
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.15.230
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 更新于 0921 02:57 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -2589,6 +2572,16 @@ proxies:
       Host: 169.40.32.48
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
+- name: 🇺🇸 美国 5
+  type: trojan
+  server: 104.18.152.50
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇹🇭 泰国 未知147
   type: vmess
   server: 118.193.57.167
@@ -2694,7 +2687,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
   tls: false
   alterId: 0
-- name: 🇯🇵 日本 242
+- name: 🇯🇵 日本 243
   type: hysteria2
   server: 141.147.151.58
   port: 443
@@ -2744,7 +2737,7 @@ proxies:
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
   servername: rmgyvpn.rest
-- name: 🇫🇷 法国 248
+- name: 🇫🇷 法国 249
   type: hysteria2
   server: 35.181.169.140
   port: 443
@@ -2752,7 +2745,7 @@ proxies:
   skip-cert-verify: true
   sni: 35.181.169.140
   servername: 35.181.169.140
-- name: 🇦🇺 澳洲 249
+- name: 🇦🇺 澳洲 250
   type: hysteria2
   server: vpn-au-002.fastervpn.world
   port: 443
@@ -2781,11 +2774,6 @@ proxies:
   server: JavidnamanIran-Javid-SHAH-KingRezaPahlav
   port: 443
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=
-- name: '嘎嘎 #1'
-  type: hysteria2
-  server: msk.frkn.org
-  port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
 - name: 🇷🇺 俄罗斯 254
   type: hysteria2
   server: gta.internet-card.sbs
@@ -2872,7 +2860,7 @@ proxies:
   obfs: salamander
   obfs-password: 6cmj1dymhm79hopl
   servername: gift-catalog.aroonia.ir
-- name: 177164 ⚡️= t.me/S
+- name: Cfox
   type: hysteria2
   server: mz.hkychina.com
   port: 8443
@@ -2962,7 +2950,7 @@ proxies:
   server: JavidnamanIran-Javid-SHAH-KingRezaPahlav
   port: 443
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad@5.175.249.174:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=
-- name: 🇷🇺 俄罗斯 Cfox
+- name: '🇷🇺 俄罗斯 Tel: @DailyConfigs'
   type: hysteria2
   server: 144.31.49.138
   port: 443
@@ -2980,7 +2968,7 @@ proxies:
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   servername: nl1.sferavpn.pro
-- name: 🇩🇪 德国 278
+- name: '🇩🇪 德国 Channel: @DailyConfigs'
   type: hysteria2
   server: 2.27.59.206
   port: 443
@@ -3053,7 +3041,7 @@ proxies:
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   servername: giftcard.gateway-stream.com
-- name: 'DailyConfigs #2'
+- name: Cfox
   type: hysteria2
   server: assets.gateway-stream.com
   port: 52021
@@ -3171,43 +3159,183 @@ proxies:
   port: 30001
   cipher: aes-256-gcm
   password: Butterfly123@qwe9527
-- name: 🇫🇷 法国 11.6MB/s
+- name: IT13.0MB/s
+  type: vless
+  server: 31.77.201.33
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  servername: italia.superbuba.top
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  network: tcp
+- name: 🇩🇪 德国 14.0MB/s
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  servername: gesmankos.sadiepinki.com
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇳🇱 荷兰 11.8MB/s
+  type: vless
+  server: prisonvpnc-production-8b3b.up.railway.app
+  port: 443
+  uuid: 08687611-b1cc-47a5-b090-094c83b0c257
+  tls: true
+  servername: prisonvpnc-production-8b3b.up.railway.app
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: prisonvpnc-production-8b3b.up.railway.app
+    path: /vlessfp=chrome
+- name: 🇺🇸 美国 12.5MB/s
+  type: vless
+  server: 69.46.46.45
+  port: 443
+  uuid: Default
+  tls: true
+  servername: ezaccess1-slv-ezaccess1-5222.up.railway.app
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: ezaccess1-slv-ezaccess1-5222.up.railway.app
+    path: /ws/vless/Default?ed=2048fp=chrome
+- name: 🇺🇸 美国 22.5MB/s
+  type: vless
+  server: 69.46.46.44
+  port: 443
+  uuid: Default
+  tls: true
+  servername: ezaccess1-slv-ezaccess1-c507.up.railway.app
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: ezaccess1-slv-ezaccess1-c507.up.railway.app
+    path: /ws/vless/Default?ed=2048fp=chrome
+- name: FI12.7MB/s
+  type: vless
+  server: tt.sonyabibboop.com
+  port: 443
+  uuid: 884b5fb5-13b5-433a-92cc-0ff4e5773375
+  tls: true
+  servername: tt.sonyabibboop.com
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸 美国 32.9MB/s
+  type: vless
+  server: 69.46.46.121
+  port: 443
+  uuid: Default
+  tls: true
+  servername: ezaccess1-slv-ezaccess1-de5d.up.railway.app
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: ezaccess1-slv-ezaccess1-de5d.up.railway.app
+    path: /ws/vless/Default?ed=2048fp=chrome
+- name: 🇫🇷 法国 13.3MB/s
+  type: vless
+  server: 152.228.139.33
+  port: 35108
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: grpc
+- name: 🇩🇪 德国 22.2MB/s
+  type: vless
+  server: 2.28.62.48
+  port: 2900
+  uuid: 0de1047d-fadd-4075-a08e-2223c5dadd0a
+  tls: true
+  servername: www.numpy.org
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇩🇪 德国 34.2MB/s
   type: ss
-  server: 15.237.196.230
+  server: 3.120.158.57
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇭🇰 香港 14.3MB/s
+- name: 🇺🇸 美国 52.9MB/s
   type: vless
-  server: agroup.hk2.ilovegairport.com
+  server: 69.46.46.117
   port: 443
-  uuid: df2a259e-32cc-4b4d-bcca-3f8d8a28dc2a
+  uuid: Default
   tls: true
-  servername: ap-east-1.console.aws.amazon.com
-  flow: xtls-rprx-vision-udp443
-  client-fingerprint: chrome
+  servername: ezaccess1-slv-ezaccess1-c8e8.up.railway.app
+  alpn:
+  - http/1.1
   skip-cert-verify: false
-  network: tcp
-- name: 🇹🇼 台湾 12.8MB/s
-  type: vless
-  server: aws-jp.webprovider.top
-  port: 30000
-  uuid: 3180f311-16fb-445c-b129-4d946940c21a
-  tls: true
-  servername: icloud.com
-  flow: xtls-rprx-vision-udp443
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
-- name: 🇩🇪 德国 11.3MB/s
+  network: ws
+  ws-opts:
+    headers:
+      Host: ezaccess1-slv-ezaccess1-c8e8.up.railway.app
+    path: /ws/vless/Default?ed=2048fp=chrome
+- name: 🇩🇪 德国 41.6MB/s
   type: ss
   server: 63.176.107.205
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇺🇸 美国 11.7MB/s
+- name: 🇨🇳 中国 315
+  type: socks5
+  server: 103.210.161.8
+  port: 1080
+- name: 🇩🇪 德国 52.2MB/s
   type: vless
-  server: 172.64.79.57
+  server: 2.26.125.38
+  port: 2096
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  tls: true
+  servername: st3f6d.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: st3f6d.rumedia-cdn.com
+    path: /cdn/v3/livefp=chrome
+- name: api.meituan88.com
+  type: ssr
+  server: api.meituan88.com
+  port: 7007
+  protocol: auth_aes128_md5
+  cipher: auto
+  obfs: plainZGkxNVBWremarks=8J-HrfCfh7BIS18xfDMuNE1CL3M=&obfsparam=MzNmMzEzNzIzLmRvdXlpbi5jb20=&protoparam=MzEzNzIzOmRDd3JuaQ==#323
+- name: api.meituan88.com
+  type: ssr
+  server: api.meituan88.com
+  port: 7016
+  protocol: auth_aes128_md5
+  cipher: auto
+  obfs: plainZGkxNVBWremarks=8J-HrfCfh7BIS18yfDUuMk1CL3M=&obfsparam=MzNmMzEzNzIzLmRvdXlpbi5jb20=&protoparam=MzEzNzIzOmRDd3JuaQ==#324
+- name: 🇩🇪 德国 64.3MB/s
+  type: vless
+  server: 162.159.152.31
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
@@ -3217,37 +3345,225 @@ proxies:
   ws-opts:
     headers:
       Host: cdn8848.776676.xyz
-    path: /dl?ed=2560fp=chrome
-- name: api.meituan88.com
-  type: ssr
-  server: api.meituan88.com
-  port: 7016
-  protocol: auth_aes128_md5
+    path: /urls?ed=2560fp=chrome
+- name: 🇩🇪 德国 74.1MB/s
+  type: ss
+  server: 130.61.116.110
+  port: 59924
   cipher: auto
-  obfs: plainZGkxNVBWremarks=8J-HrfCfh7BIS18yfDQuME1CL3M=&obfsparam=MzNmMzEzNzIzLmRvdXlpbi5jb20=&protoparam=MzEzNzIzOmRDd3JuaQ==#308
-- name: api.meituan88.com
-  type: ssr
-  server: api.meituan88.com
-  port: 7015
-  protocol: auth_aes128_md5
+  password: UpeZLBSVADf64wezj0K1CcapVO6MLWWPYtMJue7gxqE=
+- name: 🇩🇪 德国 81.7MB/s
+  type: ss
+  server: 130.61.148.193
+  port: 59924
   cipher: auto
-  obfs: plainZGkxNVBWremarks=8J-HufCfh7xUV18zfDEuNE1CL3M=&obfsparam=MzNmMzEzNzIzLmRvdXlpbi5jb20=&protoparam=MzEzNzIzOmRDd3JuaQ==#310
-- name: 🇳🇱 荷兰 11.0MB/s
+  password: 1RmIsogd2wO+AKg9dt+4v9PGoeuLhLSAztfnuapH+VI=
+- name: 🇯🇵 日本 12.8MB/s
   type: vless
-  server: soliconf.dpdns.org
+  server: 151.241.129.79
   port: 443
-  uuid: af11a901-92bb-a9d2-a17c-f9a38c4fd33b
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: soliconf.dpdns.org
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /docs/gif?ed=2560fp=chrome
+- name: 🇬🇧 英国 23.7MB/s
+  type: ss
+  server: 144.24.224.176
+  port: 61312
+  cipher: auto
+  password: hJ+f10t7OSwpGbSouJJ4/DvKxUvgo9hi7u9bLfFVmVc=
+- name: 🇳🇱 荷兰 53.6MB/s
+  type: ss
+  server: 152.70.59.102
+  port: 45819
+  cipher: auto
+  password: uj8R95KXC2t2Hcu3vuBQFbem9H1p3o9MF4kipyyiQR0=
+- name: 🇺🇸 美国 83.4MB/s
+  type: vless
+  server: 172.64.79.63
+  port: 2096
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /vod/doujin?ed=2560fp=chrome
+- name: 🇩🇪 德国 94.3MB/s
+  type: vless
+  server: gesmankos.sadiepinki.com
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  servername: gesmankos.sadiepinki.com
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  network: tcp
+- name: 🇩🇪 德国 103.6MB/s
+  type: vless
+  server: 161.35.18.70
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /about?ed=2560fp=chrome
+- name: 🇩🇪 德国 113.1MB/s
+  type: vless
+  server: 31.76.18.213
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /product/uploads/new?ed=2560fp=chrome
+- name: api.meituan88.com
+  type: ssr
+  server: api.meituan88.com
+  port: 7018
+  protocol: auth_aes128_md5
+  cipher: auto
+  obfs: plainZGkxNVBWremarks=8J-HufCfh7xUV18xfDUuNU1CL3M=&obfsparam=MzNmMzEzNzIzLmRvdXlpbi5jb20=&protoparam=MzEzNzIzOmRDd3JuaQ==#356
+- name: 🇬🇧 英国 93.8MB/s
+  type: vless
+  server: 57.128.177.218
+  port: 30963
+  uuid: aabcb69e-9f17-44bd-aaac-552dd23e9691
+  tls: true
+  servername: us.vrzn.download.nvidia.com
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  network: grpc
+- name: 🇦🇺 澳洲 12.4MB/s
+  type: vless
+  server: 123.51.23.113
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /event/link?ed=2560fp=chrome
+- name: 🇩🇪 德国 122.0MB/s
+  type: vless
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 17594
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  tls: true
+  servername: www.lamer.com.hk
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇰🇷 韩国 11.1MB/s
+  type: vless
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 61205
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇯🇵 日本 23.9MB/s
+  type: vless
+  server: jprbbqwlqqnmwysrl.cfooov.xyz
+  port: 53342
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇰🇷 韩国 23.1MB/s
+  type: vless
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 62638
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸 美国 243.8MB/s
+  type: vless
+  server: 104.143.223.80
+  port: 2085
+  uuid: 38ffee35-b305-41ba-89e0-78e62d95b99c
+  skip-cert-verify: false
+  network: grpc
+- name: 🇳🇱 荷兰 111.6MB/s
+  type: vless
+  server: amirpanel-production-8b40.up.railway.app
+  port: 443
+  uuid: 7b394c74-38a2-4d66-046c-df2f1ae703f1
+  tls: true
+  servername: amirpanel-production-8b40.up.railway.app
   alpn:
   - http/1.1
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: soliconf.dpdns.org
-    path: /ws/af11a901-92bb-a9d2-a17c-f9a38c4fd33bfp=chrome
-- name: 🇩🇪 德国 421
+      Host: amirpanel-production-8b40.up.railway.app
+    path: /ws/7b394c74-38a2-4d66-046c-df2f1ae703f1fp=chrome
+- name: IT33.0MB/s
+  type: vless
+  server: 31.76.113.231
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  servername: italia.superbuba.top
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  network: tcp
+- name: IT42.6MB/s
+  type: vless
+  server: italia.superbuba.top
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  servername: italia.superbuba.top
+  flow: xtls-rprx-vision-udp443
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸 美国 368
+  type: socks5
+  server: 104.168.249.36
+  port: 1080
+  username: test123
+  password: test123
+- name: 🇳🇱 荷兰 369
+  type: socks5
+  server: 185.145.99.41
+  port: 1080
+  username: test123
+  password: test123
+- name: 🇩🇪 德国 472
   type: socks5
   server: 45.144.54.40
   port: 1080
@@ -3383,17 +3699,6 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷 法国 04
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 05
   type: trojan
   server: 104.20.6.134
@@ -3460,17 +3765,6 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷 法国 12
-  type: trojan
-  server: 104.18.152.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 15
   type: trojan
   server: 104.17.111.1
@@ -3485,6 +3779,17 @@ proxies:
 - name: 🇫🇷 法国 16
   type: trojan
   server: 104.18.152.113
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 17
+  type: trojan
+  server: 104.16.174.36
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -3548,28 +3853,6 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷 法国 25
-  type: trojan
-  server: 172.67.188.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 26
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 28
   type: trojan
   server: 104.18.152.179
@@ -3581,42 +3864,20 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷 法国 29
-  type: trojan
-  server: 104.18.152.161
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 30
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 31
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 32
   type: trojan
   server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 33
+  type: trojan
+  server: 104.18.152.244
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -3639,6 +3900,28 @@ proxies:
 - name: 🇫🇷 法国 35
   type: trojan
   server: 104.18.152.140
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 36
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 37
+  type: trojan
+  server: 104.18.152.246
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -3696,6 +3979,17 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇫🇷 法国 45
+  type: trojan
+  server: 104.16.174.109
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 46
   type: trojan
   server: 188.114.97.7
@@ -3721,17 +4015,6 @@ proxies:
 - name: 🇫🇷 法国 48
   type: trojan
   server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 49
-  type: trojan
-  server: 104.16.174.185
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -4008,22 +4291,6 @@ proxies:
   ws-opts:
     headers:
       Host: ezaccess1-slv-ezaccess1-54fc.up.railway.app
-    path: /ws/vless/Default
-- name: 🇺🇸 美国 39
-  type: vless
-  server: 69.46.46.44
-  port: 443
-  uuid: Default
-  tls: true
-  servername: ezaccess1-slv-ezaccess1-645f.up.railway.app
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: ezaccess1-slv-ezaccess1-645f.up.railway.app
     path: /ws/vless/Default
 - name: 🇺🇸 美国 40
   type: vless
@@ -4316,20 +4583,6 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
     path: /gif/source/courses
-- name: 🇭🇰 香港 02
-  type: vless
-  server: 162.159.152.31
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /urls
 - name: 🇷🇺 俄罗斯 瑞典 01
   type: vless
   server: 161.104.44.138
