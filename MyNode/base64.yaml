@@ -1,183 +1,68 @@
 proxies:
-- name: 🇷🇺RU_1|1.4MB/s
-  type: hysteria2
-  server: msk.frkn.org
-  port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  servername: msk.frkn.org
-- name: 🇫🇮FI_1|1.8MB/s
-  type: vless
-  server: 2.26.9.243
-  port: 3454
-  uuid: 5adaf80e-2347-481f-84cb-46109d582c95
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: Bz2EFAfox-uD9nn8qAVKy86A1kDKO2OpYQhMO4fCrCg
-    short-id: 159b4efc
-  network: grpc
-- name: 🇪🇪EE_1|2.2MB/s
-  type: vless
-  server: 89.106.88.6
-  port: 20443
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  tls: true
-  servername: dest1.cdn-update.rutube.info
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
-    short-id: 08
-  network: tcp
-- name: 🇺🇸US_1|2.1MB/s
-  type: vless
-  server: 34.85.179.6
-  port: 443
-  uuid: 8ea1a178-2719-47b7-99d0-33d8dc361ba3
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: cTwhlN0bIkprnzvGCMPmsdxk8XkqUz3LcCrS0FKnbVI
-    short-id: c08efcd72d7e8389
-  network: tcp
-- name: ❓Other_1|2.0MB/s
-  type: vless
-  server: hk.sepporated.com
-  port: 443
-  uuid: 218ae360-0e5f-4856-91f3-1823adfc9037
-  tls: true
-  servername: hk.sepporated.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: hk.sepporated.com
-    path: /ws
-- name: 🇺🇸US_2|984KB/s
-  type: vless
-  server: 190.93.247.12
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /m?ed=2560
-- name: 🇩🇪DE_2|1.1MB/s
-  type: vless
-  server: pl.node-edge09.com
-  port: 443
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  tls: true
-  servername: pl.node-edge09.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU
-    short-id: 212a8beb0ea4817b
-  network: tcp
-- name: 🇸🇬SG_1|5.9MB/s
-  type: hysteria2
-  server: 161.118.253.238
-  port: 443
-  password: 1027576c-c4df-4277-b3ef-38d3213b6574
-  skip-cert-verify: true
-  sni: www.bing.com
-  servername: www.bing.com
-- name: 🇩🇪DE_3|1.1MB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇱🇹LT_1|1.1MB/s
-  type: vless
-  server: lt-vno-3.blook.network
-  port: 443
-  uuid: e230740a-aa30-461a-8bf3-9c8cab6332f7
-  tls: true
-  servername: lt-vno-3.blook.network
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: XZEwCogwNYSmUTxAvanoSdYCslQJAJcKBewa6-_pWS4
-    short-id: 89c919a1
-  network: tcp
-- name: 🇩🇪DE_4|534KB/s
-  type: ss
-  server: 35.159.113.215
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇯🇵JP_1|5.4MB/s
+- name: 🇯🇵JP_1|5.6MB/s
   type: anytls
   server: jp5.catzl.top
   port: 40055
-  password: 35936816-394d-4942-b872-fe6047e7b0dd
+  password: ad932b72-bb05-489f-b378-9c2f516709c7
   sni: jp5.catzl.top
   udp: true
   servername: jp5.catzl.top
-- name: 🇹🇼TW_1|6.7MB/s
-  type: anytls
-  server: tw1.catzl.top
-  port: 40071
-  password: 35936816-394d-4942-b872-fe6047e7b0dd
-  sni: tw1.catzl.top
-  udp: true
-  servername: tw1.catzl.top
-- name: 🇰🇷KR_1|875KB/s
-  type: anytls
-  server: kr1.catzl.top
-  port: 40041
-  password: 35936816-394d-4942-b872-fe6047e7b0dd
-  sni: kr1.catzl.top
-  udp: true
-  servername: kr1.catzl.top
-- name: 🇹🇼TW_2|5.8MB/s
-  type: anytls
-  server: tw2.catzl.top
-  port: 40072
-  password: 35936816-394d-4942-b872-fe6047e7b0dd
-  sni: tw2.catzl.top
-  udp: true
-  servername: tw2.catzl.top
-- name: 🇺🇸US_3|2.9MB/s
-  type: anytls
-  server: us2.catzl.top
-  port: 40022
-  password: 35936816-394d-4942-b872-fe6047e7b0dd
-  sni: us2.catzl.top
-  udp: true
-  servername: us2.catzl.top
-- name: 🇰🇷KR_2|2.6MB/s
+- name: 🇰🇷KR_1|3.4MB/s
   type: anytls
   server: kr2.catzl.top
   port: 40042
-  password: 35936816-394d-4942-b872-fe6047e7b0dd
+  password: ad932b72-bb05-489f-b378-9c2f516709c7
   sni: kr2.catzl.top
   udp: true
   servername: kr2.catzl.top
-- name: 🇳🇱NL_3|2.1MB/s
-  type: ss
-  server: 134.98.148.247
-  port: 45819
-  cipher: auto
-  password: rjjFYsfUkf7OHvPeiSPjvwe1J7PQhgqPvvY4toBG8Z4%3D
+- name: 🇺🇸US_1|2.6MB/s
+  type: anytls
+  server: us1.catzl.top
+  port: 40021
+  password: ad932b72-bb05-489f-b378-9c2f516709c7
+  sni: us1.catzl.top
+  udp: true
+  servername: us1.catzl.top
+- name: 🇺🇸US_2|1.8MB/s
+  type: anytls
+  server: us2.catzl.top
+  port: 40022
+  password: ad932b72-bb05-489f-b378-9c2f516709c7
+  sni: us2.catzl.top
+  udp: true
+  servername: us2.catzl.top
+- name: 🇰🇷KR_2|3.6MB/s
+  type: anytls
+  server: kr1.catzl.top
+  port: 40041
+  password: ad932b72-bb05-489f-b378-9c2f516709c7
+  sni: kr1.catzl.top
+  udp: true
+  servername: kr1.catzl.top
+- name: 🇺🇸US_3|831KB/s
+  type: vless
+  server: 104.21.16.44
+  port: 443
+  uuid: cb53f904-c979-454f-bf43-621990008148
+  tls: true
+  servername: 0.aq0.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 0.aq0.ccwu.cc
+    path: /LNbYtR09FXg1AmmjhdiHvR8v
+- name: 🇫🇮FI_1|2.2MB/s
+  type: vless
+  server: 31.77.7.122
+  port: 8443
+  uuid: 36cd557b-2b3d-46d3-8071-c77dd9cf7623
+  tls: true
+  servername: www.nokia.com
+  client-fingerprint: ios
+  skip-cert-verify: false
+  reality-opts:
+    public-key: TqsHQWg0oFULyLiaXe9vuwYXmLR6mRLiL376GJbX2Cs
+    short-id: 407f4d9be75efc56
+  network: tcp
