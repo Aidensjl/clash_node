@@ -1,13 +1,66 @@
 proxies:
-- name: 🇷🇺RU_1|3.2MB/s
-  type: hysteria2
-  server: msk.frkn.org
+- name: 🇩🇪DE_1|2.9MB/s
+  type: ss
+  server: 18.156.84.97
   port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  cipher: auto
+  password: amazonskr05
+- name: ❓Other_1|635KB/s
+  type: ssr
+  server: api.meituan88.com
+  port: 46736
+  protocol: auth_aes128_md5
+  cipher: auto
+  obfs: tls1.2_ticket_auth
+  password: di15PV
+  obfs-param: 33f313723.douyin.com
+- name: 🇩🇪DE_2|2.1MB/s
+  type: vless
+  server: 138.124.25.25
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  client-fingerprint: chrome
   skip-cert-verify: true
-- name: 🇫🇷FR_1|527KB/s
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /group/outbound/topics?ed=2560
+- name: 🇺🇸US_2|2.9MB/s
+  type: vless
+  server: 69.46.46.45
+  port: 443
+  uuid: Default
+  tls: true
+  servername: ezaccess1-slv-ezaccess1-4647.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: ezaccess1-slv-ezaccess1-4647.up.railway.app
+    path: /ws/vless/Default?ed=2048
+- name: 🇩🇪DE_3|1.9MB/s
+  type: vless
+  server: ge-a.sarky.ru
+  port: 443
+  uuid: 9c64f1aa-da4d-4c3e-9617-9bfbf1657a75
+  tls: true
+  servername: ge.sarky.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: RpjjScd4SIWgDGPtR_FJPRENMyWaPzb_hyA2cY98CDs
+    short-id: e6240b9af8d53c17
+  network: tcp
+- name: 🇫🇷FR_1|831KB/s
   type: trojan
-  server: 45.130.125.158
+  server: 104.18.15.230
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -16,80 +69,59 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇺🇸US_5|1.1MB/s
+- name: 🇫🇷FR_2|1.2MB/s
+  type: trojan
+  server: 162.159.136.234
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇩🇪DE_4|2.2MB/s
   type: vless
-  server: 104.21.62.195
+  server: 178.215.236.234
+  port: 443
+  uuid: 9c64f1aa-da4d-4c3e-9617-9bfbf1657a75
+  tls: true
+  servername: ge.sarky.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: RpjjScd4SIWgDGPtR_FJPRENMyWaPzb_hyA2cY98CDs
+    short-id: e6240b9af8d53c17
+  network: tcp
+- name: 🇳🇱NL_1|1.4MB/s
+  type: vless
+  server: 5.129.228.40
+  port: 443
+  uuid: 88a247b9-3e0b-4c0e-ba88-61fc63a9c5d1
+  tls: true
+  servername: static.yandex.net
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: k9BuzZPnzofDcPTaa7ROHNIc9ww2jy3tLAJ04GuKvAQ
+    short-id: 669d7ae5e1611511
+  network: tcp
+- name: 🇺🇸US_3|2.1MB/s
+  type: vless
+  server: 172.67.138.191
   port: 443
   uuid: cb53f904-c979-454f-bf43-621990008148
   tls: true
-  servername: 5.qq1-0.kdns.fr
+  servername: 6.qq1-0.kdns.fr
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 5.qq1-0.kdns.fr
+      Host: 6.qq1-0.kdns.fr
     path: /LNbYtR09FXg1AmmjhdiHvR8v
-- name: 🇩🇪DE_1|635KB/s
-  type: hysteria2
-  server: gta.internet-card.sbs
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  skip-cert-verify: true
-  sni: gta.internet-card.sbs
-  servername: gta.internet-card.sbs
-- name: 🇹🇼TW_1|6.1MB/s
-  type: anytls
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  password: 9sK2mP8xQ7vL3nZ6
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  udp: true
-  servername: images.ctfassets.net
-- name: 🇺🇸US_6|741KB/s
-  type: vless
-  server: 104.21.62.195
-  port: 443
-  uuid: cb53f904-c979-454f-bf43-621990008148
-  tls: true
-  servername: 3.qq1-0.kdns.fr
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 3.qq1-0.kdns.fr
-    path: /LNbYtR09FXg1AmmjhdiHvR8v
-- name: 🇩🇪DE_2|1.2MB/s
-  type: ss
-  server: 35.159.113.215
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇺🇸US_7|2.8MB/s
-  type: ss
-  server: 18.188.105.92
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇫🇷FR_2|834KB/s
-  type: ss
-  server: 35.180.172.234
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇩🇪DE_3|558KB/s
-  type: ss
-  server: 18.156.84.97
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇯🇵JP_1|2.9MB/s
+- name: 🇯🇵JP_1|2.5MB/s
   type: hysteria2
   server: msjp1.mangshe.xyz
   port: 20561
@@ -97,82 +129,181 @@ proxies:
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: 🇺🇸US_8|2.4MB/s
-  type: ss
-  server: 3.21.98.132
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇹🇼TW_2|1.4MB/s
-  type: anytls
-  server: tw2.catzl.top
-  port: 40072
-  password: 4ddf24db-6c41-4797-83e3-18fa8449c87b
-  sni: tw2.catzl.top
-  udp: true
-  servername: tw2.catzl.top
-- name: 🇯🇵JP_2|4.0MB/s
-  type: anytls
-  server: jp5.catzl.top
-  port: 40055
-  password: 4ddf24db-6c41-4797-83e3-18fa8449c87b
-  sni: jp5.catzl.top
-  udp: true
-  servername: jp5.catzl.top
-- name: 🇺🇸US_9|1.7MB/s
-  type: anytls
-  server: us2.catzl.top
-  port: 40022
-  password: 4ddf24db-6c41-4797-83e3-18fa8449c87b
-  sni: us2.catzl.top
-  udp: true
-  servername: us2.catzl.top
-- name: 🇹🇼TW_3|2.9MB/s
-  type: anytls
-  server: tw1.catzl.top
-  port: 40071
-  password: 4ddf24db-6c41-4797-83e3-18fa8449c87b
-  sni: tw1.catzl.top
-  udp: true
-  servername: tw1.catzl.top
-- name: 🇭🇰HK_1|6.6MB/s
-  type: anytls
-  server: hk3.catzl.top
-  port: 40013
-  password: 4ddf24db-6c41-4797-83e3-18fa8449c87b
-  sni: hk3.catzl.top
-  udp: true
-  servername: hk3.catzl.top
-- name: ❓Other_1|1.3MB/s
-  type: anytls
-  server: it2.nbjc.top
-  port: 40092
-  password: 4ddf24db-6c41-4797-83e3-18fa8449c87b
-  sni: it2.nbjc.top
-  udp: true
-  servername: it2.nbjc.top
-- name: 🇭🇰HK_2|538KB/s
+- name: 🇸🇬SG_1|2.2MB/s
   type: vless
-  server: cooper365.cloud
-  port: 10090
-  uuid: 560870fe-d845-4540-a698-050a33b838a8
+  server: 172.67.209.127
+  port: 8880
+  uuid: 4e81922a-1c2e-41ee-bb4c-9095a0a363fe
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: cooper365.cloud
-    path: /vless
-- name: 🇺🇸US_10|2.2MB/s
-  type: vless
-  server: 104.21.16.44
+      Host: gentle-cell-501a.273-d6b.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇺🇸US_4|2.4MB/s
+  type: anytls
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
   port: 443
-  uuid: cb53f904-c979-454f-bf43-621990008148
-  tls: true
-  servername: 0.aq0.ccwu.cc
-  client-fingerprint: chrome
+  password: 9sK2mP8xQ7vL3nZ6
   skip-cert-verify: true
+  sni: images.ctfassets.net
+  udp: true
+  servername: images.ctfassets.net
+- name: 🇫🇷FR_3|2.5MB/s
+  type: vless
+  server: 31.185.108.84
+  port: 443
+  uuid: Telegram:Daredevil_404
+  tls: true
+  servername: daredevil2.manufacturingcity.ir
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇸🇬SG_2|2.0MB/s
+  type: vless
+  server: 45.80.111.45
+  port: 8880
+  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
+  skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 0.aq0.ccwu.cc
-    path: /LNbYtR09FXg1AmmjhdiHvR8v
+      Host: cnd.singapure.mygold.stream
+    path: /cdn/assets/stream
+- name: 🇳🇴NO_1|1.5MB/s
+  type: vless
+  server: 185.125.171.128
+  port: 8443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-xcd.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: kkkk-xcd.pages.dev
+    path: /?ed=2048
+- name: 🇯🇵JP_2|3.8MB/s
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-8oc.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: kkkk-8oc.pages.dev
+    path: /?ed=2048
+- name: 🇨🇱CL_1|1.1MB/s
+  type: vless
+  server: 64.176.15.110
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇬🇧GB_1|2.7MB/s
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: 8cde6cd0-7903-4aef-8ce8-528fa9677d7b
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: steep-glitter-7c3c.367-5c9.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇦🇹AT_1|629KB/s
+  type: vless
+  server: 132.243.203.202
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇫🇷FR_4|1.1MB/s
+  type: vless
+  server: 104.194.84.188
+  port: 8443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-8oc.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: kkkk-8oc.pages.dev
+    path: /?ed=2048
+- name: 🇨🇱CL_2|715KB/s
+  type: vless
+  server: 131.255.6.88
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇦🇪AE_1|2.1MB/s
+  type: vless
+  server: 147.78.0.186
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇦🇪AE_2|2.1MB/s
+  type: vless
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇰🇷KR_1|1.7MB/s
+  type: vless
+  server: 119.28.162.39
+  port: 8443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  tls: true
+  servername: mia11.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: mia11.pages.dev
+    path: /TG:@MiaChatChannel
