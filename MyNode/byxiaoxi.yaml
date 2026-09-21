@@ -1,20 +1,24 @@
 proxies:
-- name: 🇫🇷FR_1|1.0MB/s
-  type: vless
-  server: 193.17.57.97
+- name: 🇹🇼TW_1|821KB/s
+  type: anytls
+  server: 6ivh.pnuqcnp.cn
   port: 443
-  uuid: 1e078c17-3a93-462d-9fce-9276609e29e2
-  tls: true
-  servername: www.ubuntu.com
-  client-fingerprint: safari
-  skip-cert-verify: false
-  reality-opts:
-    public-key: RnknaI5LflTQ-PKaxVqfnkoSYFySH_ILHW4YGGC5dwg
-    short-id: 5e537fa282666cb9
-  network: tcp
-- name: 🇫🇷FR_2|775KB/s
+  password: 9sK2mP8xQ7vL3nZ6
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  udp: true
+  servername: images.ctfassets.net
+- name: 🇯🇵JP_1|1.2MB/s
+  type: hysteria2
+  server: msjp1.mangshe.xyz
+  port: 20561
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  servername: www.microsoft.com
+- name: 🇯🇵JP_2|575KB/s
   type: vless
-  server: 141.227.188.153
+  server: 161.33.29.51
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   tls: true
@@ -26,9 +30,23 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
     path: /
-- name: 🇭🇺HU_1|803KB/s
+- name: 🇷🇴RO_1|711KB/s
   type: vless
-  server: 38.180.109.174
+  server: 103.126.50.196
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇮🇳IN_1|542KB/s
+  type: vless
+  server: 139.84.135.130
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   tls: true
@@ -39,4 +57,18 @@ proxies:
   ws-opts:
     headers:
       Host: shuma.ccwu.cc
+    path: /
+- name: 🇫🇮FI_1|921KB/s
+  type: vless
+  server: 202.166.187.132
+  port: 443
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  tls: true
+  servername: f.yoptybla.ru
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: f.yoptybla.ru
     path: /
