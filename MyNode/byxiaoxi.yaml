@@ -1,51 +1,51 @@
 proxies:
-- name: 🇩🇪DE_1|719KB/s
-  type: ss
-  server: 18.156.84.97
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇩🇪DE_2|629KB/s
-  type: vless
-  server: 144.31.200.207
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /code/directory/ads?ed=2560
-- name: ❓Other_1|642KB/s
+- name: 🇷🇺RU_1|1.2MB/s
   type: hysteria2
-  server: 152.67.115.203
+  server: msk.frkn.org
   port: 443
-  password: 633bc3be486b646190661ac2387c150a
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  servername: msk.frkn.org
+- name: 🇭🇰HK_1|1.1MB/s
+  type: anytls
+  server: api.meituan88.com
+  port: 7008
+  password: dCwrni
   skip-cert-verify: true
-  sni: www.bing.com
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-  servername: www.bing.com
-- name: 🇩🇪DE_3|777KB/s
+  sni: globalnetworktraffic.com
+  udp: true
+  servername: globalnetworktraffic.com
+- name: 🇫🇷FR_1|2.3MB/s
   type: vless
-  server: 31.76.18.213
+  server: kama2.api3-max.ru
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
   tls: true
-  servername: cdn8848.776676.xyz
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /product/uploads/new?ed=2560
-- name: 🇫🇷FR_1|675KB/s
+  servername: kama2.api3-max.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: tcp
+- name: 🇬🇧GB_1|1.0MB/s
+  type: vless
+  server: roskaa6.api3-max.ru
+  port: 443
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  servername: roskaa6.api3-max.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: tcp
+- name: ❓Other_1|1.6MB/s
   type: trojan
-  server: www.speedtest.net
+  server: www.speedtest.org
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -54,339 +54,327 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇹🇷TR_1|1.5MB/s
-  type: vless
-  server: 31.210.52.149
+- name: 🇺🇸US_1|1.7MB/s
+  type: hysteria2
+  server: akmgzz.jiedddym.com
+  port: 49490
+  password: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  skip-cert-verify: true
+- name: 🇯🇵JP_1|2.2MB/s
+  type: hysteria2
+  server: msjp1.mangshe.xyz
+  port: 20561
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  servername: www.microsoft.com
+- name: ❓Other_2|1.3MB/s
+  type: trojan
+  server: www.ignitelimit.com
   port: 443
-  uuid: 206a4c50-2eb6-4b7f-b7a5-15c6ab7b3f4c
-  tls: true
-  servername: tr-ist-5.blook.network
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: HabIMykoF6jIw0rAgi_t3xm_hdWTLFKIpODwNJFjznE
-    short-id: 625a948aab4f
-  network: tcp
-- name: 🇩🇪DE_4|2.0MB/s
-  type: vless
-  server: 178.215.236.234
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷FR_2|1.3MB/s
+  type: trojan
+  server: 216.24.57.1
   port: 443
-  uuid: 9c64f1aa-da4d-4c3e-9617-9bfbf1657a75
-  tls: true
-  servername: ge.sarky.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: RpjjScd4SIWgDGPtR_FJPRENMyWaPzb_hyA2cY98CDs
-    short-id: e6240b9af8d53c17
-  network: tcp
-- name: 🇺🇸US_1|2.1MB/s
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 8bcfe782-60c4-4c09-b46c-330f1aa3741c
-  skip-cert-verify: false
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
+  fingerprint: chrome
   ws-opts:
-    headers:
-      Host: snowy-lab-6cab.237-2da.workers.dev
-    path: /pyip=proxyip.us.cmliussss.net
-- name: ❓Other_2|616KB/s
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: ❓Other_3|1.2MB/s
   type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 25844c02-a1fe-43ec-a6b9-44e3bf375b83
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: dark-breeze-a59a.494.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇺🇸US_2|1.9MB/s
-  type: vless
-  server: 172.67.198.209
-  port: 443
-  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-  tls: true
-  servername: 5-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 5-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-    path: /BzuntJ8qZN0TRKbC8TveMxJ0
-- name: 🇺🇸US_3|1.2MB/s
-  type: vless
-  server: 172.67.223.78
-  port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  tls: true
-  servername: 4-m17.JordaN-LiNk.kdnS.fR
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 4-m17.joRDan-linK.KDnS.FR
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: 🇺🇸US_4|867KB/s
-  type: vless
-  server: 172.67.79.160
-  port: 2087
-  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
-  tls: true
-  servername: cvhpyn.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: cvhpyn.pages.dev
-    path: /fp=chrome
-- name: 🇺🇸US_5|677KB/s
-  type: vless
-  server: 104.21.87.109
+  server: 172.67.156.222
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: 7-m16.PhUkEt2035.kdNS.fr
+  servername: 3-m16.ChIAn-mAI-6.kDnS.Fr
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: 7-m16.PhUkEt2035.kdNS.fr
+      Host: 3-m16.ChIAn-Mai-6.kdNs.Fr
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸US_6|2.0MB/s
+- name: 🇬🇧GB_2|629KB/s
   type: vless
-  server: 104.21.16.18
+  server: 172.67.209.127
+  port: 8880
+  uuid: a62a4c64-2270-4d41-828b-2591906c48ba
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: sweet-disk-a026.253-54b.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇺🇸US_2|2.1MB/s
+  type: anytls
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
   port: 443
-  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-  tls: true
-  servername: api-gateway-1.f00f.ccwu.cc
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: api-gateway-1.f00f.ccwu.cc
-    path: /BzuntJ8qZN0TRKbC8TveMxJ0
-- name: 🇺🇦UA_1|824KB/s
+  password: 9sK2mP8xQ7vL3nZ6
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  udp: true
+  servername: images.ctfassets.net
+- name: 🇸🇬SG_1|990KB/s
   type: vless
-  server: 213.111.149.58
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇨🇾CY_1|1.2MB/s
-  type: vless
-  server: 194.55.166.65
-  port: 2087
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇬🇷GR_1|1.3MB/s
-  type: vless
-  server: 38.54.29.210
-  port: 2053
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-xcd.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kkkk-xcd.pages.dev
-    path: /?ed=2048
-- name: 🇸🇬SG_1|1.1MB/s
-  type: vless
-  server: 45.80.111.45
-  port: 8880
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: cnd.singapure.mygold.stream
-    path: /cdn/assets/stream
-- name: 🇳🇴NO_1|1.1MB/s
-  type: vless
-  server: 185.125.171.128
-  port: 8443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-xcd.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kkkk-xcd.pages.dev
-    path: /?ed=2048
-- name: 🇯🇵JP_1|2.5MB/s
-  type: vless
-  server: 43.174.195.1
+  server: 149.118.48.187
   port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
   tls: true
-  servername: kkkk-8oc.pages.dev
+  servername: mia4.pages.dev
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: kkkk-8oc.pages.dev
-    path: /?ed=2048
-- name: 🇨🇱CL_1|656KB/s
+      Host: mia4.pages.dev
+    path: /TG:@MiaChatChannel
+- name: 🇩🇪DE_1|692KB/s
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  alpn:
+  - h3
+  down: '50'
+  skip-cert-verify: true
+  up: '10'
+  sni: apple.com
+  protocol: udp
+  servername: apple.com
+- name: 🇯🇵JP_2|1.1MB/s
   type: vless
-  server: 64.176.15.110
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
   network: ws
   ws-opts:
     headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇺🇸US_7|665KB/s
-  type: vless
-  server: icook.tw
-  port: 8080
-  uuid: f8f5d3a5-54bd-4f52-9759-137bdbf950db
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
+      Host: shuma.ccwu.cc
     path: /
-- name: 🇧🇪BE_1|1.8MB/s
+- name: 🇯🇵JP_3|1.6MB/s
   type: vless
-  server: 141.227.137.177
-  port: 2053
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  server: 102.134.49.108
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   tls: true
-  servername: kkkk-xcd.pages.dev
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇸🇬SG_2|1.7MB/s
+  type: vless
+  server: 103.195.188.206
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇯🇵JP_4|2.2MB/s
+  type: vless
+  server: 35.72.179.15
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇯🇵JP_5|1.2MB/s
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇧🇪BE_1|1001KB/s
+  type: vless
+  server: 141.227.186.38
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇸🇰SK_1|824KB/s
+  type: vless
+  server: 89.46.42.141
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇫🇷FR_3|1.1MB/s
+  type: vless
+  server: 141.227.188.153
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇨🇿CZ_1|578KB/s
+  type: vless
+  server: 103.200.28.113
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇯🇵JP_6|1.6MB/s
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇸🇪SE_1|1010KB/s
+  type: vless
+  server: 144.31.217.95
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇷🇴RO_1|810KB/s
+  type: vless
+  server: 103.126.50.196
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇮🇪IE_1|1.3MB/s
+  type: vless
+  server: 107.150.20.112
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇸🇰SK_2|1.6MB/s
+  type: vless
+  server: 89.46.42.92
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇩🇰DK_1|594KB/s
+  type: vless
+  server: 193.180.209.136
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇺🇸US_3|1.7MB/s
+  type: vless
+  server: 104.21.78.105
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 6-m17.KUWaiT.kdNs.fR
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: kkkk-xcd.pages.dev
-    path: /?ed=2048
-- name: 🇬🇧GB_1|1.5MB/s
-  type: vless
-  server: 72.167.25.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime50.workers.dev
-    path: /
-- name: 🇬🇧GB_2|1.2MB/s
-  type: vless
-  server: 63.141.128.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime42.workers.dev
-    path: /
-- name: 🇦🇹AT_1|1.2MB/s
-  type: vless
-  server: 132.243.203.202
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇫🇷FR_2|676KB/s
-  type: vless
-  server: 104.194.84.188
-  port: 8443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-8oc.pages.dev
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: kkkk-8oc.pages.dev
-    path: /?ed=2048
-- name: 🇰🇿KZ_1|607KB/s
-  type: vless
-  server: 104.238.24.139
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇦🇪AE_1|889KB/s
-  type: vless
-  server: 147.78.0.186
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇦🇪AE_2|2.2MB/s
-  type: vless
-  server: 147.78.0.186
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: free.cndyw.ggff.net
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: /pyip=bpb.yousef.isegaro.com
-- name: 🇰🇷KR_1|1.7MB/s
+      Host: 6-M17.kuwAit.kDns.Fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇰🇷KR_1|1.1MB/s
   type: vless
   server: 119.28.162.39
   port: 8443
