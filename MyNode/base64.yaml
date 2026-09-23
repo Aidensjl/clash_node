@@ -1,75 +1,423 @@
 proxies:
-- name: 🇨🇭CH_1|2.2MB/s
-  type: vless
-  server: 82.38.139.24
-  port: 8446
-  uuid: c6f6ecc2-26af-4e2f-95a7-e7018819a716
-  tls: true
-  servername: hetzner.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
-  network: tcp
-- name: 🇧🇬BG_1|2.4MB/s
-  type: vless
-  server: sof.edgeptr.org
-  port: 443
-  uuid: 848ba9ec-4233-4407-b95d-3f423d3ce0ff
-  tls: true
-  servername: www.lovelive-anime.jp
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0
-    short-id: f0eb800bd980b00b
-  network: tcp
-- name: 🇫🇮FI_1|1.3MB/s
+- name: 🇯🇵JP_1|6.6MB/s
   type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: ao5znrhEwVqoJy-l7AVvgw
-- name: 🇺🇸US_1|1.2MB/s
-  type: vless
-  server: 153.76.185.147
-  port: 3090
-  uuid: c54f85fe-0e28-4c93-a53d-3ed47937ac46
-  skip-cert-verify: false
-  network: grpc
-- name: 🇩🇪DE_1|2.3MB/s
-  type: vless
-  server: 2.26.53.224
-  port: 5432
-  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
-- name: 🇩🇰DK_1|2.2MB/s
-  type: vless
-  server: 130.49.188.4
+  server: 13.230.153.249
   port: 443
-  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
+  cipher: auto
+  password: amazonskr05
+- name: 🇩🇪DE_1|2.1MB/s
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
+- name: 🇩🇪DE_2|1.3MB/s
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  alpn:
+  - h3
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
+- name: 🇩🇪DE_3|607KB/s
+  type: vless
+  server: 213.165.56.169
+  port: 443
+  uuid: 974f2c7e-a292-4207-8315-ef4151bdca41
   tls: true
-  servername: lk.s.dn.iki-servers.com
+  servername: fl-api.bachidze.com
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: GW-DWwk3vtXtXBEqQxY_Cf83JIisyyk34rUrtkMZ90g
+    public-key: LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo
   network: tcp
-- name: ❓Other_1|595KB/s
-  type: trojan
-  server: 104.18.152.161
+- name: 🇷🇺RU_1|2.2MB/s
+  type: vless
+  server: 46.173.17.19
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  uuid: fc47db0c-c6f2-4665-bdb2-8f717822ce9d
+  tls: true
+  servername: 9f8hqeju.datahubfiles.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Hhp-DQNkUYOkbWR64BHWc7gGYfeqU8yYAwX6sTsqf3A
+    short-id: 4d5163ec7a1bf048
+  network: tcp
+- name: 🇳🇱NL_3|1.9MB/s
+  type: vless
+  server: kkkk4-production.up.railway.app
+  port: 443
+  uuid: 53822985-e97d-4373-9629-e788b051cfa2
+  tls: true
+  servername: kkkk4-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
   network: ws
-  fingerprint: chrome
   ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
+    headers:
+      Host: kkkk4-production.up.railway.app
+    path: /ws/53822985-e97d-4373-9629-e788b051cfa2
+- name: 🇩🇪DE_4|1.3MB/s
+  type: vless
+  server: 34.185.172.52
+  port: 443
+  uuid: 3255d065-119c-4103-a422-ea9d301b0707
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: -XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw
+    short-id: 690ec9207866c84e
+  network: tcp
+- name: 🇳🇱NL_4|2.2MB/s
+  type: vless
+  server: 34.147.59.126
+  port: 443
+  uuid: f76627ae-2626-4c53-ab57-da0e4d377a53
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ODBW9YQs2TYvh_KBUQvbvAh61EULeZvqvwjc2RysKTs
+    short-id: 973452cd8674dbaf
+  network: tcp
+- name: 🇹🇭TH_1|2.2MB/s
+  type: vless
+  server: 34.15.176.240
+  port: 443
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    short-id: 856c0a3cd1426a5c
+  network: tcp
+- name: 🇺🇸US_2|743KB/s
+  type: vless
+  server: 136.117.218.86
+  port: 443
+  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
+    short-id: f1955f72763eb2fb
+  network: tcp
+- name: 🇺🇸US_3|818KB/s
+  type: vless
+  server: 104.21.15.212
+  port: 8880
+  uuid: 21b93e91-5bb1-4d6d-9093-1fd09ae06903
+  servername: morning-silence-7b1b.222-46c.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: morning-silence-7b1b.222-46c.workers.dev
+    path: /pyip=proxyip.jp.cmliussss.net
+- name: 🇯🇵JP_2|4.0MB/s
+  type: vless
+  server: 64.204.49.68
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  servername: vp10.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vp10.pages.dev
+    path: /fp=firefox
+- name: 🇯🇵JP_3|571KB/s
+  type: vless
+  server: 45.76.207.88
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  tls: true
+  servername: mia0.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: mia0.pages.dev
+    path: /TG:@MiaChatChannel
+- name: 🇸🇬SG_2|3.9MB/s
+  type: vless
+  server: 149.118.48.187
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  tls: true
+  servername: mia4.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: mia4.pages.dev
+    path: /TG:@MiaChatChannel
+- name: 🇹🇼TW_1|6.2MB/s
+  type: anytls
+  server: tw1.catzl.top
+  port: 40071
+  password: d63b8b7a-f370-4c51-94cc-33a2ffa1cd28
+  sni: tw1.catzl.top
+  udp: true
+  servername: tw1.catzl.top
+- name: 🇺🇸US_4|1.7MB/s
+  type: anytls
+  server: us2.catzl.top
+  port: 40022
+  password: d63b8b7a-f370-4c51-94cc-33a2ffa1cd28
+  sni: us2.catzl.top
+  udp: true
+  servername: us2.catzl.top
+- name: 🇰🇷KR_1|3.8MB/s
+  type: anytls
+  server: kr2.catzl.top
+  port: 40042
+  password: d63b8b7a-f370-4c51-94cc-33a2ffa1cd28
+  sni: kr2.catzl.top
+  udp: true
+  servername: kr2.catzl.top
+- name: 🇹🇼TW_2|4.3MB/s
+  type: anytls
+  server: tw2.catzl.top
+  port: 40072
+  password: d63b8b7a-f370-4c51-94cc-33a2ffa1cd28
+  sni: tw2.catzl.top
+  udp: true
+  servername: tw2.catzl.top
+- name: 🇰🇷KR_2|3.6MB/s
+  type: anytls
+  server: kr1.catzl.top
+  port: 40041
+  password: d63b8b7a-f370-4c51-94cc-33a2ffa1cd28
+  sni: kr1.catzl.top
+  udp: true
+  servername: kr1.catzl.top
+- name: 🇯🇵JP_4|5.6MB/s
+  type: anytls
+  server: jp5.catzl.top
+  port: 40055
+  password: d63b8b7a-f370-4c51-94cc-33a2ffa1cd28
+  sni: jp5.catzl.top
+  udp: true
+  servername: jp5.catzl.top
+- name: ❓Other_1|1.0MB/s
+  type: vless
+  server: 104.21.1.174
+  port: 443
+  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
+  tls: true
+  servername: kkkk.11ww.kdns.fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: kkkk.11ww.kdns.fr
+    path: /BzuntJ8qZN0TRKbC8TveMxJ0
+- name: 🇺🇸US_5|2.4MB/s
+  type: vless
+  server: 104.21.16.18
+  port: 443
+  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
+  tls: true
+  servername: api-gateway-1.f00f.ccwu.cc
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: api-gateway-1.f00f.ccwu.cc
+    path: /BzuntJ8qZN0TRKbC8TveMxJ0
+- name: 🇷🇴RO_1|2.4MB/s
+  type: vless
+  server: 178.214.211.99
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇵🇱PL_1|2.2MB/s
+  type: vless
+  server: 94.154.128.132
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇧🇬BG_1|1.2MB/s
+  type: vless
+  server: 104.152.48.248
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-8oc.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: kkkk-8oc.pages.dev
+    path: /?ed=2048
+- name: 🇧🇬BG_2|2.2MB/s
+  type: vless
+  server: 103.249.134.29
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇯🇵JP_5|1.1MB/s
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-8oc.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: kkkk-8oc.pages.dev
+    path: /?ed=2048
+- name: 🇸🇬SG_3|3.0MB/s
+  type: vless
+  server: 18.140.28.73
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  tls: true
+  servername: mia11.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: mia11.pages.dev
+    path: /TG:@MiaChatChannel
+- name: 🇬🇧GB_2|2.5MB/s
+  type: vless
+  server: 50.62.198.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime39.workers.dev
+    path: /
+- name: 🇫🇷FR_1|1.1MB/s
+  type: vless
+  server: 140.248.186.45
+  port: 443
+  uuid: XpnTeam-21
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: 🇵🇱PL_2|722KB/s
+  type: vless
+  server: 157.22.128.7
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇫🇷FR_2|1.7MB/s
+  type: vless
+  server: 77.110.104.125
+  port: 8443
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  servername: maps.apple.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
+    short-id: 2da4299da566b7
+  network: grpc
+- name: 🇦🇪AE_1|2.6MB/s
+  type: vless
+  server: 147.78.0.186
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇦🇪AE_2|2.3MB/s
+  type: vless
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
