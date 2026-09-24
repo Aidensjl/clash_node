@@ -1,37 +1,30 @@
 proxies:
-- name: 🇯🇵JP_1|4.2MB/s
+- name: 🇺🇸US_1|585KB/s
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: round-haze-8783.294.workers.dev
+    path: /pyip=Telegram🇨🇳+@WangCai2
+- name: 🇯🇵JP_1|4.3MB/s
   type: ss
   server: 3.112.209.209
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇩🇪DE_1|2.1MB/s
+- name: 🇫🇷FR_1|2.6MB/s
   type: hysteria2
-  server: 168.222.43.35
-  port: 443
-  password: v2rayyngvpn
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  skip-cert-verify: true
   sni: www.bing.com
-  obfs: salamander
-  obfs-password: V2RayyNGvpn
-  fingerprint: 8b5ac8eb1c23f208cb6e92bd41407d32994b0668d3ba2b0cd56400dca8c0b843
   servername: www.bing.com
-- name: 🇯🇵JP_2|4.0MB/s
-  type: hysteria2
-  server: open.w2m.ink
-  port: 5443
-  password: my_super_password_123
-  skip-cert-verify: true
-  sni: open.w2m.ink
-  servername: open.w2m.ink
-- name: 🇯🇵JP_3|2.9MB/s
-  type: hysteria2
-  server: open.w2m.ink
-  port: 443
-  password: my_super_password_123
-  skip-cert-verify: true
-  sni: open.w2m.ink
-  servername: open.w2m.ink
-- name: 🇫🇷FR_1|2.5MB/s
+- name: 🇫🇷FR_2|3.0MB/s
   type: hysteria2
   server: 62.210.7.139
   port: 60111
@@ -39,32 +32,14 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   servername: bing.com
-- name: 🇫🇮FI_1|2.8MB/s
+- name: 🇫🇮FI_1|2.7MB/s
   type: hysteria2
   server: se1.chromevpn.cc
   port: 443
   password: 02bd8b5a-170b-4a79-8e68-9cec710272c7
   sni: se1.chromevpn.cc
   servername: se1.chromevpn.cc
-- name: 🇭🇰HK_1|2.5MB/s
-  type: hysteria2
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  skip-cert-verify: true
-  sni: hk2.xiaoliyu.cyou
-  servername: hk2.xiaoliyu.cyou
-- name: 🇭🇰HK_2|702KB/s
-  type: hysteria2
-  server: 24.233.8.109
-  port: 443
-  password: 8294f130408299df8cab08c80bf6f819
-  skip-cert-verify: true
-  sni: www.bing.com
-  obfs: salamander
-  obfs-password: c8827ab99e316c5bd414e21afa915ddf
-  servername: www.bing.com
-- name: 🇩🇪DE_2|2.5MB/s
+- name: 🇩🇪DE_1|1.5MB/s
   type: hysteria
   server: 5.83.129.90
   port: 54177
@@ -76,72 +51,168 @@ proxies:
   up: '500'
   sni: apple.com
   servername: apple.com
-- name: 🇪🇪EE_1|1.6MB/s
-  type: vless
-  server: 91.215.40.6
+- name: ❓Other_1|2.5MB/s
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  protocol: udp
+  skip-cert-verify: true
+  up: '500'
+  sni: apple.com
+  servername: apple.com
+- name: 🇫🇷FR_3|674KB/s
+  type: trojan
+  server: 188.114.97.7
   port: 443
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇵🇱PL_1|1022KB/s
+  type: vless
+  server: 194.93.63.246
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   tls: true
-  servername: id.dframe.app
+  servername: pl.bubahero.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 5c766813929a1fdd
-  network: grpc
-- name: 🇷🇴RO_1|2.1MB/s
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
+  network: tcp
+- name: 🇺🇸US_2|750KB/s
   type: vless
-  server: 167.82.101.251
-  port: 80
-  uuid: 0e9f7d2a-2f92-475e-b484-e79568a8a1a2
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: Mankiamtr.global.ssl.fastly.net
-    path: /
-- name: 🇭🇰HK_3|3.2MB/s
-  type: hysteria2
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  skip-cert-verify: true
-  sni: hk2.xiaoliyu.cyou
-  servername: hk2.xiaoliyu.cyou
-- name: 🇫🇷FR_2|2.4MB/s
-  type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: google.com
-  servername: google.com
-- name: 🇩🇪DE_3|2.3MB/s
-  type: hysteria2
-  server: 168.222.43.35
-  port: 443
-  password: v2rayyngvpn
-  sni: Play.google.com
-  obfs: salamander
-  obfs-password: V2RayyNGvpn
-  fingerprint: 8b5ac8eb1c23f208cb6e92bd41407d32994b0668d3ba2b0cd56400dca8c0b843
-  servername: Play.google.com
-- name: 🇳🇱NL_3|1.7MB/s
-  type: ss
-  server: 193.123.39.109
-  port: 45819
-  cipher: auto
-- name: 🇩🇪DE_4|1.4MB/s
-  type: vless
-  server: 77.91.76.156
-  port: 57160
-  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
+  server: 179.254.94.102
+  port: 44444
+  uuid: ae2368cc-0fbe-4a06-a23e-fb73a4ac025a
   tls: true
-  servername: funpay.com
+  servername: www.iij.ad.jp
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   skip-cert-verify: false
   reality-opts:
-    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
-    short-id: 77b5
+    public-key: LZnkyLxA8cYoDAsmxGh0lOr1-auyZI5t_LSU-FNBkSs
   network: tcp
+- name: 🇺🇸US_3|3.0MB/s
+  type: hysteria2
+  server: 155.117.19.17
+  port: 443
+  password: 5fa748137b6d822308eea4611f474ad5
+  skip-cert-verify: true
+  sni: www.bing.com
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  servername: www.bing.com
+- name: 🇹🇼TW_1|2.7MB/s
+  type: anytls
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  skip-cert-verify: true
+  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
+  udp: true
+  servername: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
+- name: 🇷🇺RU_1|611KB/s
+  type: ss
+  server: 195.133.23.200
+  port: 10081
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇧🇬BG_1|741KB/s
+  type: vless
+  server: 13.140.29.170
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  tls: true
+  servername: shin-ra.ccwu.cc
+  client-fingerprint: unsafe
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: shin-ra.ccwu.cc
+    path: /
+- name: 🇺🇸US_4|1.3MB/s
+  type: vless
+  server: 188.114.97.2
+  port: 2086
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+    path: /vl/ikccafxfZ8tDV11MQjtVmuGhgJbO8?ed=2560
+- name: 🇸🇬SG_1|732KB/s
+  type: vless
+  server: 45.80.111.45
+  port: 8880
+  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: cnd.singapure.mygold.stream
+    path: /cdn/assets/stream
+- name: 🇨🇱CL_1|1.3MB/s
+  type: vless
+  server: 64.176.15.110
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇬🇧GB_1|2.0MB/s
+  type: vless
+  server: 72.167.25.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+    path: /
+- name: 🇦🇪AE_1|1.2MB/s
+  type: vless
+  server: 147.78.0.186
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
+- name: 🇦🇪AE_2|599KB/s
+  type: vless
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: /pyip=bpb.yousef.isegaro.com
