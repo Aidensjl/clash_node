@@ -1,54 +1,9 @@
 proxies:
-- name: 🇩🇪DE_1|2.1MB/s
-  type: vless
-  server: 2.26.252.61
-  port: 443
-  uuid: 61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8
-  tls: true
-  servername: cdn.jsdelivr.net
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: gMkxxxFo7F0gLBe93tRyfDKFSH0YlfTFPd7X-fHfJ1s
-    short-id: abcded1950c35dcc
-  network: tcp
-- name: 🇩🇪DE_2|633KB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
+- name: 🇯🇵JP_1|2.2MB/s
+  type: hysteria2
+  server: msjp.mangshe.xyz
+  port: 20561
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇫🇮FI_1|876KB/s
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: 🇰🇷KR_1|1.0MB/s
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: misty-mouse-141d.177-f18.workers.dev
-    path: /pyip
+  sni: www.microsoft.com
+  servername: www.microsoft.com

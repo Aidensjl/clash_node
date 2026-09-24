@@ -1,60 +1,35 @@
 proxies:
-- name: 🇩🇪DE_1|855KB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇫🇮FI_1|2.0MB/s
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: 🇸🇬SG_1|2.6MB/s
+- name: 🇯🇵JP_1|2.9MB/s
   type: hysteria2
   server: jjz.jjznodenode.top
-  port: 39999
+  port: 40000
   password: ce2f0798-38f9-4b59-ab23-cb1f26b90d27
   sni: jjz.jjznodenode.top
   obfs: salamander
-  obfs-password: uqmgFZmVNHNYGxaH
+  obfs-password: CJzHgzdjH1M1kt25
   servername: jjz.jjznodenode.top
-- name: 🇺🇸US_1|2.1MB/s
+- name: 🇺🇸US_1|2.9MB/s
   type: vless
-  server: w4.lianjieni.com
-  port: 443
-  uuid: 96fe580c-b687-4e12-a897-ed624fbef2da
+  server: www.temu.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: llm-api.sofurry.dpdns.org
+    path: /
+- name: 🇸🇬SG_1|856KB/s
+  type: vless
+  server: 154.194.0.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   tls: true
-  servername: w4.lianjieni.com
+  servername: speed.dulacloud.store
   client-fingerprint: chrome
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: w4.lianjieni.com
-    path: /cdnws
-- name: 🇫🇷FR_1|589KB/s
-  type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.bing.com
-  servername: www.bing.com
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
