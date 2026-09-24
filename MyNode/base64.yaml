@@ -1,35 +1,39 @@
 proxies:
-- name: 🇯🇵JP_1|2.9MB/s
+- name: 🇺🇸US_1|3.8MB/s
   type: hysteria2
-  server: jjz.jjznodenode.top
-  port: 40000
-  password: ce2f0798-38f9-4b59-ab23-cb1f26b90d27
-  sni: jjz.jjznodenode.top
+  server: 155.117.19.17
+  port: 443
+  password: 5fa748137b6d822308eea4611f474ad5
+  skip-cert-verify: true
+  sni: www.bing.com
   obfs: salamander
-  obfs-password: CJzHgzdjH1M1kt25
-  servername: jjz.jjznodenode.top
-- name: 🇺🇸US_1|2.9MB/s
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  servername: www.bing.com
+- name: 🇫🇷FR_1|1.0MB/s
   type: vless
-  server: www.temu.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-    path: /
-- name: 🇸🇬SG_1|856KB/s
-  type: vless
-  server: 154.194.0.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 137.74.16.237
+  port: 443
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
   tls: true
-  servername: speed.dulacloud.store
+  servername: www.icloud.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: speed.dulacloud.store
-    path: /dula?Telegram-WangCai2
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  network: tcp
+- name: 🇬🇧GB_1|1.8MB/s
+  type: vless
+  server: 138.124.121.231
+  port: 443
+  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
+  tls: true
+  servername: amd.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  network: tcp
