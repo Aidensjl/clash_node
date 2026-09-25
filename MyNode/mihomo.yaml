@@ -1,66 +1,81 @@
 proxies:
-  - cipher: aes-256-cfb
-    name: "\U0001F1EF\U0001F1F5JP_1|2.9MB/s"
-    password: amazonskr05
+  - name: "\U0001F1EC\U0001F1E7GB_1|1.7MB/s"
     port: 443
-    server: 54.199.248.166
-    type: ss
-  - name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
-    password: 'null'
-    port: 9002
-    server: 84.17.47.148
+    server: 212.102.63.1
     skip-cert-verify: true
     tls: true
     type: http
-    username: 'null'
-  - name: ❓Other_1|1.6MB/s
+  - name: ❓Other_1|1.1MB/s
     port: 443
-    server: 87.249.132.97
+    server: 149.22.86.1
     skip-cert-verify: true
     tls: true
     type: http
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: '1000'
-    name: "\U0001F1E9\U0001F1EADE_1|708KB/s"
-    obfs: ''
-    port: 54177
-    protocol: udp
-    server: 5.83.129.90
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '500'
-    auth-str: dongtaiwang.com
-  - name: "\U0001F1E8\U0001F1F3CN_1|634KB/s"
-    password: Og==
+  - name: "\U0001F1E8\U0001F1F3CN_1|3.9MB/s"
+    password: T2c9PTpPZz09
     port: 1080
     server: 103.210.161.8
     skip-cert-verify: true
     type: socks5
-    username: Og==
-  - name: "\U0001F1F9\U0001F1FCTW_1|2.2MB/s"
-    password: 7f7cf243-a63e-43ec-a46f-ec2ea11259cd
-    port: 40073
-    server: tw3.catzl.top
-    type: anytls
+    username: T2c9PTpPZz09
+  - auth: ce2f0798-38f9-4b59-ab23-cb1f26b90d27
+    name: "\U0001F1F8\U0001F1ECSG_1|2.9MB/s"
+    obfs: salamander
+    obfs-password: uqmgFZmVNHNYGxaH
+    password: ce2f0798-38f9-4b59-ab23-cb1f26b90d27
+    port: 39999
+    server: jjz.jjznodenode.top
+    skip-cert-verify: false
+    sni: jjz.jjznodenode.top
+    type: hysteria2
     udp: true
-    sni: tw3.catzl.top
-  - name: "\U0001F1EF\U0001F1F5JP_2|6.4MB/s"
-    password: 7f7cf243-a63e-43ec-a46f-ec2ea11259cd
-    port: 40055
-    server: jp5.catzl.top
-    type: anytls
+  - name: "\U0001F1E6\U0001F1FAAU_1|565KB/s"
+    port: 443
+    server: 103.62.50.130
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - name: "\U0001F1F3\U0001F1F1NL_1|709KB/s"
+    port: 443
+    server: 149.36.51.129
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - client-fingerprint: safari
+    flow: xtls-rprx-vision
+    name: "\U0001F1F8\U0001F1ECSG_2|1.9MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: '-LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0'
+      short-id: "e3a4bdfe3d6fd8ec"
+    server: 163.128.99.14
+    tls: true
+    type: vless
     udp: true
-    sni: jp5.catzl.top
-  - name: "\U0001F1F9\U0001F1FCTW_2|6.5MB/s"
-    password: 7f7cf243-a63e-43ec-a46f-ec2ea11259cd
-    port: 40071
-    server: tw1.catzl.top
-    type: anytls
+    uuid: bda35755-c838-49c3-a19e-3712f2d54275
+    xudp: true
+    servername: www.apple.com
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_1|808KB/s"
+    network: ws
+    port: 443
+    server: piracy-android.video-streams.org
+    tls: true
+    type: vless
     udp: true
-    sni: tw1.catzl.top
+    uuid: c7f0b683-61ea-48c5-93f1-783459ba2124
+    ws-opts:
+      headers:
+        Host: piracy-android.video-streams.org
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/60.0.3112.101 Safari/537.36
+      path: /ws
+    xudp: true
+    servername: piracy-android.video-streams.org
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
