@@ -1,15 +1,36 @@
 proxies:
-- name: 🇺🇸US_1|2.9MB/s
+- name: 🇺🇸US_1|2.4MB/s
   type: vless
-  server: 154.9.241.28
+  server: 38.244.20.25
   port: 443
-  uuid: 596be9d9-0bb9-41bc-bff5-1adb483cbc32
+  uuid: 5272cd9f-a028-4452-ad8a-9bc21f87bb19
   tls: true
-  servername: www.amazon.com
+  servername: www.apple.com
   flow: xtls-rprx-vision
-  client-fingerprint: qq
+  client-fingerprint: safari
   skip-cert-verify: false
   reality-opts:
-    public-key: NB_j6YyAs0xI5881v6cfx2jGUKb065ErIrHdOf8ZhVU
-    short-id: 1ac9bcc4e8fd
+    public-key: 0dIyov95G3A1ySANsJzdYY9DGLvaIFU8ofJf3Jtv1Ds
+    short-id: befa80d97af98b74
+  network: tcp
+- name: 🇬🇧GB_1|1.8MB/s
+  type: vless
+  server: 188.166.146.136
+  port: 11186
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  skip-cert-verify: false
+  network: tcp
+- name: 🇭🇰HK_1|3.3MB/s
+  type: vless
+  server: bgroup.hk2.ilovegairport.com
+  port: 443
+  uuid: c321e3a4-7488-4ba9-b34c-f85966068173
+  tls: true
+  servername: ap-east-1.console.aws.amazon.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: vueao8fqt0okOmCjgrdUVdIZExh2RoOXEcmncaQ5Pzg
+    short-id: 822f301dceef
   network: tcp
