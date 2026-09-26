@@ -72,8 +72,22 @@ proxies:
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
 - name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 104.21.67.181
+  port: 443
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 7-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 7-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+- name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 172.67.188.109
+  server: 104.18.152.108
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -83,7 +97,7 @@ proxies:
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.16.174.101
+  server: 104.20.6.134
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -93,85 +107,9 @@ proxies:
       Host: www.ignitelimit.com
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇷🇺 俄罗斯 15
-  type: vless
-  server: 91.240.87.166
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  tls: true
-  servername: yandex.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4
-    short-id: 7bb730e3e6616d31
-  network: tcp
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇬🇧 英国 17
-  type: hysteria2
-  server: 85.237.207.49
-  port: 50160
-  password: a56619e2bed91121eabb97d20be207c3
-  skip-cert-verify: true
-  sni: 85-237-207-49.liao.kdns.fr
-  servername: 85-237-207-49.liao.kdns.fr
-- name: 🇺🇸 美国 18
-  type: vless
-  server: 144.31.27.215
-  port: 43000
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  tls: true
-  servername: 144.31.27.215
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-    spider-x: /AhmadV2ray
-  network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇨🇳 中国 广东省市+华为云
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  skip-cert-verify: false
-  network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.208
+  server: 104.18.12.149
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -181,7 +119,7 @@ proxies:
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.22.63
+  server: 104.16.174.185
   port: 443
   password: humanity
   fingerprint: chrome
@@ -190,6 +128,75 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.6
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.233
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 捷克
+  type: vless
+  server: 5.39.202.118
+  port: 443
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  tls: true
+  servername: cze1.somiki.best
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: sg6UZorSKWbfwmfxh0SyfZ-SszlhitX43LHtRGTZU2Y
+    short-id: a4c4e97b89446dcd
+  network: tcp
+- name: 巴西
+  type: vless
+  server: germanz.ruletka.study
+  port: 443
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  tls: true
+  servername: germanz.ruletka.study
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+    spider-x: /ahmadV2ray
+  network: tcp
+- name: 🇮🇳 印度 尼西亚
+  type: hysteria2
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  servername: cf2.rumedia-cdn.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
   server: 104.18.152.179
@@ -203,73 +210,26 @@ proxies:
     path: /assignment
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.50
+  type: vless
+  server: 172.67.223.26
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇮🇳 印度 尼西亚
-  type: hysteria2
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  servername: cf2.rumedia-cdn.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 0-M17.kUWAit-liNe.Kdns.FR
+  skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
+      Host: 0-M17.kUwAit-LiNe.KDNS.fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.26.15.137
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
@@ -282,6 +242,70 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 佛罗里达州市
+  type: vless
+  server: 72.56.41.33
+  port: 40443
+  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
+  tls: true
+  servername: deepl.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
+    short-id: ee33
+  network: tcp
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  fingerprint: chrome
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.50
+  port: 443
+  password: humanity
+  fingerprint: chrome
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 104.21.16.137
+  port: 443
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  tls: true
+  servername: 1-M17.kuWAit-aIRliNE.kDNs.FR
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 1-M17.kUWaIT-AirLInE.Kdns.Fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
 - name: 更新于 0926 04:16 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -3339,6 +3363,17 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇫🇷 法国 02
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 03
   type: trojan
   server: 104.17.111.1
@@ -3375,17 +3410,6 @@ proxies:
 - name: 🇫🇷 法国 06
   type: trojan
   server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 07
-  type: trojan
-  server: 104.18.152.108
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -3501,6 +3525,17 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇫🇷 法国 21
+  type: trojan
+  server: 104.18.152.207
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 22
   type: trojan
   server: 104.16.174.148
@@ -3526,17 +3561,6 @@ proxies:
 - name: 🇫🇷 法国 25
   type: trojan
   server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 26
-  type: trojan
-  server: 104.18.12.149
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -3614,6 +3638,28 @@ proxies:
 - name: 🇫🇷 法国 36
   type: trojan
   server: 104.21.8.107
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 37
+  type: trojan
+  server: 172.67.188.109
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 38
+  type: trojan
+  server: 104.18.152.204
   port: 443
   password: humanity
   sni: www.ignitelimit.com
