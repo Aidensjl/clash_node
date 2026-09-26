@@ -1,16 +1,37 @@
 proxies:
   - cipher: aes-256-cfb
-    name: "\U0001F1FA\U0001F1F8US_1|538KB/s"
+    name: "\U0001F1FA\U0001F1F8US_1|2.5MB/s"
     password: amazonskr05
     port: 443
     server: 18.205.21.144
     type: ss
-  - cipher: aes-256-cfb
-    name: "\U0001F1F8\U0001F1EASE_1|849KB/s"
-    password: amazonskr05
+  - name: "\U0001F1FA\U0001F1F8US_2|2.5MB/s"
+    port: 9002
+    server: 138.199.35.200
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F1\U0001F1F9LT_1|1.2MB/s"
+    network: tcp
     port: 443
-    server: 51.20.122.188
-    type: ss
+    reality-opts:
+      public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+      short-id: "dbb2ef1c7c"
+    server: 94.176.234.161
+    tls: true
+    type: vless
+    udp: true
+    uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
+    xudp: true
+    servername: www.intel.com
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select

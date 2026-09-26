@@ -1,13 +1,21 @@
 proxies:
-- name: 🇺🇸US_1|538KB/s
+- name: 🇺🇸US_1|2.5MB/s
   type: ss
   server: 18.205.21.144
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇸🇪SE_1|849KB/s
-  type: ss
-  server: 51.20.122.188
+- name: 🇱🇹LT_1|1.2MB/s
+  type: vless
+  server: 94.176.234.161
   port: 443
-  cipher: auto
-  password: amazonskr05
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
+  tls: true
+  servername: www.intel.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+  network: tcp
