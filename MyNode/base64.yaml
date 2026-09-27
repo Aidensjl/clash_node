@@ -1,11 +1,93 @@
 proxies:
-- name: 🇸🇪SE_1|2.4MB/s
-  type: ss
-  server: 51.20.122.188
+- name: 🇨🇭CH_1|1.4MB/s
+  type: hysteria2
+  server: 152.67.75.161
   port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇺🇸US_1|1.6MB/s
+  password: 3a702d4d1de4949005d8431220e040fb
+  skip-cert-verify: true
+  sni: www.bing.com
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+  servername: www.bing.com
+- name: 🇵🇱PL_1|3.1MB/s
+  type: hysteria2
+  server: streambox.wwwinternetvideo.click
+  port: 443
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  skip-cert-verify: true
+- name: 🇯🇵JP_1|2.9MB/s
+  type: hysteria2
+  server: 45.88.43.116
+  port: 52454
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
+- name: 🇯🇵JP_2|2.9MB/s
+  type: hysteria2
+  server: 45.88.43.116
+  port: 52454
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  skip-cert-verify: true
+  sni: 45.88.43.116
+  servername: 45.88.43.116
+- name: 🇵🇱PL_2|1.5MB/s
+  type: hysteria2
+  server: streambox.wwwinternetvideo.click
+  port: 443
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  skip-cert-verify: true
+  sni: streambox.wwwinternetvideo.click
+  servername: streambox.wwwinternetvideo.click
+- name: 🇫🇷FR_1|2.3MB/s
+  type: hysteria2
+  server: 173.212.201.85
+  port: 443
+  password: gf1:gfhysteria2024
+  skip-cert-verify: true
+  sni: www.docker.com
+  servername: www.docker.com
+- name: 🇸🇬SG_1|1.2MB/s
+  type: hysteria2
+  server: 138.2.73.238
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
+- name: 🇸🇬SG_2|2.2MB/s
+  type: hysteria2
+  server: 138.2.73.238
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
+  skip-cert-verify: true
+  sni: 138.2.73.238
+  servername: 138.2.73.238
+- name: 🇯🇵JP_3|2.9MB/s
+  type: hysteria2
+  server: 138.3.208.26
+  port: 50160
+  password: 184cdec28da5a09450803c8debcd2cc9
+  skip-cert-verify: true
+  sni: 138.3.208.26
+  servername: 138.3.208.26
+- name: 🇰🇷KR_2|3.7MB/s
+  type: hysteria2
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
+  servername: 150-230-252-217.liao.kdns.fr
+- name: 🇯🇵JP_4|5.1MB/s
+  type: anytls
+  server: iijjp.mggl.wang
+  port: 35791
+  password: 9e98496a-0036-4cc6-8302-3929c29ba772
+  skip-cert-verify: true
+  sni: www.apple.com
+  udp: true
+  servername: www.apple.com
+- name: 🇺🇸US_1|1.8MB/s
   type: anytls
   server: awefd2313fefarg23fr24.pnuqcnp.cn
   port: 443
@@ -14,3 +96,327 @@ proxies:
   sni: images.ctfassets.net
   udp: true
   servername: images.ctfassets.net
+- name: 🇺🇸US_2|2.4MB/s
+  type: vless
+  server: w3.lianjieni.com
+  port: 443
+  uuid: 73619cbe-aac3-4635-bb83-ca16bcfc5eaf
+  tls: true
+  servername: w3.lianjieni.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: w3.lianjieni.com
+    path: /cdnws
+- name: 🇯🇵JP_5|905KB/s
+  type: vless
+  server: lbb-sanwang-youhua.lbbzz.com
+  port: 23801
+  uuid: 9cad4134-f6f0-4e83-adca-53ae98c08852
+  tls: true
+  servername: www.amd.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 7ogEKTScQCeqqPGOaUgWZMwX5Xdizvk9JKtu5MMfJ1o
+    short-id: 274ab0bb
+  network: tcp
+- name: 🇯🇵JP_6|1.1MB/s
+  type: vless
+  server: lbb-sanwang-youhua.lbbzz.com
+  port: 23801
+  uuid: e29d3b64-c6c8-4b10-b6fe-b75bcc1891f4
+  tls: true
+  servername: www.amd.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 7ogEKTScQCeqqPGOaUgWZMwX5Xdizvk9JKtu5MMfJ1o
+    short-id: 274ab0bb
+  network: tcp
+- name: 🇸🇪SE_1|2.3MB/s
+  type: vless
+  server: 103.177.249.40
+  port: 2083
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: yf.962456.xyz
+    path: /proxyip=kr.william.us.ci
+- name: 🇫🇮FI_1|583KB/s
+  type: hysteria2
+  server: 222.167.212.160
+  port: 8443
+  password: kewr0929_M9ic23iqe_m9E2R93Js8034c_Rt10
+  sni: new-finland-september.bumbleshrimp.com
+  servername: new-finland-september.bumbleshrimp.com
+- name: 🇺🇸US_3|2.7MB/s
+  type: vless
+  server: 172.67.73.170
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇺🇸US_4|2.7MB/s
+  type: vless
+  server: 104.26.0.226
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇺🇸US_5|3.0MB/s
+  type: vless
+  server: 104.26.10.213
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇭🇰HK_1|6.0MB/s
+  type: vless
+  server: 104.17.150.17
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇦🇹AT_1|1.4MB/s
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇹🇼TW_1|1023KB/s
+  type: vless
+  server: 141.11.87.48
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇭🇰HK_2|6.2MB/s
+  type: vless
+  server: cf.877774.xyz
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- name: 🇳🇱NL_1|1.0MB/s
+  type: vless
+  server: 51.170.176.145
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  skip-cert-verify: false
+  network: tcp
+- name: 🇸🇪SE_2|2.0MB/s
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: yf.962456.xyz
+    path: /proxyip=kr.william.us.ci
+- name: 🇸🇬SG_3|1.8MB/s
+  type: vless
+  server: 91.193.58.108
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_4|2.1MB/s
+  type: vless
+  server: 91.193.58.218
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_5|2.0MB/s
+  type: vless
+  server: 91.193.58.15
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_6|1.3MB/s
+  type: vless
+  server: 91.193.58.57
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_7|2.1MB/s
+  type: vless
+  server: 91.193.58.61
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_8|2.2MB/s
+  type: vless
+  server: 91.193.58.45
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_9|2.4MB/s
+  type: vless
+  server: 91.193.58.52
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇸🇬SG_10|1.7MB/s
+  type: vless
+  server: 91.193.58.118
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇭🇰HK_3|2.1MB/s
+  type: vless
+  server: 39.109.50.142
+  port: 443
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: yf.962456.xyz
+    path: /proxyip=kr.william.us.ci
+- name: 🇯🇵JP_7|2.5MB/s
+  type: hysteria2
+  server: open.2ml.bid
+  port: 443
+  password: my_super_password_123
+  skip-cert-verify: true
+  sni: open.2ml.bid
+  servername: open.2ml.bid
+- name: 🇫🇷FR_2|3.9MB/s
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  skip-cert-verify: true
+  sni: google.com
+  servername: google.com
