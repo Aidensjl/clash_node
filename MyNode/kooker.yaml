@@ -73,7 +73,7 @@ proxies:
   password: bdb313adf74c2ede
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: www.speedtest.org
+  server: 104.18.152.244
   port: 443
   password: humanity
   fingerprint: chrome
@@ -84,12 +84,79 @@ proxies:
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.152.155
+  server: www.ignitelimit.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 162.159.136.234
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 172.67.169.99
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: 8-m16.PHuKEt2035.KdnS.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8-m16.PHuKEt2035.KdnS.fr
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.71
+  port: 443
+  password: humanity
+  fingerprint: chrome
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇯🇵 日本 18
+  type: hysteria2
+  server: 43.167.208.94
+  port: 443
+  password: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
+  skip-cert-verify: true
+  sni: 43.167.208.94
+  servername: 43.167.208.94
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.159
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.101
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: /assignment
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 加州
@@ -98,111 +165,48 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-  fingerprint: chrome
   network: ws
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: /assignment
   servername: www.ignitelimit.com
-- name: 立陶宛
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 伊朗
+- name: 🇺🇸 美国 CloudFlare节点
   type: vless
-  server: 217.60.177.195
+  server: 172.67.212.195
   port: 443
-  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
   tls: true
-  servername: est1.gursub.com
+  servername: 7-m17.KuWAiT-AIrLiNE.kDns.Fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 7-M17.kUwaIt-AIrLInE.kDNS.fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: 🇬🇧 英国 23
+  type: vless
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  tls: true
+  servername: rusbid.de
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: 6S5TksQPwvFJqlj5JJGnuUFF06crL-xFS15111ml9kY
-    short-id: 529a266bd38ca939
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   network: tcp
+- name: 🇯🇵 日本 Oracle+Cloud
+  type: hysteria2
+  server: open.2ml.cc.cd
+  port: 5443
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  servername: open.2ml.cc.cd
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  fingerprint: chrome
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇮🇳 印度 伊朗
-  type: vless
-  server: 151.241.138.151
-  port: 8444
-  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  tls: true
-  servername: pl1.gursub.com
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  skip-cert-verify: false
-  reality-opts:
-    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
-    short-id: a3f509aa7a4b41cc
-  network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.17.177.143
+  server: 104.16.174.185
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -216,76 +220,61 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-  fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇺🇸 美国 Lasalle大学
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  servername: platform103.halalkhor.info
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: platform103.halalkhor.info
-    path: /platform103
-- name: 🇦🇺 澳洲 27
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-    path: /29c8fed7ca22
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.18.22.63
+  server: 104.18.152.50
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇺🇸 美国 29
-  type: vless
-  server: 165.245.181.74
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.229
   port: 443
-  uuid: c92e12ca-ea66-4785-8675-652b35134117
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.46
+  port: 443
+  password: humanity
+  fingerprint: chrome
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 立陶宛+维尔纽斯县维尔纽斯iv.lt
+  type: vless
+  server: 94.176.234.161
+  port: 443
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
   tls: true
-  servername: thus-k.netnode.cc.cd
+  servername: www.intel.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: thus-k.netnode.cc.cd
-    path: /t.me/daily_free_vpn
-- name: 🇬🇧 英国 30
-  type: hysteria2
-  server: 82.38.64.239
-  port: 8443
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  servername: hopp-swizland-new.mysynology.net
+  reality-opts:
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+    spider-x: /
+  network: tcp
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 104.18.152.179
   port: 443
   password: humanity
-  alpn:
-  - h3
-  - h2
-  - http/1.1
   fingerprint: chrome
   sni: www.ignitelimit.com
   network: ws
@@ -294,14 +283,13 @@ proxies:
   servername: www.ignitelimit.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: trojan
-  server: 104.16.174.14
+  server: 104.18.152.155
   port: 443
   password: humanity
+  fingerprint: chrome
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: /assignment
   servername: www.ignitelimit.com
 - name: 更新于 0927 03:26 by https://github.com/tssf/fly
@@ -1226,6 +1214,16 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
   tls: false
   alterId: 0
+- name: 🇺🇸 美国 3
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.ignitelimit.com
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 未知65
   type: vmess
   server: pool.arosakforosh.ir
@@ -2296,16 +2294,6 @@ proxies:
     path: linkvws
     headers:
       Host: yichueng.org
-- name: 🇺🇸 美国 6
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  network: ws
-  sni: www.ignitelimit.com
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇺🇸 美国 26
   type: vmess
   server: 165.140.216.142
@@ -2673,21 +2661,7 @@ proxies:
   skip-cert-verify: true
   sni: se.xiaoliyu.cyou
   servername: se.xiaoliyu.cyou
-- name: 🇫🇷 法国 咕
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  servername: 152-69-231-175.liao.kdns.fr
-- name: 🇩🇪 德国 咕咕
-  type: hysteria2
-  server: 162.249.126.7
-  port: 8443
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
-  servername: hopp-germany-new.ddnsguru.com
-- name: '咕咕 #1'
+- name: 咕咕
   type: hysteria2
   server: 137.131.167.179
   port: 443
@@ -2697,32 +2671,11 @@ proxies:
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
   servername: rmgyvpn.rest
-- name: 🇬🇧 英国 嘎
-  type: hysteria2
-  server: vpn-uk-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  skip-cert-verify: true
-  sni: vpn-uk-002.fastervpn.world
-  servername: vpn-uk-002.fastervpn.world
 - name: 🇩🇪 德国 KAFING2
   type: hysteria2
   server: JavidnamanIran-Javid-SHAH-KingRezaPahlav
   port: 443
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=
-- name: '嘎嘎 #1'
-  type: hysteria2
-  server: msk.frkn.org
-  port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-- name: '🇸🇬 新加坡 咕 #1'
-  type: hysteria2
-  server: 47.129.241.226
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  servername: vpn-sg-001.fastervpn.world
 - name: 🇺🇸 美国 139909 ⚡️= t.me/S
   type: hysteria2
   server: 54.213.89.22
@@ -2731,6 +2684,14 @@ proxies:
   skip-cert-verify: true
   sni: vk.com
   servername: vk.com
+- name: 🇺🇸 美国 89@oneclickvpnkeys
+  type: hysteria2
+  server: 163.192.14.135
+  port: 50160
+  password: 099830134df5ac3a04a4b21d39b8c395
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
 - name: 🇷🇺 俄罗斯 BegooVPN
   type: hysteria2
   server: 91.142.73.159
@@ -2777,7 +2738,7 @@ proxies:
   obfs: salamander
   obfs-password: 6cmj1dymhm79hopl
   servername: gift-catalog.aroonia.ir
-- name: 🇩🇪 德国 25@oneclickvpnkeys
+- name: 🇩🇪 德国 182023 ⚡️= t.me/S
   type: hysteria2
   server: 2.26.54.174
   port: 8443
@@ -2785,35 +2746,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: SalamanderKey1
-- name: baaz
-  type: hysteria2
-  server: 85.204.107.172
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  servername: hopp-romania-new.roxa.org
-- name: 'baaz #1'
-  type: hysteria2
-  server: 85.204.107.184
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  servername: hopp-romania-new.roxa.org
-- name: 'baaz #2'
-  type: hysteria2
-  server: 85.204.107.185
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  servername: hopp-romania-new.roxa.org
-- name: 99@oneclickvpnkeys
-  type: hysteria2
-  server: 85.204.107.188
-  port: 8443
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  skip-cert-verify: true
-  sni: hopp-romania-new.roxa.org
-  servername: hopp-romania-new.roxa.org
 - name: 🇩🇪 德国 Azarakhshxy
   type: hysteria2
   server: 179.61.132.96
@@ -2833,7 +2765,15 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
   servername: hy2-new.aspidnet.xyz
-- name: 181533 ⚡️= t.me/SO
+- name: 🇺🇸 美国 96@oneclickvpnkeys
+  type: hysteria2
+  server: 192.255.128.123
+  port: 443
+  password: RN_3f80eeb4bbd0f13f
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
+- name: 'kurdconfig #1'
   type: hysteria2
   server: api.ohbah.com
   port: 25287
@@ -2910,14 +2850,6 @@ proxies:
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   servername: giftcard.gateway-stream.com
-- name: 🇩🇪 德国 28@oneclickvpnkeys
-  type: hysteria2
-  server: 91.196.32.163
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  skip-cert-verify: true
-  sni: germany3.h2corp.local
-  servername: germany3.h2corp.local
 - name: '🇳🇱 荷兰 NOFiLTERING2 ❤️ وصل شدی ج... #1'
   type: hysteria2
   server: 130.49.161.70
@@ -2951,6 +2883,14 @@ proxies:
 - name: 40@oneclickvpnkeys
   type: hysteria2
   server: 217.60.182.79
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  skip-cert-verify: true
+  sni: cabinet.wwwinternetvideo.click
+  servername: cabinet.wwwinternetvideo.click
+- name: 🇷🇺 俄罗斯 92@oneclickvpnkeys
+  type: hysteria2
+  server: 31.76.71.63
   port: 443
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   skip-cert-verify: true
@@ -2996,7 +2936,7 @@ proxies:
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇭🇰 香港 284
+- name: 🇭🇰 香港 277
   type: vmess
   server: v10.hdacd.com
   port: 30807
@@ -3011,7 +2951,7 @@ proxies:
   password: BxceQaOe
   sni: t.me/ripaojiedian
   servername: t.me/ripaojiedian
-- name: 🇮🇩 印尼 286
+- name: 🇮🇩 印尼 279
   type: vmess
   server: 24864168545164.oylfmxz.cn
   port: 443
@@ -3037,19 +2977,19 @@ proxies:
   port: 36602
   cipher: aes-128-gcm
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-- name: 🇹🇼 台湾 289
+- name: 🇹🇼 台湾 282
   type: ss
   server: gd.bjnet2.com
   port: 36603
   cipher: aes-128-gcm
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-- name: 🇸🇬 新加坡 290
+- name: 🇸🇬 新加坡 283
   type: ss
   server: gd.bjnet2.com
   port: 36604
   cipher: aes-128-gcm
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-- name: 🇯🇵 日本 291
+- name: 🇯🇵 日本 284
   type: ss
   server: gd.bjnet2.com
   port: 36609
@@ -3061,7 +3001,7 @@ proxies:
   port: 36608
   cipher: aes-128-gcm
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-- name: 🇺🇸 美国 293
+- name: 🇺🇸 美国 286
   type: ss
   server: gd.bjnet2.com
   port: 36608
@@ -3135,7 +3075,7 @@ proxies:
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
   servername: www.bing.com
-- name: 🇨🇳 中国 300
+- name: 🇨🇳 中国 293
   type: socks5
   server: 103.210.161.8
   port: 1080
@@ -3154,18 +3094,6 @@ proxies:
     headers:
       Host: M.HUaNGShANG.HIDns.co
     path: /FbLtzaav4GSW7GPL6LUGsEkZfp=chrome
-- name: Other12.5MB/s
-  type: vless
-  server: 172.67.212.195
-  port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  servername: 7-m17.KuWAiT-AIrLiNE.kDns.Fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7-M17.kUwaIt-AIrLInE.kDNS.fr
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlPsecurity=tls
 - name: 🇫🇷 法国 24.3MB/s
   type: hysteria2
   server: 62.210.7.139
@@ -3310,7 +3238,7 @@ proxies:
     headers:
       Host: Appxdn.global.ssl.fastly.net
     path: /fp=chrome
-- name: 🇩🇪 德国 459
+- name: 🇩🇪 德国 451
   type: socks5
   server: 45.144.54.40
   port: 1080
@@ -3443,17 +3371,6 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷 法国 04
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 05
   type: trojan
   server: 104.21.46.3
@@ -3498,31 +3415,20 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
-- name: 🇫🇷 法国 11
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 12
-  type: trojan
-  server: 162.159.136.234
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 13
   type: trojan
   server: 104.18.15.230
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
+- name: 🇫🇷 法国 14
+  type: trojan
+  server: 86.38.214.205
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -3550,6 +3456,17 @@ proxies:
   skip-cert-verify: true
   sni: google.com
   servername: google.com
+- name: 🇫🇷 法国 18
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 19
   type: trojan
   server: 104.16.174.143
@@ -3594,6 +3511,17 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇫🇷 法国 23
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 25
   type: trojan
   server: 104.18.152.187
@@ -3616,6 +3544,17 @@ proxies:
   ws-opts:
     path: /assignment
   servername: www.ignitelimit.com
+- name: 🇫🇷 法国 27
+  type: trojan
+  server: 172.67.74.2
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  fingerprint: chrome
+  ws-opts:
+    path: /assignment
+  servername: www.ignitelimit.com
 - name: 🇫🇷 法国 28
   type: trojan
   server: 188.114.97.7
@@ -3630,17 +3569,6 @@ proxies:
 - name: 🇫🇷 法国 29
   type: trojan
   server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  fingerprint: chrome
-  ws-opts:
-    path: /assignment
-  servername: www.ignitelimit.com
-- name: 🇫🇷 法国 30
-  type: trojan
-  server: 104.18.152.179
   port: 443
   password: humanity
   sni: www.ignitelimit.com
