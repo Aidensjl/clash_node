@@ -2,7 +2,7 @@ proxies:
 - name: 🇺🇸 美国 NewYork PAC
   type: ss
   server: 46.29.163.78
-  port: 40440
+  port: 20999
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
 - name: 🇸🇬 新加坡 02
@@ -13,119 +13,116 @@ proxies:
   password: 3FN3FGfTer3et3kX
 - name: 🇯🇵 日本 03
   type: ss
-  server: 185.141.219.101
+  server: 185.141.219.33
   port: 8388
   cipher: aes-256-gcm
-  password: GSApe9ULgFCeTiAs
+  password: AIe2aNsA6KVQ6Ok0
 - name: 🇭🇰 香港 04
   type: ss
-  server: 212.192.12.11
+  server: 212.192.12.24
   port: 8388
   cipher: aes-256-gcm
-  password: WqE61ZpAXu2fU3zN
+  password: RpMtrTbA7wdK0Pia
 - name: 🇫🇷 法国 05
   type: ss
   server: 103.115.18.145
-  port: 10090
+  port: 20999
   cipher: aes-256-gcm
   password: 9cfaa78d51ac366f
 - name: 🇹🇭 泰国 06
   type: ss
   server: 132.243.255.3
-  port: 40440
+  port: 20999
   cipher: aes-256-gcm
   password: 78235e7dc55e9ad1
 - name: 🇦🇺 澳洲 07
   type: ss
   server: 194.87.196.13
-  port: 40401
+  port: 20999
   cipher: aes-256-gcm
   password: 4938e975724d0ed1
 - name: 🇷🇺 俄罗斯 加拿大 Montreal
   type: ss
   server: 195.133.23.200
-  port: 40440
+  port: 20999
   cipher: aes-256-gcm
   password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 意大利 Italy
   type: ss
   server: 195.58.48.137
-  port: 40401
+  port: 20999
   cipher: aes-256-gcm
   password: 8ad9d72a5571df86
 - name: 🇬🇧 英国 British
   type: ss
   server: 46.17.41.166
-  port: 10090
+  port: 20999
   cipher: aes-256-gcm
   password: 895b4b796a357570
 - name: 🇭🇰 香港 11
   type: ss
   server: 212.192.13.143
-  port: 10090
+  port: 20999
   cipher: aes-256-gcm
   password: 72553320ae6bcc8f
 - name: 🇷🇺 俄罗斯 12
   type: ss
-  server: 185.22.154.239
+  server: 46.17.45.31
   port: 40101
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇺🇸 美国 CloudFlare节点
+- name: 土耳其
+  type: hysteria2
+  server: rb.mangshe.xyz
+  port: 2060
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  skip-cert-verify: true
+  sni: rb.mangshe.xyz
+  servername: rb.mangshe.xyz
+- name: 🇳🇱 荷兰 摩尔多瓦
   type: vless
-  server: 172.67.133.44
-  port: 2086
-  uuid: af19ce98-b58b-43ef-9f0d-2ae6343e28fe
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: blue-disk-1124.sawmansafi.workers.dev
-    path: /eyJqdW5rIjoiQTdKUTVZeVVoQWpjamhqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed=2560
-- name: 立陶宛
-  type: vless
-  server: 62.77.158.1
-  port: 443
-  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
+  server: 185.244.48.183
+  port: 8443
+  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
   tls: true
-  servername: online.1c.ru
+  servername: www.ozone.nl
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
-    short-id: 6a
+    public-key: XgdHElYEGdc0A5NTZP4uTya2Y4WTKnfFV4ormD7rLx4
+    short-id: debb
   network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.21.55.229
-  port: 8880
-  uuid: f55a75a7-5aa6-4df7-814a-99da0edb5c86
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: autumn-cloud-ab5e.229-601.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.20.23.154
-  port: 8880
-  uuid: 15ce0fde-88e2-42b0-91e6-e4a1b4568f6e
-  servername: old-truth-de8a.110-187.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: old-truth-de8a.110-187.workers.dev
-    path: /pyip
-- name: 🇭🇰 香港 特别行政区
+- name: 🇸🇬 新加坡 甲骨文机房
   type: hysteria2
-  server: 45.192.12.93
+  server: 138.2.73.238
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
+- name: 🇫🇷 法国 Amazon数据中心
+  type: hysteria2
+  server: vpn-fr-002.fastervpn.world
   port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  servername: admin.wwwinternetvideo.click
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  servername: 127.0.0.1
+- name: 🇳🇱 荷兰 17
+  type: vless
+  server: 85.149.211.28
+  port: 8443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hk.152568.xyz
+    path: /cdn/packages/runtime-core.tar.gz
 - name: 🇬🇧 英国 18
   type: vless
   server: 31.77.59.225
@@ -140,165 +137,65 @@ proxies:
     public-key: D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ
     short-id: f43f3666afdec470
   network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 172.67.134.7
-  port: 2052
-  uuid: f1e5d738-2e83-4e2f-b6d6-a9013b3e7e48
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: a6o58qfpwvgrwmz0crtha0r24uyiu2l.x7-f5jb95s0ocjt-0.workers.dev
-    path: /vl/u3oMYZoYUAozPFEA8UhR?ed=2560
-- name: 🇩🇪 德国 乌克兰
-  type: vless
-  server: 46.28.69.53
-  port: 443
-  uuid: f2381f29-c724-4491-95a3-a17bd6eea47f
-  tls: true
-  servername: de2.willo.help
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY
-    short-id: abcd1234
-  network: tcp
-- name: 🇺🇸 美国 巴西圣保罗+CloudFlare节点
-  type: vless
-  server: 188.114.99.0
-  port: 8880
-  uuid: 80f083d3-8348-4514-b075-62f303b7fd86
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: young-term-5783.284.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 伊朗
-  type: vless
-  server: 31.56.188.185
-  port: 443
-  uuid: 0082f629-fe72-40b0-8e62-ba358eaacbde
-  tls: true
-  servername: v1.convertermini.fit
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: faBGu_MJ0duHpf3uw4Hm-eFxtgcODS39EJCyeLQUahM
-    short-id: 43dcff53849b81e6
-  network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: 902fd911-ca5d-49a6-99ad-47372a266804
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: young-wildflower-6b6c.100-52d.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇺🇸 美国 南非
+- name: 🇭🇰 香港 特别行政区
   type: hysteria2
-  server: 156.229.160.253
-  port: 55000
-  password: e4fa7b90-b8ee-45bb-b3be-cb3bfdc551e3
-  skip-cert-verify: true
-  sni: www.bing.com
-  servername: www.bing.com
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.21.11.152
-  port: 8080
-  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: server6.diwir81236.workers.dev
-    path: /eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 172.67.143.139
-  port: 8080
-  uuid: 18907dc3-7e4c-476f-9ed8-b360db563bf9
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: server8.faway91418.workers.dev
-    path: /eyJqdW5rIjoiN3FOeFprWFkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.18.30.170
-  port: 8880
-  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: round-truth-dcf1.34-719.workers.dev
-    path: /
-- name: 🇸🇬 新加坡 甲骨文机房
-  type: hysteria2
-  server: 138.2.73.238
-  port: 50160
-  password: f87376e17da040ed04c9665ce8972930
-  skip-cert-verify: true
-  sni: www.bing.com
-  servername: www.bing.com
-- name: 🇳🇱 荷兰 芬兰
-  type: vless
-  server: 94.237.40.197
+  server: 45.192.12.93
   port: 443
-  uuid: e96896d8-72d1-496f-8d28-b3fa0de4a562
-  tls: true
-  servername: bazitory.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: RYfzci_ctBzEbBah0jwygnWrGer9_LQfjOgmh9VizQE
-    short-id: f9
-    spider-x: /05bd2aba76ceb96
-  network: tcp
-- name: 🇷🇺 俄罗斯 30
-  type: hysteria2
-  server: 91.240.86.70
-  port: 24443
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  servername: hy.quattro-tech.ru
-- name: 乌克兰
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  servername: admin.wwwinternetvideo.click
+- name: 🇬🇧 英国 20
   type: vless
-  server: spanish67.kovsh.lol
+  server: 31.76.84.174
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   tls: true
-  servername: spanish67.kovsh.lol
+  servername: yaruss.stopingiphatered.shop
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
-    spider-x: /
   network: tcp
-- name: 伊朗
+- name: 乌克兰
   type: vless
-  server: pl.gazladder.work
+  server: pl-cdn.fireflycloud.shop
   port: 443
-  uuid: e9844617-e393-4876-afa7-11859695f4ee
+  uuid: 7bc54bcc-2557-475b-8d8a-1c85cba882da
   tls: true
-  servername: pl.gazladder.work
-  flow: xtls-rprx-vision
+  servername: pl.fireflycloud.shop
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
+    public-key: dUWeioROs0savXrcoWbUzsETfAHUT1ed1SdKFrQwF3s
+    short-id: 649777a80e8c7073
+    spider-x: /8aabb3715b98aa8
   network: tcp
+- name: 🇷🇺 俄罗斯 22
+  type: vless
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: fbsv6.guardora.pro
+    path: /ws
+- name: 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+  type: hysteria2
+  server: els.mangshe.xyz
+  port: 2060
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  skip-cert-verify: true
+  sni: els.mangshe.xyz
+  servername: els.mangshe.xyz
 - name: 更新于 0930 13:42 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -369,7 +266,7 @@ proxies:
   uuid: 6b306661-93c7-4653-94d6-a8adb742b82f
   tls: false
   alterId: 0
-- name: 🇺🇸 美国 40
+- name: 🇺🇸 美国 31
   type: vmess
   server: d3cdy6viklzpq1.cloudfront.net
   port: 443
@@ -1509,7 +1406,7 @@ proxies:
     headers:
       Host: renderer-stream-2-62.mirra.now
   servername: renderer-stream-2-62.mirra.now
-- name: 🇹🇼 台湾 144
+- name: 🇹🇼 台湾 135
   type: vmess
   server: 2.27.174.110
   port: 794
@@ -2658,7 +2555,7 @@ proxies:
   obfs: salamander
   obfs-password: 09p333uviv2qal0y
   servername: giftcard.gisora.ir
-- name: Free_Node_252
+- name: Free_Node_243
   type: hysteria2
   server: 31.76.80.69
   port: 443
@@ -2704,15 +2601,7 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
   servername: hy2-new.aspidnet.xyz
-- name: 🇺🇸 美国 184357 ⚡️= t.me/S
-  type: hysteria2
-  server: 192.255.128.123
-  port: 443
-  password: RN_3f80eeb4bbd0f13f
-  skip-cert-verify: true
-  sni: www.bing.com
-  servername: www.bing.com
-- name: 🇩🇪 德国 yNGvpn
+- name: '🇩🇪 德国 kurdconfig #1'
   type: hysteria2
   server: 91.107.150.74
   port: 443
@@ -2755,13 +2644,6 @@ proxies:
   server: JavidnamanIran-Javid-SHAH-KingRezaPahlav
   port: 443
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad@5.175.249.174:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=
-- name: 184360 ⚡️= t.me/S
-  type: hysteria2
-  server: hy2.123266.xyz
-  port: 33333
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
-  servername: hy2.123266.xyz
 - name: 🇷🇺 俄罗斯 FreakConfig
   type: hysteria2
   server: 144.31.49.138
@@ -2866,7 +2748,7 @@ proxies:
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇭🇰 香港 276
+- name: 🇭🇰 香港 265
   type: vmess
   server: v10.hdacd.com
   port: 30807
@@ -2930,7 +2812,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: syJ2gGUgMwBwQwQx.v.3dns.vip
-- name: 🇯🇵 日本 281
+- name: 🇯🇵 日本 270
   type: vmess
   server: Z9FfBx3zs2q5O0BG.v.3dns.vip
   port: 443
@@ -2972,7 +2854,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: kneNaKHeSXnZH259.v.3dns.vip
-- name: 🇸🇬 新加坡 284
+- name: 🇸🇬 新加坡 273
   type: vmess
   server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   port: 443
@@ -3000,7 +2882,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
-- name: 🇰🇷 韩国 286
+- name: 🇰🇷 韩国 275
   type: vmess
   server: 8nTzyR5KNivfabaT.v.3dns.vip
   port: 443
@@ -3014,7 +2896,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 8nTzyR5KNivfabaT.v.3dns.vip
-- name: 🇺🇸 美国 287
+- name: 🇺🇸 美国 276
   type: vmess
   server: 53vXOVarmgcreAsv.v.3dns.vip
   port: 443
@@ -3077,14 +2959,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇸🇬 新加坡 294
+- name: 🇸🇬 新加坡 283
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 10135
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇺🇸 美国 295
+- name: 🇺🇸 美国 284
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 10155
@@ -3098,14 +2980,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇹🇼 台湾 297
+- name: 🇹🇼 台湾 286
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 12142
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇰🇷 韩国 298
+- name: 🇰🇷 韩国 287
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 11171
@@ -3578,7 +3460,7 @@ proxies:
     headers:
       Host: tgmansion.site
     path: /vless-ilfp=firefox
-- name: 🇨🇳 中国 344
+- name: 🇨🇳 中国 333
   type: socks5
   server: 103.210.161.8
   port: 1080
@@ -3718,7 +3600,7 @@ proxies:
   port: 2377
   cipher: chacha20-ietf-poly1305
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-- name: 🇩🇪 德国 486
+- name: 🇩🇪 德国 475
   type: socks5
   server: 45.144.54.40
   port: 1080
@@ -3873,20 +3755,6 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   network: tcp
-- name: 🇭🇰 香港 11
-  type: vless
-  server: 85.149.211.28
-  port: 8443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: hk.152568.xyz
-    path: /cdn/packages/runtime-core.tar.gz
 - name: 🇭🇰 香港 12
   type: hysteria2
   server: hk01.kfc-520.com
@@ -3948,6 +3816,14 @@ proxies:
   skip-cert-verify: true
   sni: xship.top
   servername: xship.top
+- name: 🇺🇸 美国 28
+  type: hysteria2
+  server: 156.229.160.253
+  port: 55000
+  password: e4fa7b90-b8ee-45bb-b3be-cb3bfdc551e3
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
 - name: 🇺🇸 美国 33
   type: trojan
   server: 192.236.151.43
@@ -4838,6 +4714,13 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   servername: www.bing.com
+- name: 🇷🇺 俄罗斯 拉脱维亚 01
+  type: hysteria2
+  server: 91.240.86.70
+  port: 24443
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  servername: hy.quattro-tech.ru
 - name: 拉脱维亚 03
   type: hysteria2
   server: 31.76.104.152
@@ -4864,6 +4747,20 @@ proxies:
   reality-opts:
     public-key: xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI
     short-id: 330a464a00000000
+  network: tcp
+- name: 立陶宛 01
+  type: vless
+  server: 62.77.158.1
+  port: 443
+  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
+  tls: true
+  servername: online.1c.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  skip-cert-verify: false
+  reality-opts:
+    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
+    short-id: 6a
   network: tcp
 - name: 哈萨克斯坦 01
   type: vless
