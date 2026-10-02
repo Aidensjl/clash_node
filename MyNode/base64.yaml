@@ -1,23 +1,62 @@
 proxies:
-- name: 🇱🇻LV_1|1.1MB/s
-  type: hysteria2
-  server: 104.165.205.46
-  port: 9443
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  servername: onecloudstream.com
-- name: ❓Other_1|649KB/s
-  type: hysteria2
-  server: 144.31.212.253
+- name: 🇹🇷TR_1|2.2MB/s
+  type: vless
+  server: tr-irancell4.xelfona.ir
+  port: 20018
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  skip-cert-verify: false
+  network: tcp
+- name: 🇮🇳IN_1|4.4MB/s
+  type: vmess
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16626
+  cipher: auto
+  uuid: 522bf832-cb94-4588-bb4e-a578d1f72603
+  tls: false
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bc35dd8f9bb478fdf27856815a6d1dc8.mobgslb.tbcache.com
+- name: 🇸🇬SG_1|551KB/s
+  type: vless
+  server: trackydev.site
   port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  servername: vps155-edge.kermemehori.ru
-- name: 🇦🇺AU_1|783KB/s
-  type: hysteria2
-  server: vpn-au-001.fastervpn.world
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  tls: true
+  servername: trackydev.site
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: trackydev.site
+    path: /
+- name: 🇷🇺RU_1|1013KB/s
+  type: vless
+  server: 31.76.34.216
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  skip-cert-verify: true
-  sni: vpn-au-001.fastervpn.world
-  servername: vpn-au-001.fastervpn.world
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  tls: true
+  servername: ru-c-1.minzt.su
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+  network: tcp
+- name: 🇩🇪DE_1|2.3MB/s
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  tls: true
+  servername: mcde.67resserv67.info
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+  network: tcp
