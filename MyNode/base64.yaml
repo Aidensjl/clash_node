@@ -1,62 +1,41 @@
 proxies:
-- name: 🇹🇷TR_1|2.2MB/s
+- name: 🇮🇱IL_1|1.6MB/s
   type: vless
-  server: tr-irancell4.xelfona.ir
-  port: 20018
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  skip-cert-verify: false
-  network: tcp
-- name: 🇮🇳IN_1|4.4MB/s
-  type: vmess
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16626
-  cipher: auto
-  uuid: 522bf832-cb94-4588-bb4e-a578d1f72603
-  tls: false
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bc35dd8f9bb478fdf27856815a6d1dc8.mobgslb.tbcache.com
-- name: 🇸🇬SG_1|551KB/s
-  type: vless
-  server: trackydev.site
+  server: 34.165.56.30
   port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
   tls: true
-  servername: trackydev.site
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: trackydev.site
-    path: /
-- name: 🇷🇺RU_1|1013KB/s
-  type: vless
-  server: 31.76.34.216
-  port: 443
-  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
-  tls: true
-  servername: ru-c-1.minzt.su
-  flow: xtls-rprx-vision
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
   network: tcp
-- name: 🇩🇪DE_1|2.3MB/s
+- name: 🇵🇱PL_1|2.1MB/s
   type: vless
-  server: 177.1.186.44
+  server: pl193.mech-pro.online
   port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
   tls: true
-  servername: mcde.67resserv67.info
+  servername: pl193.mech-pro.online
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   skip-cert-verify: false
   reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  network: tcp
+- name: 🇫🇷FR_1|786KB/s
+  type: vless
+  server: 45.131.212.231
+  port: 443
+  uuid: 19513b1b-d29a-4f3e-ba9a-888261e4e048
+  tls: true
+  servername: sellflow.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp

@@ -71,13 +71,81 @@ proxies:
   port: 20999
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇷🇺 俄罗斯 保加利亚
+- name: 🇺🇸 美国 Alabanza
   type: vless
-  server: ee10.zazazuza.ru
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 65.109.209.172
+  port: 9094
+  uuid: 7b760357-d569-4d02-9de6-7b1c0bfae1b8
+  skip-cert-verify: false
+  network: tcp
+- name: 🇩🇪 德国 巴西
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
   tls: true
-  servername: fdghyt.com
+  servername: mcde.67resserv67.info
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+    spider-x: /
+  network: tcp
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 104.21.55.229
+  port: 8880
+  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
+  servername: dark-dew-c3ed.48-97c.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: dark-dew-c3ed.48-97c.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: www.glassdoor.com
+  port: 8880
+  uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: red-disk-58df.153-2ce.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 172.67.134.7
+  port: 2052
+  uuid: f1e5d738-2e83-4e2f-b6d6-a9013b3e7e48
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: a6o58qfpwvgrwmz0crtha0r24uyiu2l.x7-f5jb95s0ocjt-0.workers.dev
+    path: /vl/u3oMYZoYUAozPFEA8UhR?ed=2560
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: www.wto.org
+  port: 8443
+  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
+  sni: jiangjc.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: jiangjc.pages.dev
+    path: /
+  servername: jiangjc.pages.dev
+- name: 🇺🇸 美国 19
+  type: vless
+  server: oigf-production.up.railway.app
+  port: 443
+  uuid: 8fc8293e-2787-14d1-5f69-237cdb89b42f
+  tls: true
+  servername: oigf-production.up.railway.app
   client-fingerprint: chrome
   alpn:
   - http/1.1
@@ -85,75 +153,158 @@ proxies:
   network: ws
   ws-opts:
     headers:
-      Host: fdghyt.com
-    path: /vpn-wss/fluxor/59011/
-- name: 🇩🇪 德国 乌克兰
-  type: trojan
-  server: 82.117.245.125
-  port: 2053
-  password: humanity
-  fingerprint: chrome
-  sni: www.calmlunch.com
+      Host: oigf-production.up.railway.app
+    path: /ws/8fc8293e-2787-14d1-5f69-237cdb89b42f
+- name: 🇦🇺 澳洲 亚太地区+AT&T
+  type: hysteria2
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  skip-cert-verify: true
+  sni: vpn-au-001.fastervpn.world
+  servername: vpn-au-001.fastervpn.world
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: deepl.com
+  port: 8880
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
-  servername: www.calmlunch.com
-- name: 🇦🇺 澳洲 15
-  type: hysteria2
-  server: de1.xiaoliyu.cyou
-  port: 4433
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
-  servername: de1.xiaoliyu.cyou
-- name: 🇺🇸 美国 16
-  type: hysteria2
-  server: 162.249.127.143
-  port: 8443
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  servername: hop-germany-september.dynuddns.com
-- name: 🇺🇸 美国 加拿大
-  type: hysteria2
-  server: 108.181.5.106
-  port: 51285
-  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
-  skip-cert-verify: true
-  sni: www.bing.com
-  servername: www.bing.com
-- name: 🇺🇸 美国 惠普HP
+    headers:
+      Host: mute-sunset-0849.40-aeb.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 美国 CloudFlare节点
   type: vless
-  server: tk1.high-speed-test-56424.me
+  server: v2ray.aizgl.com
   port: 443
-  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
   tls: true
-  servername: aws.amazon.com
+  servername: v2ray.aizgl.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: v2ray.aizgl.com
+    path: /xray-ws
+- name: 🇷🇺 俄罗斯 JustHost
+  type: hysteria2
+  server: els.mangshe.xyz
+  port: 2060
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  skip-cert-verify: true
+  sni: els.mangshe.xyz
+  servername: els.mangshe.xyz
+- name: 🇷🇺 俄罗斯 24
+  type: hysteria2
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  skip-cert-verify: true
+  sni: hk2.xiaoliyu.cyou
+  servername: hk2.xiaoliyu.cyou
+- name: 乌克兰
+  type: vless
+  server: 212.87.190.36
+  port: 443
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  tls: true
+  servername: ee174.mech-pro.online
   flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  network: tcp
+- name: 🇳🇱 荷兰 26
+  type: vless
+  server: 194.26.141.148
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  tls: true
+  servername: fdghyt.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: fdghyt.com
+    path: /vpn-wss/fluxor/59011/
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: 172.67.171.191
+  port: 8080
+  uuid: 0b2ea024-3ffd-46a7-87ce-86cbb79d7a48
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: server18.peekconfig2.workers.dev
+    path: /eyJqdW5rIjoiT3FNeW1sMVdGVHlvNTIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
+- name: 🇺🇸 美国 28
+  type: vless
+  server: 45.154.206.88
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  servername: es.monkeyisland.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  network: tcp
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: log.bpminecraft.com
+  port: 8880
+  uuid: 84270e8b-567e-45c6-b2f2-56ec9a67ae1e
+  servername: log.bpminecraft.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: young-leaf-a723.162-4da.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇹🇼 台湾 县+Google云计算数据中心
+  type: vless
+  server: 35.185.179.62
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-    short-id: 21270a66
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
   network: tcp
-- name: 🇷🇺 俄罗斯 19
+- name: 🇺🇸 美国 CloudFlare节点
   type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  client-fingerprint: firefox
+  server: skk.moe
+  port: 8880
+  uuid: a8985e6a-f338-4b44-9a41-f94495603a96
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
-- name: 🇺🇸 美国 20
-  type: hysteria2
-  server: 144.31.212.253
-  port: 443
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  servername: vps155-edge.kermemehori.ru
+    headers:
+      Host: dawn-cell-346f.238-df6.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇷🇺 俄罗斯 32
+  type: vless
+  server: 176.108.242.55
+  port: 5002
+  uuid: 8e8ea5d2-6941-40fb-9efe-f9062b11b2b9
+  tls: true
+  servername: lm.centermass.net
+  client-fingerprint: edge
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: media.playback.v1.SessionGateway
 - name: 更新于 1003 04:57 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -287,7 +438,7 @@ proxies:
     path: /vmess-argo
     headers:
       Host: balanced-minds-carrier-demanding.trycloudflare.com
-- name: 🇺🇸 美国 33
+- name: 🇺🇸 美国 45
   type: vmess
   server: d3cdy6viklzpq1.cloudfront.net
   port: 80
@@ -332,7 +483,7 @@ proxies:
       Host: 193.148.253.210
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
-- name: 🇭🇰 香港 37
+- name: 🇭🇰 香港 49
   type: vmess
   server: 47.76.197.72
   port: 443
@@ -592,7 +743,7 @@ proxies:
     path: /d187a23a-76a9-4d55-84e3-ea3b8b222cbf-vm
     headers:
       Host: dimensional-regularly-buildings-keys.trycloudflare.com
-- name: 🇹🇼 台湾 59
+- name: 🇹🇼 台湾 71
   type: vmess
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
@@ -2539,7 +2690,7 @@ proxies:
   obfs: salamander
   obfs-password: 09p333uviv2qal0y
   servername: giftcard.gisora.ir
-- name: Free_Node_240
+- name: Free_Node_252
   type: hysteria2
   server: 31.76.80.69
   port: 443
@@ -2548,6 +2699,14 @@ proxies:
   obfs: salamander
   obfs-password: uw9b2qq5rx
   servername: fiproxy1.lockdwn.com
+- name: 🇺🇸 美国 75@oneclickvpnkeys
+  type: hysteria2
+  server: 108.181.5.106
+  port: 51285
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  skip-cert-verify: true
+  sni: www.bing.com
+  servername: www.bing.com
 - name: 🇸🇬 新加坡 186009 ⚡️= t.me/S
   type: hysteria2
   server: sg4.dexlos.com
@@ -3064,17 +3223,6 @@ proxies:
     headers:
       Host: free.cndyw.ggff.net
     path: pyip=bpb.yousef.isegaro.comfp=random
-- name: 🇩🇪 德国 www.v2s.com] 1
-  type: vless
-  server: 177.1.186.44
-  port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
-  tls: true
-  servername: mcde.67resserv67.info
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
 - name: '🇩🇪 德国 www.v2s.com] 1... #1'
   type: vless
   server: 139.162.149.105
@@ -3242,19 +3390,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-wsfp=chrome
-- name: 'www.v2s.com] EE1... #3'
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  tls: true
-  servername: fdghyt.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: fdghyt.com
-    path: /vpn-wss/fluxor/59011/fp=firefox
 - name: 'www.v2s.com] EE1... #4'
   type: vless
   server: 141.0.187.52
@@ -4632,6 +4767,21 @@ proxies:
   client-fingerprint: firefox
   skip-cert-verify: false
   network: tcp
+- name: '🇷🇺 俄罗斯 www.v2s.com] 1... #3'
+  type: vless
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: fbsv6.guardora.pro
+    path: /wsfp=chrome
 - name: '🇷🇺 俄罗斯 www.v2s.com] 1... #4'
   type: vless
   server: xsru1.ddnsfree.com
@@ -5132,6 +5282,17 @@ proxies:
   client-fingerprint: firefox
   skip-cert-verify: false
   network: tcp
+- name: '🇺🇸 美国 www.v2s.com] 1... #9'
+  type: vless
+  server: tk1.high-speed-test-56424.me
+  port: 443
+  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+  tls: true
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
 - name: '🇺🇸 美国 www.v2s.com] 1... #2'
   type: vless
   server: 31.14.123.220
@@ -5623,7 +5784,7 @@ proxies:
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇭🇰 香港 542
+- name: 🇭🇰 香港 555
   type: vmess
   server: v10.hdacd.com
   port: 30807
@@ -5687,7 +5848,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: syJ2gGUgMwBwQwQx.v.3dns.vip
-- name: 🇯🇵 日本 547
+- name: 🇯🇵 日本 560
   type: vmess
   server: Z9FfBx3zs2q5O0BG.v.3dns.vip
   port: 443
@@ -5729,7 +5890,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: kneNaKHeSXnZH259.v.3dns.vip
-- name: 🇸🇬 新加坡 550
+- name: 🇸🇬 新加坡 563
   type: vmess
   server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   port: 443
@@ -5757,7 +5918,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
-- name: 🇰🇷 韩国 552
+- name: 🇰🇷 韩国 565
   type: vmess
   server: 8nTzyR5KNivfabaT.v.3dns.vip
   port: 443
@@ -5771,7 +5932,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 8nTzyR5KNivfabaT.v.3dns.vip
-- name: 🇺🇸 美国 553
+- name: 🇺🇸 美国 566
   type: vmess
   server: 53vXOVarmgcreAsv.v.3dns.vip
   port: 443
@@ -5834,14 +5995,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇸🇬 新加坡 560
+- name: 🇸🇬 新加坡 573
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 10135
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇺🇸 美国 561
+- name: 🇺🇸 美国 574
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 10155
@@ -5855,14 +6016,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇹🇼 台湾 563
+- name: 🇹🇼 台湾 576
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 12142
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇰🇷 韩国 564
+- name: 🇰🇷 韩国 577
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 11171
@@ -5880,7 +6041,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇭🇰 香港 567
+- name: 🇭🇰 香港 580
   type: socks5
   server: 47.242.19.215
   port: 8899
@@ -5945,6 +6106,14 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 44xgqIHCG64I2kMxXzr4AexLc3TmyXX1oYY5C68s2ck=
+- name: 🇩🇪 德国 2
+  type: hysteria2
+  server: 144.31.212.253
+  port: 443
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  skip-cert-verify: true
+  sni: vps155-edge.kermemehori.ru
+  servername: vps155-edge.kermemehori.ru
 - name: 🇩🇪 德国 3
   type: vless
   server: 159.194.244.172
@@ -5989,17 +6158,6 @@ proxies:
   uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
   tls: true
   servername: us51.mech-pro.online
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  network: tcp
-- name: '爱沙尼亚 EST #3'
-  type: vless
-  server: 212.87.190.36
-  port: 443
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
-  tls: true
-  servername: ee174.mech-pro.online
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   skip-cert-verify: false
@@ -6071,7 +6229,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇯🇵 日本 587
+- name: 🇯🇵 日本 600
   type: vmess
   server: 5do8ad4-g03.jp02-e3-vm0.entry.fr0528.art
   port: 11775
@@ -6279,16 +6437,6 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇸🇬 新加坡 2
-  type: vless
-  server: 35.185.179.62
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
 - name: 🇸🇬 新加坡 3
   type: vless
   server: 162.159.43.187
@@ -6300,19 +6448,7 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- name: 🇸🇬 新加坡 4
-  type: trojan
-  server: www.wto.org
-  port: 8443
-  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
-  sni: jiangjc.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: jiangjc.pages.dev
-    path: /
-  servername: jiangjc.pages.dev
-- name: 🇹🇼 台湾 611
+- name: 🇹🇼 台湾 622
   type: trojan
   server: ttww11.bpca2026.top
   port: 443
@@ -6481,7 +6617,7 @@ proxies:
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
   servername: me17.msjia8844.site
-- name: 🇩🇪 德国 731
+- name: 🇩🇪 德国 742
   type: socks5
   server: 45.144.54.40
   port: 1080
@@ -6992,6 +7128,22 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   network: tcp
+- name: 🇷🇺 俄罗斯 爱沙尼亚 01
+  type: vless
+  server: ee10.zazazuza.ru
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  tls: true
+  servername: fdghyt.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: fdghyt.com
+    path: /vpn-wss/fluxor/59011/
 - name: 🇸🇬 新加坡 01
   type: anytls
   server: svip.skycon808.com
