@@ -1,5 +1,5 @@
 proxies:
-- name: 🇸🇬SG_1|639KB/s
+- name: 🇸🇬SG_1|6.4MB/s
   type: vless
   server: 112.49.63.11
   port: 33102
@@ -8,5 +8,74 @@ proxies:
   servername: sgg.knhqf.com
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
+- name: 🇪🇪EE_1|1.6MB/s
+  type: vless
+  server: 163.245.52.91
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  tls: true
+  servername: d3-ee1.cloud-cdn.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
+    short-id: ad6e08b22389abd2
+  network: tcp
+- name: 🇭🇰HK_1|6.1MB/s
+  type: vless
+  server: 27.155.117.209
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  tls: true
+  servername: thuk.huaweiyouxuan.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  network: tcp
+- name: 🇭🇰HK_2|6.0MB/s
+  type: vless
+  server: 27.44.143.169
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  tls: true
+  servername: thuk.huaweiyouxuan.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  network: tcp
+- name: 🇭🇰HK_3|7.5MB/s
+  type: vless
+  server: 14.17.78.146
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  tls: true
+  servername: thuk.huaweiyouxuan.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: tcp
+- name: 🇦🇺AU_1|596KB/s
+  type: vless
+  server: 34.40.217.165
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  network: tcp
+- name: 🇸🇪SE_1|2.9MB/s
+  type: vless
+  server: psf-2.weedly.top
+  port: 80
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: stigmata.ir
+    path: /
