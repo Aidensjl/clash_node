@@ -1,19 +1,21 @@
 proxies:
-- name: 🇫🇷FR_1|971KB/s
+- name: 🇫🇷FR_1|819KB/s
   type: ss
-  server: 13.36.178.160
+  server: 13.36.241.80
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇩🇪DE_1|1.6MB/s
-  type: ss
-  server: 18.196.88.40
-  port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇺🇸US_1|2.3MB/s
-  type: ss
-  server: 34.228.79.192
-  port: 443
-  cipher: auto
-  password: amazonskr05
+- name: 🇵🇱PL_1|832KB/s
+  type: vless
+  server: 31.76.22.195
+  port: 2083
+  uuid: cc4074d6-f450-4025-833a-a6e0100ceaff
+  tls: true
+  servername: crt.molniya.sbs
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless-ws

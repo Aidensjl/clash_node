@@ -1,23 +1,27 @@
 proxies:
     - cipher: aes-256-cfb
-      name: "\U0001F1EB\U0001F1F7FR_1|971KB/s"
+      name: "\U0001F1EB\U0001F1F7FR_1|819KB/s"
       password: amazonskr05
-      port: 443
-      server: 13.36.178.160
-      skip-cert-verify: true
+      port: "443"
+      server: 13.36.241.80
       type: ss
       udp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1E9\U0001F1EADE_1|1.6MB/s"
-      password: amazonskr05
-      port: 443
-      server: 18.196.88.40
-      type: ss
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1F5\U0001F1F1PL_1|832KB/s"
+      network: ws
+      port: "2083"
+      server: 31.76.22.195
+      servername: crt.molniya.sbs
+      tls: true
+      type: vless
       udp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1FA\U0001F1F8US_1|2.3MB/s"
-      password: amazonskr05
-      port: 443
-      server: 34.228.79.192
-      type: ss
-      udp: true
+      uuid: cc4074d6-f450-4025-833a-a6e0100ceaff
+      ws-opts:
+        headers:
+            Host: ""
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+        path: /vless-ws
+      xudp: true
