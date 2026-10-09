@@ -1,21 +1,38 @@
 proxies:
-- name: 🇫🇷FR_1|819KB/s
+- name: 🇫🇷FR_1|1.1MB/s
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  alpn:
+  - h3
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  down: 55 Mbps
+  protocol: udp
+  skip-cert-verify: true
+  up: 11 Mbps
+  sni: bing.com
+  servername: bing.com
+- name: 🇫🇷FR_6|2.0MB/s
   type: ss
   server: 13.36.241.80
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇵🇱PL_1|832KB/s
-  type: vless
-  server: 31.76.22.195
-  port: 2083
-  uuid: cc4074d6-f450-4025-833a-a6e0100ceaff
-  tls: true
-  servername: crt.molniya.sbs
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless-ws
+- name: 🇭🇰HK_1|1.0MB/s
+  type: anytls
+  server: 56481.df6h451rh.xin
+  port: 443
+  password: 6725d134ee80
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  udp: true
+  servername: images.ctfassets.net
+- name: 🇺🇸US_19|1.6MB/s
+  type: anytls
+  server: 98416548.df6h451rh.xin
+  port: 443
+  password: 6725d134ee80
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  udp: true
+  servername: images.ctfassets.net
