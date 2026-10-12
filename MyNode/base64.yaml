@@ -1,21 +1,29 @@
 proxies:
-- name: 🇵🇱PL_1|1.3MB/s
+- name: 🇷🇺RU_1|1.2MB/s
+  type: hysteria2
+  server: 194.87.118.184
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  skip-cert-verify: true
+  sni: match-stream.lovkisport.blog
+  servername: match-stream.lovkisport.blog
+- name: 🇸🇬SG_1|1.4MB/s
+  type: ss
+  server: ruot.ayucloudservices.nl
+  port: 22059
+  cipher: aes-256-gcm
+  password: c2fe9024-d253-401a-b868-97421f6eb9e0
+- name: 🇺🇸US_2|862KB/s
   type: vless
-  server: pl-1-1.unturned-rust-dead.lol
-  port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  server: 179.253.227.10
+  port: 8443
+  uuid: 81eed05f-e2d0-4944-9e48-caeb8d036557
   tls: true
-  servername: pl-1-1.unturned-rust-dead.lol
+  servername: us-lax.862400.xyz
   client-fingerprint: random
   skip-cert-verify: false
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  network: tcp
-- name: 🇫🇷FR_2|2.9MB/s
-  type: hysteria2
-  server: 62.210.147.2
-  port: 43115
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: /announcement?ed=2048
