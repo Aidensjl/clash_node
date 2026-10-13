@@ -1,29 +1,15 @@
 proxies:
-- name: 🇷🇺RU_1|1.2MB/s
-  type: hysteria2
-  server: 194.87.118.184
-  port: 2053
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  skip-cert-verify: true
-  sni: match-stream.lovkisport.blog
-  servername: match-stream.lovkisport.blog
-- name: 🇸🇬SG_1|1.4MB/s
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22059
-  cipher: aes-256-gcm
-  password: c2fe9024-d253-401a-b868-97421f6eb9e0
-- name: 🇺🇸US_2|862KB/s
+- name: 🇺🇸US_1|1.8MB/s
   type: vless
-  server: 179.253.227.10
-  port: 8443
-  uuid: 81eed05f-e2d0-4944-9e48-caeb8d036557
+  server: 38.180.137.143
+  port: 9443
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
   tls: true
-  servername: us-lax.862400.xyz
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
   client-fingerprint: random
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: /announcement?ed=2048
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
