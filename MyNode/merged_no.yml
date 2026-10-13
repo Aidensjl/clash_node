@@ -1,31 +1,29 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_1|1.6MB/s
-  port: 9443
-  reality-opts:
-    public-key: ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g
-    short-id: 649ab61e575fdbc9
-  server: 213.165.50.45
-  servername: usa.edgeses.org
-  skip-cert-verify: true
-  tls: true
+- encryption: none
+  name: 🇬🇧GB_1|610KB/s
+  network: ws
+  port: '8880'
+  server: 194.76.18.2
   type: vless
   udp: true
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-- client-fingerprint: chrome
-  name: 🇺🇸US_2|3.9MB/s
-  port: 443
-  reality-opts:
-    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
-    short-id: 56cd2f720d
-  server: akga01.xyy123.bid
-  servername: buckeye-retail-website.amazon.com
-  skip-cert-verify: true
-  tls: true
+  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
+  ws-opts:
+    headers:
+      Host: yellow-mouse-fcce.400-318.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+    path: /pyip=Telegram🇨🇳 @WangCai2
+  xudp: true
+- name: 🇬🇧GB_1|610KB/s
   type: vless
-  udp: true
-  uuid: 05dd8b4c-c202-406a-a550-31c0b92ba312
+  server: 194.76.18.2
+  port: 8880
+  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: yellow-mouse-fcce.400-318.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
 - name: 🇺🇸US_1|1.0MB/s
   type: ss
   server: 54.234.217.115
@@ -111,20 +109,29 @@ proxies:
   port: 20111
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇩🇪 德国 13
+- name: 巴西圣保罗+CloudFlare节点
   type: vless
-  server: fr.song69.fun
-  port: 28150
-  uuid: 408c51e8-9246-483d-ba73-34ab4e202eb9
+  server: 188.114.97.6
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   tls: true
-  servername: metrika.yandex.ru
-  flow: xtls-rprx-vision
+  servername: snip.edgeoneai.cc.cd
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   skip-cert-verify: false
-  reality-opts:
-    public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
-    short-id: dcb858da
-  network: tcp
+  network: ws
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /?telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+- name: 🇺🇸 美国 加利福尼亚
+  type: hysteria2
+  server: qcloudge1.exitvpn.shop
+  port: 20270
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: qcloudge1.exitvpn.shop
+  servername: qcloudge1.exitvpn.shop
 - name: 🇭🇰 香港 比利时
   type: vless
   server: 143.20.156.116
@@ -139,80 +146,35 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- name: 🇺🇸 美国 15
-  type: hysteria2
-  server: 152.70.237.123
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: cctvhikvision.center
   port: 2053
-  password: maintell
-  skip-cert-verify: true
-  sni: 152.70.237.123
-  servername: 152.70.237.123
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: www.glassdoor.com
-  port: 8880
-  uuid: 220046c3-0081-4c22-a648-83a52bc3a0d5
-  servername: www.glassdoor.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: yellow-sky-38b3.154-d73.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 104.18.28.234
-  port: 8880
-  uuid: e74e8806-06b5-4fb0-a89e-cf79d88cfd02
-  servername: wild-frog-54a9.170-dcc.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: wild-frog-54a9.170-dcc.workers.dev
-    path: /pyip
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 104.21.33.59
-  port: 443
-  password: humanity
-  alpn:
-  - http/1.1
-  fingerprint: unsafe
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.pleadcourt.org
-- name: 🇬🇧 英国 桑德兰大学
-  type: vless
-  server: 157.228.128.59
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
+  servername: uwu.blueknightnet.qzz.io
   client-fingerprint: chrome
   skip-cert-verify: false
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  network: tcp
-- name: 🇺🇸 美国 CloudFlare节点
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: 8546bcef-8456-41a2-82bc-d2231b42b769
-  servername: small-tree-9ec0.84-971.workers.dev
-  skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: small-tree-9ec0.84-971.workers.dev
-    path: /
+      Host: uwu.blueknightnet.qzz.io
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+- name: 奥地利
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  network: ws
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+  servername: www.calmlunch.com
 - name: 🇺🇸 美国 州伊利县威廉斯维尔村ColoCroing有限公司
   type: vless
-  server: s482.wagahaha.xyz
+  server: 192.227.169.125
   port: 10829
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
   tls: true
@@ -224,6 +186,46 @@ proxies:
   - http/1.1
   skip-cert-verify: false
   network: tcp
+- name: 🇺🇸 美国 19
+  type: trojan
+  server: 45.38.3.25
+  port: 443
+  password: humanity
+  alpn:
+  - http/1.1
+  fingerprint: unsafe
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+  servername: www.pleadcourt.org
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  client-fingerprint: qq
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: lucasjow.us.ci
+    path: /cart/docs/www/proxyip=108.160.132.132
+- name: 🇺🇸 美国 CloudFlare节点
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - name: 更新于 1013 15:01 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -3321,13 +3323,6 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: www.v2s.com] ES1
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  skip-cert-verify: false
-  network: tcp
 - name: 'www.v2s.com] ES1... #1'
   type: vless
   server: 212.227.235.66
@@ -3429,6 +3424,17 @@ proxies:
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   servername: www.google.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 'www.v2s.com] FI1... #8'
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
@@ -5306,11 +5312,6 @@ proxies:
   server: 144.31.182.130
   port: 443
   password: humanity
-- name: '🇳🇱 荷兰 www.v2s.com] ... #11'
-  type: trojan
-  server: 45.38.3.25
-  port: 443
-  password: humanity
 - name: '🇳🇱 荷兰 www.v2s.com] ... #9'
   type: trojan
   server: 185.22.172.249
@@ -5495,7 +5496,7 @@ proxies:
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇭🇰 香港 555
+- name: 🇭🇰 香港 554
   type: vmess
   server: v10.hdacd.com
   port: 30807
@@ -5559,7 +5560,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: syJ2gGUgMwBwQwQx.v.3dns.vip
-- name: 🇯🇵 日本 560
+- name: 🇯🇵 日本 559
   type: vmess
   server: Z9FfBx3zs2q5O0BG.v.3dns.vip
   port: 443
@@ -5601,7 +5602,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: kneNaKHeSXnZH259.v.3dns.vip
-- name: 🇸🇬 新加坡 563
+- name: 🇸🇬 新加坡 562
   type: vmess
   server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   port: 443
@@ -5629,7 +5630,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
-- name: 🇰🇷 韩国 565
+- name: 🇰🇷 韩国 564
   type: vmess
   server: 8nTzyR5KNivfabaT.v.3dns.vip
   port: 443
@@ -5643,7 +5644,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 8nTzyR5KNivfabaT.v.3dns.vip
-- name: 🇺🇸 美国 566
+- name: 🇺🇸 美国 565
   type: vmess
   server: 53vXOVarmgcreAsv.v.3dns.vip
   port: 443
@@ -5706,14 +5707,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇸🇬 新加坡 573
+- name: 🇸🇬 新加坡 572
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 10135
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇺🇸 美国 574
+- name: 🇺🇸 美国 573
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 10155
@@ -5727,21 +5728,21 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇹🇼 台湾 576
+- name: 🇹🇼 台湾 575
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 12142
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇰🇷 韩国 577
+- name: 🇰🇷 韩国 576
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 11171
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇳🇱 荷兰 578
+- name: 🇳🇱 荷兰 577
   type: vless
   server: video-origin.lovkisport.blog
   port: 443
@@ -5816,13 +5817,13 @@ proxies:
   server: ca.tronsg.com
   port: 443
   password: Trojan@82164024
-- name: 🇸🇬 新加坡 632
+- name: 🇸🇬 新加坡 631
   type: http
   server: 54.151.156.21
   port: 2080
   username: '1234'
   password: '1234'
-- name: 🇺🇸 美国 633
+- name: 🇺🇸 美国 632
   type: socks5
   server: 43.130.42.51
   port: 1088
@@ -5848,7 +5849,7 @@ proxies:
   client-fingerprint: random
   skip-cert-verify: false
   network: grpc
-- name: 🇦🇺 澳洲 638
+- name: 🇦🇺 澳洲 637
   type: hysteria2
   server: 137.23.2.56
   port: 443
@@ -6385,6 +6386,17 @@ proxies:
   - h2
   skip-cert-verify: false
   network: tcp
+- name: 🇺🇸 美国 9
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 37fce9ce-9fec-4f30-89a0-fbb1f6f33b3c
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: white-night-afee.419-acc.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
 - name: 🇺🇸 美国 10
   type: vless
   server: 2abe883d.bilibiliapp.cn
