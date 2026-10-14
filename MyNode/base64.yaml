@@ -1,7 +1,59 @@
 proxies:
-- name: 🇵🇱PL_1|2.1MB/s
-  type: ss
-  server: 54.36.174.140
+- name: 🇫🇷FR_1|887KB/s
+  type: vless
+  server: 140.248.186.45
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+  uuid: XpnTeam-2
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: 🇩🇪DE_1|756KB/s
+  type: vless
+  server: 31.58.95.10
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  servername: de-gdd-1.unturned-rust-dead.lol
+  client-fingerprint: random
+  skip-cert-verify: false
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  network: grpc
+- name: 🇫🇷FR_2|633KB/s
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-2
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: 🇫🇷FR_3|1.2MB/s
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-1
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
