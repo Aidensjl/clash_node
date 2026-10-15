@@ -1,40 +1,30 @@
 proxies:
-- name: 🇺🇸US_1|4.5MB/s
-  type: hysteria2
-  server: 179.255.104.98
-  port: 443
-  password: lh92eQnxIpeg2odHHDg0SrcczqwS4e8Y
-  skip-cert-verify: true
-  sni: dl1.yuanshicheng.com
-  servername: dl1.yuanshicheng.com
-- name: 🇭🇰HK_2|1.6MB/s
-  type: vless
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-  tls: true
-  servername: buylite.music.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  network: tcp
-- name: 🇸🇬SG_1|555KB/s
-  type: vless
-  server: centurylink.es
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  client-fingerprint: chrome
+- name: 🇫🇷FR_1|1.6MB/s
+  type: hysteria
+  server: 62.210.70.191
+  port: 24667
   alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-    path: /
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  protocol: udp
+  skip-cert-verify: true
+  up: 11 Mbps
+  sni: bing.com
+  servername: bing.com
+- name: 🇦🇺AU_1|900KB/s
+  type: hysteria2
+  server: 192.9.175.191
+  port: 20000
+  password: a34f3990b69f44bfa0d32385
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
+  obfs: salamander
+  obfs-password: a34f3990b69f44bfa0d32385
+  servername: rmgyvpn.rest
+- name: 🇨🇦CA_1|2.1MB/s
+  type: ss
+  server: 15.175.213.130
+  port: 443
+  cipher: auto
+  password: amazonskr05
