@@ -1,28 +1,40 @@
 proxies:
-- name: 🇩🇪DE_1|628KB/s
-  type: vless
-  server: 152.53.186.202
+- name: 🇺🇸US_1|4.5MB/s
+  type: hysteria2
+  server: 179.255.104.98
   port: 443
-  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
-  tls: true
-  servername: deinfo.chaosnetwork.app
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: tcp
-- name: 🇸🇬SG_1|2.0MB/s
+  password: lh92eQnxIpeg2odHHDg0SrcczqwS4e8Y
+  skip-cert-verify: true
+  sni: dl1.yuanshicheng.com
+  servername: dl1.yuanshicheng.com
+- name: 🇭🇰HK_2|1.6MB/s
   type: vless
-  server: sg4.oh-node.com
-  port: 443
-  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
   tls: true
-  servername: www.changiairport.com
+  servername: buylite.music.apple.com
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
-    short-id: 1dd8558159ecd0
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
   network: tcp
+- name: 🇸🇬SG_1|555KB/s
+  type: vless
+  server: centurylink.es
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+    path: /
