@@ -1,14 +1,35 @@
 proxies:
-- name: 🇺🇸US_1|1.0MB/s
-  type: ss
-  server: 54.234.217.115
+- name: 🇬🇧GB_1|2.0MB/s
+  type: vless
+  server: 13.135.17.74
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  skip-cert-verify: false
+  network: tcp
+- name: 🇷🇺RU_1|1.9MB/s
+  type: vless
+  server: 78.159.246.179
+  port: 2053
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
+  tls: true
+  servername: randomquaint.net
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  - h2
+  skip-cert-verify: false
+  network: tcp
+- name: 🇦🇹AT_1|1.4MB/s
+  type: vless
+  server: api.mediakaskad.cc
   port: 443
-  cipher: auto
-  password: amazonskr05
-- name: 🇱🇻LV_1|2.0MB/s
-  type: hysteria2
-  server: 91.240.86.70
-  port: 24443
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  servername: hy.quattro-tech.ru
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  tls: true
+  servername: api.mediakaskad.cc
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  network: tcp
