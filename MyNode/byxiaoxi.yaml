@@ -1,33 +1,21 @@
 proxies:
-- name: 🇬🇧GB_1|2.0MB/s
+- name: 🇬🇧GB_1|685KB/s
+  type: anytls
+  server: gb2.xiaoliyu.cyou
+  port: 4430
+  password: 5b4f91fa-e64f-4af0-a5c2-b27ac8b52939
+  skip-cert-verify: true
+  sni: gb2.xiaoliyu.cyou
+  servername: gb2.xiaoliyu.cyou
+- name: 🇺🇸US_5|1.1MB/s
   type: vless
-  server: 13.135.17.74
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  skip-cert-verify: false
-  network: tcp
-- name: 🇷🇺RU_1|1.9MB/s
-  type: vless
-  server: 78.159.246.179
-  port: 2053
-  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
-  tls: true
-  servername: randomquaint.net
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  - h2
-  skip-cert-verify: false
-  network: tcp
-- name: 🇦🇹AT_1|1.4MB/s
-  type: vless
-  server: api.mediakaskad.cc
+  server: api.videobereg.cc
   port: 443
   uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
   tls: true
-  servername: api.mediakaskad.cc
+  servername: api.videobereg.cc
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: qq
   skip-cert-verify: false
   reality-opts:
     public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
