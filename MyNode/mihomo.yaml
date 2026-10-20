@@ -1,52 +1,73 @@
 proxies:
-  - name: "\U0001F1EC\U0001F1E7GB_1|1.8MB/s"
-    port: 1080
-    server: 57.129.182.181
-    skip-cert-verify: false
-    type: socks5
-  - name: "\U0001F1FA\U0001F1F8US_1|1.6MB/s"
-    port: 40001
-    server: 104.219.55.50
-    skip-cert-verify: false
-    tls: false
-    type: http
-  - name: "\U0001F1F3\U0001F1F1NL_1|521KB/s"
-    password: 'null'
-    port: 443
-    server: 157.22.183.72
-    skip-cert-verify: false
-    tls: true
-    type: http
-    username: 'null'
-  - name: "\U0001F1E9\U0001F1EADE_1|1.6MB/s"
-    port: 443
-    server: 87.249.132.97
+  - delay: 2991
+    name: "\U0001F1E9\U0001F1EADE_1|1.4MB/s"
+    port: 9002
+    server: 158.173.154.3
     skip-cert-verify: true
     tls: true
     type: http
-  - client-fingerprint: chrome
-    name: "\U0001F1F8\U0001F1ECSG_1|2.8MB/s"
-    network: ws
-    port: 443
-    server: 178.93.160.236
+  - delay: 1081
+    name: "\U0001F1E9\U0001F1EADE_2|1.5MB/s"
+    port: 9002
+    server: 158.173.154.2
+    skip-cert-verify: true
     tls: true
-    type: vless
-    udp: true
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    ws-opts:
-      headers:
-        Host: snip.edgeoneai.cc.cd
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
-          wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
-          Chrome/62.0.3202.84 Mobile Safari/537.36
-      path: /fp=chrome
-    xudp: true
-    servername: snip.edgeoneai.cc.cd
-  - name: ❓Other_1|2.9MB/s
-    port: 9090
-    server: 128.199.121.61
     type: http
+  - delay: 1709
+    name: "\U0001F1EB\U0001F1F7FR_1|1.2MB/s"
+    port: 443
+    server: 82.65.162.76
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - delay: 2056
+    name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
+    port: 9002
+    server: 84.17.47.146
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - delay: 2408
+    name: "\U0001F1F3\U0001F1F1NL_2|1.1MB/s"
+    port: 9002
+    server: 84.17.47.147
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - delay: 1726
+    name: "\U0001F1F3\U0001F1F1NL_3|1.3MB/s"
+    port: 9002
+    server: 84.17.47.150
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - delay: 2164
+    name: "\U0001F1F7\U0001F1F4RO_1|2.2MB/s"
+    port: 9002
+    server: 193.176.84.27
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - delay: 2117
+    name: "\U0001F1FA\U0001F1F8US_1|2.2MB/s"
+    password: None
+    port: 9002
+    server: 138.199.35.209
+    skip-cert-verify: true
+    tls: true
+    type: http
+  - cipher: chacha20-ietf-poly1305
+    country: "\U0001F1F9\U0001F1FCTW"
+    delay: 610
+    name: "\U0001F1F9\U0001F1FCTW_1|540KB/s"
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: "(Telegram\U0001F1E8\U0001F1F3 @WangCai2)5337fad:11915"
+      mode: tls
+    port: 2377
+    server: 60.249.14.95
+    type: ss
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
