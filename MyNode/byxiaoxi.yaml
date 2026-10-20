@@ -1,11 +1,56 @@
 proxies:
-- name: 🇹🇼TW_1|1.1MB/s
-  type: ss
-  server: 60.249.14.95
-  port: 2377
-  cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: (Telegram🇨🇳 @WangCai2)5337fad:11915
+- name: 🇩🇪DE_1|1.9MB/s
+  type: vless
+  server: 188.114.98.0
+  port: 2053
+  uuid: 3ee10440-225e-4cbc-83ed-3c80b90bcb07
+  tls: true
+  servername: ovh-gr1.mahkhorshidi.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: ovh-gr1.mahkhorshidi.ir
+    path: /movies/12345
+- name: 🇳🇱NL_1|592KB/s
+  type: trojan
+  server: 188.114.97.3
+  port: 443
+  password: humanity
+  sni: www.pleadcourt.org
+  network: ws
+  fingerprint: unsafe
+  ws-opts:
+    path: /assignment
+  servername: www.pleadcourt.org
+- name: 🇫🇮FI_1|1.6MB/s
+  type: vless
+  server: 2.56.175.179
+  port: 9443
+  uuid: 8179d7cc-82bc-4eae-a97f-5d30c6c2a812
+  tls: true
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg
+    short-id: 6ba7b810
+  network: grpc
+- name: 🇳🇱NL_2|1.9MB/s
+  type: trojan
+  server: 188.114.97.3
+  port: 443
+  password: humanity
+  sni: www.volumeroot.com
+  network: ws
+  alpn:
+  - http/1.1
+  fingerprint: unsafe
+  ws-opts:
+    path: /assignment
+  servername: www.volumeroot.com
