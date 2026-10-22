@@ -1,42 +1,13 @@
 proxies:
-- name: 🇳🇱NL_1|2.4MB/s
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  cipher: auto
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  tls: false
-  alterId: 2
-- name: 🇳🇱NL_2|2.7MB/s
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  cipher: auto
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  tls: false
-  alterId: 2
-- name: 🇫🇮FI_2|1.0MB/s
+- name: 🇹🇷TR_1|1.1MB/s
   type: vless
-  server: 212.87.222.10
+  server: 177.3.208.65
   port: 443
-  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   tls: true
-  servername: www.nokia.com
-  client-fingerprint: random
+  servername: tgmansion.site
+  client-fingerprint: firefox
   skip-cert-verify: false
-  reality-opts:
-    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
-  network: tcp
-- name: 🇩🇪DE_6|1.0MB/s
-  type: vless
-  server: 193.223.107.107
-  port: 1932
-  uuid: b8f083b6-ae01-431f-9b41-9e2eb96f352b
-  tls: true
-  servername: www.vk.com
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  skip-cert-verify: false
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /vless-tr
