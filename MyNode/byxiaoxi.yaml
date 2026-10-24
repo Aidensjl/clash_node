@@ -1,18 +1,7 @@
 proxies:
-- name: 🇺🇸US_1|662KB/s
+- name: 🇺🇸US_1|710KB/s
   type: vless
-  server: 92.53.189.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime19.workers.dev
-    path: /
-- name: 🇺🇸US_2|1.8MB/s
-  type: vless
-  server: 89.116.180.40
+  server: 139.64.235.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   skip-cert-verify: false
@@ -20,8 +9,37 @@ proxies:
   ws-opts:
     headers:
       Host: vms.lifetime09.workers.dev
-    path: /?ed=2560
-- name: 🇺🇸US_3|899KB/s
+    path: /
+- name: 🇺🇸US_2|576KB/s
+  type: vless
+  server: 104.18.1.1
+  port: 2087
+  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
+  tls: true
+  servername: 1.proxy2.us.ci.
+  client-fingerprint: ios
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: 1.proxy2.us.ci.
+    path: /
+- name: 🇺🇸US_3|698KB/s
+  type: vless
+  server: 89.116.180.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime09.workers.dev
+    path: /
+- name: 🇺🇸US_4|593KB/s
   type: vless
   server: 185.162.229.50
   port: 8880
@@ -32,51 +50,7 @@ proxies:
     headers:
       Host: vms.lifetime61.workers.dev
     path: /
-- name: 🇺🇸US_4|1.1MB/s
-  type: vless
-  server: 45.194.53.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime19.workers.dev
-    path: /?ed=2560
-- name: 🇺🇸US_5|723KB/s
-  type: vless
-  server: 45.80.110.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime51.workers.dev
-    path: /
-- name: 🇺🇸US_6|599KB/s
-  type: vless
-  server: 108.165.152.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime61.workers.dev
-    path: /
-- name: 🇺🇸US_7|2.3MB/s
-  type: vless
-  server: 185.193.30.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime09.workers.dev
-    path: /
-- name: 🇺🇸US_8|594KB/s
+- name: 🇺🇸US_5|697KB/s
   type: vless
   server: 185.162.229.40
   port: 8880
@@ -86,4 +60,29 @@ proxies:
   ws-opts:
     headers:
       Host: vms.lifetime61.workers.dev
-    path: /?ed=2560
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+- name: 🇺🇸US_6|583KB/s
+  type: vless
+  server: 185.148.107.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime55.workers.dev
+    path: /
+- name: 🇺🇸US_7|544KB/s
+  type: vless
+  server: 128.203.252.97
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: cf-1rm.pages.dev
+    path: /
