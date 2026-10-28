@@ -1,14 +1,120 @@
 proxies:
-- name: 🇫🇷FR_1|572KB/s
-  type: hysteria
-  server: 62.210.70.191
-  port: 24667
+- name: 🇭🇰HK_1|785KB/s
+  type: anytls
+  server: 56481.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
   alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  protocol: udp
+  - http/1.1
   skip-cert-verify: true
-  up: 11 Mbps
-  sni: bing.com
-  servername: bing.com
+  sni: images.ctfassets.net
+  client-fingerprint: chrome
+  servername: images.ctfassets.net
+- name: 🇺🇸US_1|514KB/s
+  type: vless
+  server: 155.117.232.61
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  tls: true
+  servername: node-usa.blok-signalon.top
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
+    short-id: 336c2cff6e3717c4
+  network: tcp
+- name: 🇫🇮FI_1|575KB/s
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  tls: true
+  servername: firefox.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+- name: 🇪🇪EE_1|570KB/s
+  type: vless
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  network: tcp
+- name: 🇺🇸US_2|630KB/s
+  type: vless
+  server: node-usa.blok-signalon.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  tls: true
+  servername: node-usa.blok-signalon.top
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
+    short-id: 336c2cff6e3717c4
+  network: tcp
+- name: 🇪🇪EE_2|525KB/s
+  type: vless
+  server: 31.76.70.90
+  port: 443
+  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  tls: true
+  servername: 597dad6b.con.fernarchive.online
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇩🇪DE_1|669KB/s
+  type: vless
+  server: 144.31.217.28
+  port: 443
+  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  tls: true
+  servername: 9187bd6f.con.fernarchive.online
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇫🇮FI_2|548KB/s
+  type: vless
+  server: 823bcb90.con.fernarchive.online
+  port: 443
+  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  tls: true
+  servername: 823bcb90.con.fernarchive.online
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇬🇧GB_1|773KB/s
+  type: vless
+  server: ru3.radiolumens.uk
+  port: 8444
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru3.radiolumens.uk
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: grpc
+- name: 🇫🇷FR_1|766KB/s
+  type: hysteria2
+  server: fr2-cl3.happy-glonaris.top
+  port: 443
+  password: 4b1be712-774c-4b65-8491-a3339e124a70
+  skip-cert-verify: true
+  sni: fr2-cl3.happy-glonaris.top
+  servername: fr2-cl3.happy-glonaris.top
