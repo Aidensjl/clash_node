@@ -71,13 +71,30 @@ proxies:
   port: 18443
   cipher: aes-256-gcm
   password: P
-- name: 🇨🇳 中国 广东省市+华为云
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  skip-cert-verify: false
-  network: tcp
+- name: 新西兰
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 CloudFlare节点
+  type: trojan
+  server: 172.67.203.46
+  port: 443
+  password: humanity
+  sni: www.cordweave.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: www.cordweave.com
+    path: /assignment
+  servername: www.cordweave.com
+- name: 新西兰
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 哈萨克斯坦
   type: vless
   server: 95.56.251.12
@@ -92,45 +109,9 @@ proxies:
     public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
     short-id: ae97223a8f799877
   network: tcp
-- name: 新西兰
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 CloudFlare节点
-  type: trojan
-  server: 172.67.203.46
-  port: 443
-  password: humanity
-  sni: www.cordweave.com
-  network: ws
-  ws-opts:
-    path: /assignment
-  servername: www.cordweave.com
-- name: 新西兰
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 Xerox
-  type: vless
-  server: s12.bsh-net.ru
-  port: 443
-  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
-  tls: true
-  servername: s12.bsh-net.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
-    short-id: 51079f144d661484
-  network: tcp
 - name: 🇺🇸 美国 CloudFlare节点
   type: vless
-  server: 104.20.6.134
+  server: 104.20.5.134
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   servername: hhlfy.twiladaphne.ndjp.net
@@ -140,21 +121,25 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
     path: /sg-melbi
-- name: 🇭🇰 香港 智利
+- name: 新西兰
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 新西兰
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇳 中国 广东省市+华为云
   type: vless
-  server: 152.175.6.229
-  port: 31884
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   skip-cert-verify: false
   network: tcp
-- name: 🇺🇸 美国 21
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
 - name: 更新于 1101 04:20 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -298,7 +283,7 @@ proxies:
   uuid: 0069c10a-a224-49c5-8613-4cec5bb9e33d
   tls: false
   alterId: 0
-- name: 🇺🇸 美国 36
+- name: 🇺🇸 美国 35
   type: vmess
   server: v2ray1.dozapp.xyz
   port: 8443
@@ -1058,7 +1043,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 台湾 105
+- name: 🇹🇼 台湾 104
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -2438,7 +2423,7 @@ proxies:
   obfs: salamander
   obfs-password: dzcb7hv6i2kx2zze
   servername: cdn77.dmtr.ru
-- name: Free_Node_237
+- name: Free_Node_236
   type: hysteria2
   server: 31.76.80.69
   port: 443
@@ -2498,7 +2483,7 @@ proxies:
   obfs: salamander
   obfs-password: SalamanderNL2026
   servername: nl.nobelchat.ru
-- name: 🇩🇪 德国 244
+- name: 🇩🇪 德国 243
   type: hysteria2
   server: vpnje
   port: 443
@@ -5062,21 +5047,9 @@ proxies:
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 'www.v2s.com] IT1602... #4'
+- name: 'www.v2s.com] IT1602... #5'
   type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 'www.v2s.com] IT1602... #6'
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 6
-  type: ss
-  server: 202.50.253.81
+  server: 202.50.253.45
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -5104,6 +5077,12 @@ proxies:
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
+- name: 🇯🇵 日本 www.v2s.com] 1599
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
 - name: 🇯🇵 日本 www.v2s.com] 1544
   type: ss
   server: 84.247.155.196
@@ -5462,7 +5441,7 @@ proxies:
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇭🇰 香港 550
+- name: 🇭🇰 香港 548
   type: vmess
   server: v10.hdacd.com
   port: 30807
@@ -5526,7 +5505,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: syJ2gGUgMwBwQwQx.v.3dns.vip
-- name: 🇯🇵 日本 555
+- name: 🇯🇵 日本 553
   type: vmess
   server: Z9FfBx3zs2q5O0BG.v.3dns.vip
   port: 443
@@ -5568,7 +5547,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: kneNaKHeSXnZH259.v.3dns.vip
-- name: 🇸🇬 新加坡 558
+- name: 🇸🇬 新加坡 556
   type: vmess
   server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   port: 443
@@ -5596,7 +5575,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
-- name: 🇰🇷 韩国 560
+- name: 🇰🇷 韩国 558
   type: vmess
   server: 8nTzyR5KNivfabaT.v.3dns.vip
   port: 443
@@ -5610,7 +5589,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 8nTzyR5KNivfabaT.v.3dns.vip
-- name: 🇺🇸 美国 561
+- name: 🇺🇸 美国 559
   type: vmess
   server: 53vXOVarmgcreAsv.v.3dns.vip
   port: 443
@@ -5673,14 +5652,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇸🇬 新加坡 568
+- name: 🇸🇬 新加坡 566
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 10135
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇺🇸 美国 569
+- name: 🇺🇸 美国 567
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 10155
@@ -5694,14 +5673,14 @@ proxies:
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇹🇼 台湾 571
+- name: 🇹🇼 台湾 569
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 12142
   password: AA885B42-133C-3828-FB69-E45105C06092
   sni: m.ctrip.com
   servername: m.ctrip.com
-- name: 🇰🇷 韩国 572
+- name: 🇰🇷 韩国 570
   type: trojan
   server: 63182sh8-4d7b.aws-agent.net
   port: 11171
@@ -5854,7 +5833,7 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   servername: www.bing.com
-- name: 🇳🇱 荷兰 590
+- name: 🇳🇱 荷兰 588
   type: trojan
   server: 179.255.99.31
   port: 443
@@ -6753,13 +6732,13 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇺🇸 美国 36
+- name: 🇺🇸 美国 35
   type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
   client-fingerprint: chrome
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: 🇺🇸 美国 37
   type: vless
