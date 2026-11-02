@@ -1,16 +1,11 @@
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇫🇮FI_1|731KB/s
-  obfs: ''
-  obfs-password: ''
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  port: '443'
-  server: 217.60.73.56
+- name: 🇭🇰HK_1|603KB/s
+  password: admin
+  port: 8899
+  server: 47.242.19.215
   skip-cert-verify: true
-  sni: forshynewh.duckdns.org
-  type: hysteria2
-  up: ''
+  type: socks5
+  username: admin
 - name: 🇫🇮FI_1|731KB/s
   type: hysteria2
   server: 217.60.73.56
@@ -119,89 +114,111 @@ proxies:
   port: 18443
   cipher: aes-256-gcm
   password: P
+- name: 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT股份有限公司
+  type: trojan
+  server: ph001.zestapp778.com
+  port: 46298
+  password: 5t6i121em5lkmsmk
+  fingerprint: chrome
+  sni: ph001.zestapp778.com
+  network: tcp
+  servername: ph001.zestapp778.com
 - name: 🇺🇸 美国 CloudFlare节点
   type: vless
-  server: 172.67.68.157
+  server: 104.20.6.134
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  servername: hhlfy.twiladaphne.ndjp.net
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
     path: /sg-melbi
-- name: 🇺🇸 美国 瑞典
-  type: trojan
-  server: 167.88.61.198
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
-  servername: cdn.browseseniorrolesandenhanceyourcareertoday.com
-- name: 🇳🇱 荷兰 15
+- name: 巴西
+  type: hysteria2
+  server: fl3.nexfile.net
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
+  servername: fl3.nexfile.net
+- name: 🇭🇰 香港 智利
   type: vless
-  server: 188.164.248.110
-  port: 443
-  uuid: 13134515-adc7-404b-8d2a-f9ad99e8dcbd
+  server: 152.175.6.229
+  port: 31884
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  servername: imanvipreserved.pages.dev
+  servername: hk010.zestapp778.com
   skip-cert-verify: false
-  network: ws
-- name: 🇺🇸 美国 CloudFlare节点
+  network: tcp
+- name: 🇬🇧 英国 17
   type: vless
-  server: 104.21.94.161
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 31.77.13.22
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   tls: true
-  servername: ccc.010304.xyz
+  servername: rusbid.de
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  network: tcp
+- name: 🇲🇾 马来西亚 新西兰
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 巴西圣保罗+CloudFlare节点
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
-    path: /
-- name: 新西兰
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇷🇺 俄罗斯 巴西+圣保罗
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+- name: 🇩🇪 德国 以色列
   type: vless
-  server: 200.169.184.168
-  port: 443
-  uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
+  server: de15.h1cloud.net
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
   tls: true
-  servername: net.formatgo.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  servername: www.chip.de
+  client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: QnaizqXrXA0e4XihP_5Nf1z1aOOf0obBoyJ8QY_03kw
-    short-id: 9d0e1b6bf9c5eddb
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+    short-id: 23732d14a527990d
   network: tcp
-- name: 伊朗
-  type: hysteria2
-  server: forshynewh.duckdns.org
+- name: 🇩🇪 德国 GHOSTnet+GmbH
+  type: vless
+  server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
+  port: 20065
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  tls: true
+  servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  network: tcp
+- name: 🇷🇺 俄罗斯 23
+  type: vless
+  server: vivozim.vyvoz-musora.cc
   port: 443
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  servername: forshynewh.duckdns.org
-- name: 🇺🇸 美国 Xerox
-  type: hysteria2
-  server: 13.143.188.143
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  skip-cert-verify: true
-  sni: bl1.nexfile.net
-  servername: bl1.nexfile.net
-- name: 🇺🇸 美国 21
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
+  uuid: a0052f4f-4c63-485a-a16f-ab2d5d718cd3
+  tls: true
+  servername: vivozim.vyvoz-musora.cc
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: vivozim.vyvoz-musora.cc
+    path: /e8ws
 - name: 更新于 1102 14:19 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -270,7 +287,7 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇺🇸 美国 30
+- name: 🇺🇸 美国 31
   type: vmess
   server: 165.140.217.139
   port: 443
@@ -289,7 +306,7 @@ proxies:
   network: ws
   ws-opts:
     path: /?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
-- name: 🇭🇰 香港 32
+- name: 🇭🇰 香港 33
   type: vmess
   server: 366-1095.rabbitpro-in-3.com
   port: 29009
@@ -612,7 +629,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 台湾 62
+- name: 🇹🇼 台湾 63
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -2492,7 +2509,7 @@ proxies:
   password: 63e1b9462d708b56d5d5a0267cffecdc
   sni: promo3.goonars.com
   servername: promo3.goonars.com
-- name: Free_Node_242
+- name: Free_Node_243
   type: hysteria2
   server: 31.76.80.69
   port: 443
@@ -2567,7 +2584,7 @@ proxies:
   obfs: salamander
   obfs-password: SalamanderNL2026
   servername: nl.nobelchat.ru
-- name: 🇩🇪 德国 251
+- name: 🇩🇪 德国 252
   type: hysteria2
   server: vpnje
   port: 443
@@ -3059,17 +3076,6 @@ proxies:
   servername: udemy.com
   flow: xtls-rprx-vision
   client-fingerprint: ios
-  skip-cert-verify: false
-  network: tcp
-- name: '🇳🇱 荷兰 捷克 CZE #1'
-  type: vless
-  server: 31.77.13.22
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  tls: true
-  servername: rusbid.de
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
 - name: CZ31.0MB/s
@@ -3641,14 +3647,6 @@ proxies:
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
-- name: 🇭🇰 香港 www.v2s.com] 1
-  type: vless
-  server: 152.175.6.229
-  port: 31884
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
   skip-cert-verify: false
   network: tcp
 - name: '🇭🇰 香港 www.v2s.com] 1... #1'
@@ -5047,9 +5045,9 @@ proxies:
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '意大利 ITA #5'
+- name: '意大利 ITA #1'
   type: ss
-  server: 202.50.253.99
+  server: 202.50.253.45
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -5089,6 +5087,12 @@ proxies:
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
+- name: 🇯🇵 日本 www.v2s.com] 1599
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
 - name: 🇯🇵 日本 www.v2s.com] 1544
   type: ss
   server: 84.247.155.196
@@ -5493,6 +5497,13 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
   servername: learn.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: '🇺🇸 美国 www.v2s.com] ... #9'
+  type: trojan
+  server: 167.88.61.198
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
+  servername: cdn.browseseniorrolesandenhanceyourcareertoday.com
 - name: '🇺🇸 美国 www.v2s.com] ... #13'
   type: trojan
   server: 170.101.101.131
@@ -5658,12 +5669,12 @@ proxies:
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   sni: cm.g.doubleclick.net
   servername: cm.g.doubleclick.net
-- name: 🇺🇸 美国 611
+- name: 🇺🇸 美国 613
   type: socks5
   server: 69.55.49.177
   port: 38182
   password: None
-- name: '614'
+- name: '616'
   type: socks5
   server: 176.124.206.150
   port: 8443
@@ -5673,7 +5684,7 @@ proxies:
   port: 443
   cipher: auto
   password: amazonskr05
-- name: 🇺🇸 美国 658
+- name: 🇺🇸 美国 660
   type: socks5
   server: 104.168.249.36
   port: 1080
@@ -5716,7 +5727,7 @@ proxies:
   client-fingerprint: firefox
   skip-cert-verify: false
   network: tcp
-- name: '663'
+- name: '665'
   type: http
   server: 147.161.246.36
   port: 11703
@@ -5952,7 +5963,7 @@ proxies:
   port: 33336
   protocol: auth_chain_a
   cipher: auto
-  obfs: tls1.2_ticket_authZG9uZ3RhaXdhbmcuY29tremarks=OEotSHNfQ2ZoN0VnNkkyMzVZV3dJSHdnVGt4RQ==&obfsparam=&protoparam=&group=VTFOU1VISnZkbWxrWlhJ#686
+  obfs: tls1.2_ticket_authZG9uZ3RhaXdhbmcuY29tremarks=OEotSHNfQ2ZoN0VnNkkyMzVZV3dJSHdnVGt4RQ==&obfsparam=&protoparam=&group=VTFOU1VISnZkbWxrWlhJ#688
 - name: 🇳🇱 荷兰 1
   type: vless
   server: 91.185.83.44
@@ -6034,7 +6045,7 @@ proxies:
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   sni: cm.g.doubleclick.net
   servername: cm.g.doubleclick.net
-- name: 🇹🇭 泰国 694
+- name: 🇹🇭 泰国 696
   type: hysteria2
   server: 13.212.72.174
   port: 10000
@@ -6201,7 +6212,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇻🇳 越南 709
+- name: 🇻🇳 越南 711
   type: hysteria2
   server: ufcaxsoooxez3p6h.5273ef7a.e.yuetong.online
   port: 443
