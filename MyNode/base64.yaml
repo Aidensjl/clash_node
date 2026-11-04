@@ -1,8 +1,14 @@
 proxies:
-- name: 🇵🇱PL_1|573KB/s
-  type: hysteria2
-  server: 13.143.189.147
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
-  servername: pl2.nexfile.net
+- name: 🇩🇪DE_1|518KB/s
+  type: vless
+  server: 193.160.208.240
+  port: 443
+  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
+  tls: true
+  servername: 193.160.208.240
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: false
+  network: tcp
