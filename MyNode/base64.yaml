@@ -1,123 +1,83 @@
 proxies:
-- name: 🇮🇹IT_1|2.2MB/s
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_2|1.6MB/s
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_3|1.8MB/s
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_4|2.2MB/s
+- name: 🇮🇹IT_1|1.6MB/s
   type: ss
   server: 202.50.253.90
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_5|2.2MB/s
+- name: 🇮🇹IT_2|1.4MB/s
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹IT_3|1.6MB/s
   type: ss
   server: 202.50.253.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇷🇺RU_1|637KB/s
+- name: 🇮🇹IT_4|1.6MB/s
   type: ss
-  server: 46.17.47.58
-  port: 18443
+  server: 202.50.253.54
+  port: 19999
   cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇳🇱NL_1|1.1MB/s
-  type: ssr
-  server: 109.104.153.43
-  port: 33336
-  protocol: auth_chain_a
-  cipher: auto
-  obfs: tls1.2_ticket_auth
-  password: dongtaiwang.com
-- name: 🇫🇷FR_1|1.6MB/s
-  type: hysteria
-  server: 62.210.28.175
-  port: 24667
-  alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  protocol: udp
-  skip-cert-verify: true
-  up: 11 Mbps
-  sni: bing.com
-  servername: bing.com
-- name: 🇷🇺RU_2|1.3MB/s
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹IT_5|1.6MB/s
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹IT_6|1.6MB/s
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹IT_7|1.2MB/s
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹IT_8|1.1MB/s
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪DE_2|629KB/s
   type: vless
-  server: xsru1.ddnsfree.com
+  server: 188.130.154.204
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
   tls: true
-  servername: xsru1.ddnsfree.com
-  client-fingerprint: random
-  skip-cert-verify: false
-  network: grpc
-- name: 🇸🇬SG_2|2.3MB/s
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
+  servername: cdn2.zovip2.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   skip-cert-verify: false
   network: ws
   ws-opts:
     headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
-- name: 🇳🇱NL_2|927KB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '1000'
-  protocol: udp
-  skip-cert-verify: true
-  up: '500'
-  sni: apple.com
-  servername: apple.com
-- name: 🇳🇱NL_3|855KB/s
+      Host: cdn2.zovip2.ir
+    path: /api/v3/pulse
+- name: 🇫🇮FI_1|990KB/s
   type: vless
-  server: 201.34.142.108
+  server: fi-edge.gacvpn.site
   port: 443
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
   tls: true
-  servername: 201.34.142.108
+  servername: fi3-edge.gacvpn.site
+  flow: xtls-rprx-vision
   client-fingerprint: firefox
   skip-cert-verify: false
+  reality-opts:
+    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
+    short-id: c59bb8af70d9db1e
   network: tcp
-- name: 🇷🇺RU_3|1.7MB/s
-  type: vless
-  server: xsru2.freeddns.org
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru2.freeddns.org
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: xsru2.freeddns.org
-    path: /wsru
-- name: 🇨🇭CH_1|532KB/s
+- name: 🇨🇭CH_1|882KB/s
   type: vless
   server: prvtch.titun.su
   port: 443
@@ -131,40 +91,15 @@ proxies:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
   network: tcp
-- name: 🇳🇱NL_5|2.1MB/s
+- name: 🇵🇱PL_1|2.8MB/s
   type: vless
-  server: 5d0319t.nl7.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  server: pl-b1.golangwikito.cfd
+  port: 61374
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   tls: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  network: tcp
-- name: 🇨🇭CH_2|1.5MB/s
-  type: vless
-  server: 179.43.166.190
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  tls: true
-  servername: perevodchiki.su
-  flow: xtls-rprx-vision
+  servername: pl-b1.golangwikito.cfd
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
+    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
   network: tcp
-- name: 🇷🇺RU_4|893KB/s
-  type: vless
-  server: xssite.webredirect.org
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: grpc
