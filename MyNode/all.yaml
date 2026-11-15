@@ -1,233 +1,858 @@
 proxies:
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_1|1020KB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.72
-      type: ss
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1F3\U0001F1F1NL_1|599KB/s"
+      network: tcp
+      port: 443
+      server: base.hosamobenl.co.uk
+      servername: base.hosamobenl.co.uk
+      tls: true
+      type: vless
       udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_2|1.6MB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.63
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_3|1.6MB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.18
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_4|1.6MB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.27
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_5|670KB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.90
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_6|911KB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.54
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_7|1.6MB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.36
-      type: ss
-      udp: true
+      uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+      ws-opts:
+        headers:
+            Host: base.hosamobenl.co.uk
+        path: /
     - client-fingerprint: firefox
       grpc-opts:
+        grpc-mode: gun
         grpc-service-name: mobile.api.Event
-      name: "\U0001F1F7\U0001F1FARU_1|2.4MB/s"
+      name: "\U0001F1F7\U0001F1FARU_1|1.6MB/s"
       network: grpc
-      port: "443"
+      port: 443
       server: 201.24.116.192
       servername: vps3.nemnogogo.com
       tls: true
       type: vless
       udp: true
       uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-      xudp: true
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1F5\U0001F1F1PL_1|3.0MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-      port: "4444"
-      server: bl1.nexfile.net
-      skip-cert-verify: false
-      sni: bl1.nexfile.net
-      type: hysteria2
-      up: ""
     - alpn:
         - h2
-      client-fingerprint: firefox
-      grpc-opts:
-        grpc-service-name: glush.de3.v1
-      name: "\U0001F1E9\U0001F1EADE_1|704KB/s"
-      network: grpc
-      port: "443"
-      server: luminexorizon.ink
-      servername: luminexorizon.ink
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1E7\U0001F1ECBG_1|1.3MB/s"
+      network: xhttp
+      port: 8443
+      server: earlytrain.net
+      servername: earlytrain.net
       tls: true
       type: vless
       udp: true
-      uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+      uuid: 37af0181-5598-4aad-a040-d926bcb65757
+      xhttp-opts:
+        host: earlytrain.net
+        mode: auto
+        path: /api/v1/upload
+        reuse-settings:
+            c-max-reuse-times: 64-128
+            max-concurrency: 16-32
+            max-connections: "0"
+        sc-max-each-post-bytes: 1000000
+        sc-min-posts-interval-ms: 30
+        x-padding-bytes: 100-1000
       xudp: true
+    - name: "\U0001F1E8\U0001F1EDCH_1|1.3MB/s"
+      port: 443
+      server: 31.7.62.50
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E9\U0001F1EADE_1|569KB/s"
+      port: 9002
+      server: 158.173.154.5
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_2|1.7MB/s"
+      port: 19362
+      server: 51.159.225.197
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_3|681KB/s"
+      password: "null"
+      port: 23856
+      server: 51.159.225.196
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+    - name: "\U0001F1F3\U0001F1F1NL_4|1012KB/s"
+      port: 23856
+      server: 51.159.225.196
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_5|1.5MB/s"
+      password: None
+      port: 9002
+      server: 84.17.47.148
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_6|1.2MB/s"
+      password: None
+      port: 9002
+      server: 84.17.47.149
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_7|2.0MB/s"
+      port: 443
+      server: 149.36.51.129
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1ED\U0001F1FAHU_1|926KB/s"
+      port: 443
+      server: 146.70.203.18
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F7\U0001F1F4RO_1|1.2MB/s"
+      port: 9002
+      server: 193.176.84.26
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+    - name: "\U0001F1F3\U0001F1F1NL_8|1.5MB/s|P002-260618"
+      password: None
+      port: 9443
+      server: 149.36.51.157
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_9|1.5MB/s|P002-260618"
+      password: None
+      port: 9002
+      server: 84.17.47.126
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E8\U0001F1FFCZ_1|965KB/s"
+      port: 443
+      server: 185.216.35.66
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EB\U0001F1F7FR_1|1.6MB/s|K001-260618"
+      password: None
+      port: 443
+      server: 82.66.235.221
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F8\U0001F1EASE_1|945KB/s|R002-260618"
+      port: 9443
+      server: 146.70.242.146
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EB\U0001F1F7FR_2|2.1MB/s"
+      password: "null"
+      port: 6103
+      server: 87.98.174.157
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: "null"
+    - name: "\U0001F1E9\U0001F1EADE_2|1.2MB/s|R002-260618"
+      port: 9002
+      server: 158.173.154.2
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EA\U0001F1E8EC_1|1.1MB/s"
+      port: 9443
+      server: 38.165.231.71
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E7\U0001F1ECBG_2|1.8MB/s|R002-260618"
+      password: None
+      port: 443
+      server: 185.94.192.210
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
     - alpn:
         - h2
+        - http/1.1
       client-fingerprint: firefox
-      grpc-opts:
-        grpc-service-name: mobile.api.Event
-      name: "\U0001F1F7\U0001F1FARU_2|2.4MB/s"
-      network: grpc
-      port: "443"
-      server: 201.51.12.98
-      servername: vps3.nemnogogo.com
+      encryption: none
+      name: "\U0001F1E7\U0001F1ECBG_3|993KB/s"
+      network: xhttp
+      port: 8443
+      server: 46.243.232.178
+      servername: earlytrain.net
       tls: true
       type: vless
       udp: true
-      uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+      uuid: 37af0181-5598-4aad-a040-d926bcb65757
+      xhttp-opts:
+        host: earlytrain.net
+        mode: auto
+        path: /api/v1/upload
+        reuse-settings:
+            c-max-reuse-times: 64-128
+            h-keep-alive-period: 0
+            h-max-request-times: "0"
+            h-max-reusable-secs: "0"
+            max-concurrency: 16-32
+            max-connections: "0"
+        session-length: "0"
+        x-padding-bytes: 100-1000
+        x-padding-obfs-mode: false
       xudp: true
+    - name: "\U0001F1ED\U0001F1F0HK_1|3.4MB/s"
+      port: 3128
+      server: 119.12.161.248
+      skip-cert-verify: true
+      type: http
+    - name: "\U0001F1F8\U0001F1ECSG_1|3.0MB/s"
+      password: None
+      port: 9090
+      server: 152.42.170.187
+      skip-cert-verify: true
+      type: http
+    - name: "\U0001F1F0\U0001F1F7KR_1|768KB/s"
+      port: 80
+      server: 211.188.55.218
+      skip-cert-verify: true
+      type: http
+    - name: "\U0001F1F0\U0001F1F7KR_2|3.0MB/s"
+      port: 80
+      server: 211.188.69.153
+      skip-cert-verify: true
+      type: http
     - alpn:
         - h2
       client-fingerprint: firefox
       grpc-opts:
+        grpc-mode: gun
         grpc-service-name: mobile.api.Event
-      name: "\U0001F1F7\U0001F1FARU_3|2.4MB/s"
+      name: "\U0001F1F7\U0001F1FARU_2|2.0MB/s"
       network: grpc
-      port: "443"
+      port: 443
       server: vps3.nemnogogo.com
       servername: vps3.nemnogogo.com
       tls: true
       type: vless
       udp: true
       uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-      xudp: true
-    - fingerprint: ""
-      name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
-      password: 0324fbc29561
-      port: "443"
-      server: sdf65h46wr.df6h451rh.xin
-      skip-cert-verify: true
-      sni: images.ctfassets.net
-      type: anytls
-      udp: true
-      username: 0324fbc29561
-    - client-fingerprint: firefox
-      encryption: none
-      name: "\U0001F1FA\U0001F1F8US_2|2.7MB/s"
-      network: xhttp
-      port: "443"
-      server: 200.102.179.69
-      servername: dmbdnpctq8hjxx.hat.onl
+    - alpn:
+        - h2
+      client-fingerprint: firefox
+      grpc-opts:
+        grpc-mode: gun
+        grpc-service-name: mobile.api.Event
+      name: "\U0001F1F7\U0001F1FARU_3|1.6MB/s"
+      network: grpc
+      port: 443
+      server: 201.51.12.98
+      servername: vps3.nemnogogo.com
       tls: true
       type: vless
       udp: true
-      uuid: 7592ca5c-b352-4562-8856-a9c936a3331b
-      xhttp-opts:
-        host: dmbdnpctq8hjxx.hat.onl
-        mode: auto
-        path: /hls/014373eq/seg
-      xudp: true
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: "55"
-      name: "\U0001F1EB\U0001F1F7FR_1|1.8MB/s"
-      obfs: ""
-      port: "24667"
-      protocol: ""
-      server: 62.210.28.175
+      uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+    - name: "\U0001F1EE\U0001F1EAIE_1|1.6MB/s"
+      port: 443
+      server: 34.249.214.108
       skip-cert-verify: true
-      sni: bing.com
-      type: hysteria
-      up: "11"
-    - alpn:
-        - ""
-      alterId: 0
-      cipher: auto
-      http-opts:
-        headers:
-            Host:
-                - down-cdn.dingtalk.com
-        path:
-            - /QQqun-737805443
-      name: "\U0001F1E9\U0001F1EADE_2|2.2MB/s"
-      network: http
-      port: 52080
-      server: 23.165.200.150
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
-      xudp: true
-    - alpn:
-        - h3
-      auth_str: github.com/Alvin9999-newpac/fanqiang
-      down: "55"
-      name: "\U0001F1FA\U0001F1F8US_3|720KB/s"
-      obfs: ""
-      port: "22335"
-      protocol: ""
-      server: 198.200.57.142
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria
-      up: "11"
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "\U0001F1E6\U0001F1FAAU_1|970KB/s"
-      network: raw
-      port: "54528"
-      reality-opts:
-        public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-        short-id: 54cca3c1c1c7
-      server: zfapi.zalolink.com
-      servername: www.apple.com
       tls: true
-      type: vless
+      type: http
       udp: true
-      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-      xudp: true
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: "20"
-      name: "\U0001F1FA\U0001F1F8US_4|584KB/s"
-      obfs: ""
-      port: "20022"
-      protocol: ""
-      server: 137.175.82.43
+    - name: "\U0001F1F1\U0001F1FBLV_1|1.3MB/s"
+      port: 443
+      server: 185.219.159.15
       skip-cert-verify: true
-      sni: bing.com
-      type: hysteria
-      up: "20"
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: "55"
-      name: "\U0001F1F3\U0001F1F1NL_1|2.2MB/s"
-      obfs: ""
-      port: "26691"
-      protocol: ""
-      server: 5.83.129.143
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F1\U0001F1FBLV_2|1.4MB/s"
+      password: None
+      port: 443
+      server: 185.219.159.16
       skip-cert-verify: true
-      sni: ""
-      type: hysteria
-      up: "11"
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_10|523KB/s"
+      port: 9002
+      server: 84.17.47.125
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_11|557KB/s|R002-260618"
+      password: None
+      port: 9002
+      server: 84.17.47.148
+      skip-cert-verify: true
+      sni: 84.17.47.148
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_2|1.5MB/s|R002-260618"
+      port: 9443
+      server: 135.136.1.2
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_3|586KB/s"
+      port: 9002
+      server: 193.176.84.19
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+    - name: "\U0001F1F7\U0001F1F4RO_4|806KB/s|R002-260618"
+      password: None
+      port: 9002
+      server: 193.176.84.22
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_5|1021KB/s"
+      port: 9002
+      server: 193.176.84.27
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+    - name: "\U0001F1EE\U0001F1EAIE_2|2.0MB/s|R002-260618"
+      port: 443
+      server: 18.200.158.139
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EA\U0001F1F8ES_1|1.6MB/s|R002-260618"
+      port: 443
+      server: 130.195.250.18
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E8\U0001F1EDCH_2|1.6MB/s"
+      password: ""
+      port: 9443
+      server: 149.88.27.46
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_12|1.7MB/s|R002-260618"
+      password: "null"
+      port: 23856
+      server: 51.159.225.196
+      skip-cert-verify: true
+      sni: 51.159.225.196
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_13|1.6MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 51.158.243.91
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EE\U0001F1EAIE_3|648KB/s|P002-260618"
+      password: "null"
+      port: 443
+      server: 18.200.158.139
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F8\U0001F1EASE_2|2.2MB/s|R002-260618"
+      port: 443
+      server: 146.70.242.130
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1ED\U0001F1F0HK_2|1.4MB/s"
+      port: 8443
+      server: 38.76.140.254
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1EB\U0001F1F7FR_3|1.8MB/s|P002-260618"
+      password: None
+      port: 9443
+      server: 138.199.47.247
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1FARU_4|532KB/s|K001-260618"
+      password: "null"
+      port: 8443
+      server: 87.242.85.187
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_14|944KB/s|R002-260618"
+      port: 9002
+      server: 84.17.47.126
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EB\U0001F1F7FR_4|1.9MB/s|P002-260618"
+      password: "null"
+      port: 443
+      server: 82.66.235.221
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_15|1.7MB/s|R002-260618"
+      password: "null"
+      port: 9002
+      server: 84.17.47.150
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_6|1.6MB/s"
+      password: "null"
+      port: 9002
+      server: 193.176.84.26
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: "null"
+    - name: "\U0001F1E9\U0001F1EADE_3|1.9MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 87.106.223.158
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_7|1.1MB/s"
+      port: 9002
+      server: 193.176.84.33
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E9\U0001F1EADE_4|2.0MB/s|R002-260618"
+      port: 443
+      server: 87.106.223.158
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_8|1.1MB/s"
+      password: ""
+      port: 9002
+      server: 193.176.84.16
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_9|1.3MB/s|P002-260618"
+      port: 9002
+      server: 193.176.84.37
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E9\U0001F1EADE_5|1.8MB/s|K001-260618"
+      password: None
+      port: 9002
+      server: 158.173.154.3
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F2\U0001F1FDMX_1|1.3MB/s"
+      password: DJy1T0dt
+      port: 42000
+      server: 144.225.47.8
+      type: socks5
+      username: Tek2x6av
+    - name: "\U0001F1F7\U0001F1F4RO_10|735KB/s"
+      port: 9002
+      server: 193.176.84.35
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EB\U0001F1F7FR_5|1.7MB/s|R002-260618"
+      port: 443
+      server: 82.66.235.221
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_11|1.0MB/s"
+      port: 9002
+      server: 193.176.84.24
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_12|617KB/s|R002-260618"
+      password: "null"
+      port: 9002
+      server: 193.176.84.31
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_13|690KB/s"
+      port: 9002
+      server: 193.176.84.34
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_14|1.8MB/s"
+      password: ""
+      port: 9002
+      server: 193.176.84.27
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_15|1.5MB/s|R002-260618"
+      password: "null"
+      port: 9002
+      server: 193.176.84.22
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1E7\U0001F1EABE_1|1.1MB/s|R002-260618"
+      password: None
+      port: 443
+      server: 146.70.176.242
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_16|2.0MB/s"
+      password: "null"
+      port: 9002
+      server: 193.176.84.23
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: "null"
+    - name: "\U0001F1F7\U0001F1F4RO_17|1.3MB/s"
+      password: "null"
+      port: 9002
+      server: 193.176.84.35
+      skip-cert-verify: true
+      sni: 193.176.84.35
+      tls: true
+      type: http
+      username: "null"
+    - name: "\U0001F1EE\U0001F1F1IL_1|1.9MB/s|K001-260618"
+      password: None
+      port: 443
+      server: 62.90.77.30
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1EE\U0001F1EAIE_4|652KB/s|K001-260618"
+      password: None
+      port: 443
+      server: 34.249.214.108
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_18|652KB/s|P002-260618"
+      password: None
+      port: 9002
+      server: 193.176.84.32
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_1|533KB/s|R002-260618"
+      port: 443
+      server: 162.217.114.50
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_19|907KB/s"
+      port: 9002
+      server: 193.176.84.21
+      skip-cert-verify: true
+      sni: www.bing.com
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_16|2.0MB/s|K001-260618"
+      password: e4b72b531a2d10900519
+      port: 443
+      server: 82.196.9.7
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: testuser1
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_20|1.6MB/s|P002-260618"
+      password: None
+      port: 9002
+      server: 193.176.84.19
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EC\U0001F1E7GB_1|1.3MB/s|P002-260618"
+      password: None
+      port: 9443
+      server: 84.17.50.129
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1EE\U0001F1F1IL_2|1.9MB/s|R002-260618"
+      port: 443
+      server: 62.90.77.30
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_21|2.2MB/s"
+      port: 9002
+      server: 193.176.84.25
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E8\U0001F1FECY_1|987KB/s|R002-260618"
+      port: 443
+      server: 213.207.130.34
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_22|1.2MB/s|P002-260618"
+      password: None
+      port: 9002
+      server: 193.176.84.21
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - delay: 1488
+      name: "\U0001F1F7\U0001F1F4RO_23|778KB/s|G001-260618"
+      password: "null"
+      port: 9002
+      server: 193.176.84.35
+      skip-cert-verify: true
+      sub_tag: G001-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F7\U0001F1F4RO_24|632KB/s|Z001-260618"
+      port: 9002
+      server: 193.176.84.21
+      skip-cert-verify: true
+      sub_tag: Z001-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E7\U0001F1F7BR_1|548KB/s|R002-260618"
+      password: None
+      port: 443
+      server: 134.65.17.77
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F0\U0001F1F7KR_3|1.6MB/s|R002-260618"
+      port: 443
+      server: 152.69.230.221
+      skip-cert-verify: true
+      sni: 152.69.230.221
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F1\U0001F1F9LT_1|1.1MB/s|R002-260618"
+      password: "null"
+      port: 443
+      server: 89.124.11.9
+      skip-cert-verify: true
+      sni: 89.124.11.9
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      username: "null"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F1\U0001F1FBLV_3|1.3MB/s|R002-260618"
+      port: 443
+      server: 85.203.39.130
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F1\U0001F1F9LT_2|852KB/s|K001-260618"
+      password: None
+      port: 443
+      server: 89.124.11.9
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1E7\U0001F1ECBG_4|1.6MB/s|R002-260618"
+      port: 443
+      server: 109.204.88.17
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
