@@ -1,16 +1,102 @@
 proxies:
-- name: 🇺🇸US_2|889KB/s
+- name: 🇷🇺RU_1|1.3MB/s
+  type: vless
+  server: vps3.nemnogogo.com
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: grpc
+- name: 🇮🇹IT_1|1.9MB/s
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹IT_2|1.7MB/s
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪DE_1|1.8MB/s
+  type: vless
+  server: 193.160.208.240
+  port: 443
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  tls: true
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸US_1|2.2MB/s
+  type: vless
+  server: zfapi.zalolink.com
+  port: 47691
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
+    short-id: 2905326a
+  network: tcp
+- name: 🇳🇱NL_1|1.7MB/s
+  type: vless
+  server: 31.77.28.68
+  port: 443
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  tls: true
+  servername: nl2.soshelper.space
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
+    short-id: 6562cf617728186e
+  network: tcp
+- name: 🇯🇵JP_1|2.9MB/s
+  type: vless
+  server: zfapi.zalolink.com
+  port: 43149
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  servername: psstatic.cdn.bcebos.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  network: tcp
+- name: 🇫🇷FR_1|558KB/s
+  type: hysteria
+  server: 62.210.28.175
+  port: 24667
+  alpn:
+  - h3
+  down: '55'
+  skip-cert-verify: true
+  up: '11'
+  sni: bing.com
+  protocol: udp
+  servername: bing.com
+- name: 🇺🇸US_2|1003KB/s
   type: hysteria
   server: 198.200.57.142
   port: 22335
   alpn:
   - h3
-  auth-str: github.com/Alvin9999-newpac/fanqiang
   down: '55'
-  protocol: udp
   skip-cert-verify: true
   up: '11'
-- name: 🇳🇱NL_9|2.1MB/s
+  sni: bing.com
+  protocol: udp
+  servername: bing.com
+- name: 🇳🇱NL_2|2.3MB/s
   type: hysteria
   server: 5.83.129.143
   port: 26691
