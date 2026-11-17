@@ -1,86 +1,53 @@
 proxies:
-- name: 🇳🇱NL_4|1.8MB/s
-  type: hysteria
-  server: 5.83.129.143
-  port: 26691
+- name: 🇷🇺RU_1|2.4MB/s
+  type: vless
+  server: vps3.nemnogogo.com
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: chrome
   alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '55'
-  skip-cert-verify: true
-  up: '11'
-  protocol: udp
-- name: 🇫🇮FI_1|2.6MB/s
-  type: vless
-  server: 196.196.204.162
-  port: 443
-  uuid: 40ec5509-5da9-44b8-bb25-e6091ac9c6db
-  tls: true
-  servername: 8e526cg.fi12.h1clayd.click
-  client-fingerprint: chrome
+  - h2
   skip-cert-verify: false
-  reality-opts:
-    public-key: eYbvMPFfKx6p-MHADvbHFh9mwW7Da0i2pSTlJFY56iE
-    short-id: 7d423daf022cf4a1
   network: grpc
-- name: 🇩🇪DE_3|1.8MB/s
-  type: ss
-  server: 47.85.201.22
-  port: 443
-  cipher: auto
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA%3D
-- name: 🇳🇱NL_5|1.0MB/s
+- name: 🇩🇪DE_1|906KB/s
   type: vless
-  server: 194.60.228.97
+  server: 193.160.208.240
   port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
   tls: true
-  servername: base.hosamobenl.co.uk
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇨🇾CY_1|1.2MB/s
+- name: 🇨🇿CZ_1|1007KB/s
   type: vless
-  server: 194.55.167.133
+  server: 103.118.211.38
   port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  uuid: 3dbd9377-43cc-46c3-b32c-2605908024eb
   tls: true
-  servername: cy1.gofizz.in
-  flow: xtls-rprx-vision
+  servername: czechia.richforever.ru
   client-fingerprint: firefox
   skip-cert-verify: false
   reality-opts:
-    public-key: XSh3jB8zXtqpI38glgwN2Bn5imxN8Rkyc39LeBSD8BQ
-    short-id: 24f1fa53275b
+    public-key: PA1xWXjxZLn68I-6cjWVdqc0dYhWbu9W5c1GpjEOZgE
+    short-id: 8a9442353eebbe0f
   network: tcp
-- name: 🇸🇪SE_1|2.5MB/s
+- name: 🇳🇱NL_1|1.3MB/s
   type: vless
-  server: 88.216.60.73
+  server: 136.148.208.221
   port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   tls: true
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  network: tcp
-- name: 🇳🇱NL_6|2.3MB/s
-  type: vless
-  server: 31.77.28.68
-  port: 443
-  uuid: 372931d3-91c5-4564-b79c-041302de9a17
-  tls: true
-  servername: nl2.soshelper.space
+  servername: 8a2e72t.nl20.h1clayd.shop
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
-    short-id: 6562cf617728186e
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
   network: tcp
-- name: 🇸🇪SE_2|2.4MB/s
+- name: 🇸🇪SE_1|2.2MB/s
   type: vless
   server: 88.216.214.159
   port: 443
@@ -93,68 +60,56 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
   network: tcp
-- name: 🇷🇺RU_2|2.4MB/s
+- name: 🇳🇱NL_2|859KB/s
   type: vless
-  server: 201.24.116.192
+  server: 194.60.228.97
   port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  network: grpc
-- name: 🇷🇺RU_3|1.4MB/s
-  type: vless
-  server: vps3.nemnogogo.com
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  skip-cert-verify: false
-  network: grpc
-- name: 🇷🇺RU_4|2.7MB/s
-  type: vless
-  server: 201.51.12.98
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  skip-cert-verify: false
-  network: grpc
-- name: 🇳🇱NL_7|2.6MB/s
-  type: vless
-  server: edition.ativetechnology.ir
-  port: 46132
-  uuid: 39397ce8-51f5-4780-957f-942b4dfd75f7
-  skip-cert-verify: false
-  network: tcp
-- name: 🇩🇪DE_4|758KB/s
-  type: vless
-  server: luminexorizon.ink
-  port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  tls: true
-  servername: luminexorizon.ink
+  servername: base.hosamobenl.co.uk
   client-fingerprint: chrome
-  skip-cert-verify: false
-  network: grpc
-- name: 🇳🇱NL_8|1.2MB/s
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: tcp
+- name: 🇸🇪SE_2|2.2MB/s
   type: vless
-  server: 31.77.28.173
+  server: 195.72.62.7
   port: 443
-  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   tls: true
-  servername: nl4.soshelper.space
+  servername: fexzoo.net
   flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GQC47B2ZbBygpgJap7Em9lZmCZZkzlckiadXWXlVxGU
+    short-id: 2a67748b0d641e16
+  network: tcp
+- name: 🇺🇸US_1|2.2MB/s
+  type: vless
+  server: 199.232.78.120
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ushetzijji.global.ssl.fastly.net.
+    path: /
+- name: 🇫🇮FI_1|2.4MB/s
+  type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  tls: true
+  servername: vipfree.dr-ping.ir
   client-fingerprint: chrome
   skip-cert-verify: false
-  reality-opts:
-    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
-    short-id: e06e30590f288e0f
-  network: tcp
+  network: ws
+  ws-opts:
+    headers:
+      Host: vipfree.dr-ping.ir
+    path: /
