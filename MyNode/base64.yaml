@@ -1,50 +1,72 @@
 proxies:
-- name: 🇷🇺RU_1|1.3MB/s
+- name: 🇳🇱NL_4|1.8MB/s
+  type: hysteria
+  server: 5.83.129.143
+  port: 26691
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '55'
+  skip-cert-verify: true
+  up: '11'
+  protocol: udp
+- name: 🇫🇮FI_1|2.6MB/s
   type: vless
-  server: vps3.nemnogogo.com
+  server: 196.196.204.162
   port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 40ec5509-5da9-44b8-bb25-e6091ac9c6db
   tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: grpc
-- name: 🇮🇹IT_1|1.9MB/s
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_2|1.7MB/s
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪DE_1|1.8MB/s
-  type: vless
-  server: 193.160.208.240
-  port: 443
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  tls: true
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
-- name: 🇺🇸US_1|2.2MB/s
-  type: vless
-  server: zfapi.zalolink.com
-  port: 47691
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
+  servername: 8e526cg.fi12.h1clayd.click
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
-    short-id: 2905326a
+    public-key: eYbvMPFfKx6p-MHADvbHFh9mwW7Da0i2pSTlJFY56iE
+    short-id: 7d423daf022cf4a1
+  network: grpc
+- name: 🇩🇪DE_3|1.8MB/s
+  type: ss
+  server: 47.85.201.22
+  port: 443
+  cipher: auto
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA%3D
+- name: 🇳🇱NL_5|1.0MB/s
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  tls: true
+  servername: base.hosamobenl.co.uk
+  client-fingerprint: chrome
+  skip-cert-verify: false
   network: tcp
-- name: 🇳🇱NL_1|1.7MB/s
+- name: 🇨🇾CY_1|1.2MB/s
+  type: vless
+  server: 194.55.167.133
+  port: 443
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  tls: true
+  servername: cy1.gofizz.in
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: XSh3jB8zXtqpI38glgwN2Bn5imxN8Rkyc39LeBSD8BQ
+    short-id: 24f1fa53275b
+  network: tcp
+- name: 🇸🇪SE_1|2.5MB/s
+  type: vless
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  network: tcp
+- name: 🇳🇱NL_6|2.3MB/s
   type: vless
   server: 31.77.28.68
   port: 443
@@ -58,51 +80,81 @@ proxies:
     public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
     short-id: 6562cf617728186e
   network: tcp
-- name: 🇯🇵JP_1|2.9MB/s
+- name: 🇸🇪SE_2|2.4MB/s
   type: vless
-  server: zfapi.zalolink.com
-  port: 43149
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 88.216.214.159
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   tls: true
-  servername: psstatic.cdn.bcebos.com
-  flow: xtls-rprx-vision
+  servername: api-svc-mgr.galioncc.com
   client-fingerprint: firefox
   skip-cert-verify: false
   reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
   network: tcp
-- name: 🇫🇷FR_1|558KB/s
-  type: hysteria
-  server: 62.210.28.175
-  port: 24667
+- name: 🇷🇺RU_2|2.4MB/s
+  type: vless
+  server: 201.24.116.192
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  network: grpc
+- name: 🇷🇺RU_3|1.4MB/s
+  type: vless
+  server: vps3.nemnogogo.com
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
   alpn:
-  - h3
-  down: '55'
-  skip-cert-verify: true
-  up: '11'
-  sni: bing.com
-  protocol: udp
-  servername: bing.com
-- name: 🇺🇸US_2|1003KB/s
-  type: hysteria
-  server: 198.200.57.142
-  port: 22335
+  - h2
+  skip-cert-verify: false
+  network: grpc
+- name: 🇷🇺RU_4|2.7MB/s
+  type: vless
+  server: 201.51.12.98
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
   alpn:
-  - h3
-  down: '55'
-  skip-cert-verify: true
-  up: '11'
-  sni: bing.com
-  protocol: udp
-  servername: bing.com
-- name: 🇳🇱NL_2|2.3MB/s
-  type: hysteria
-  server: 5.83.129.143
-  port: 26691
-  alpn:
-  - h3
-  down: '55'
-  skip-cert-verify: true
-  up: '11'
-  protocol: udp
+  - h2
+  skip-cert-verify: false
+  network: grpc
+- name: 🇳🇱NL_7|2.6MB/s
+  type: vless
+  server: edition.ativetechnology.ir
+  port: 46132
+  uuid: 39397ce8-51f5-4780-957f-942b4dfd75f7
+  skip-cert-verify: false
+  network: tcp
+- name: 🇩🇪DE_4|758KB/s
+  type: vless
+  server: luminexorizon.ink
+  port: 443
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  tls: true
+  servername: luminexorizon.ink
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: grpc
+- name: 🇳🇱NL_8|1.2MB/s
+  type: vless
+  server: 31.77.28.173
+  port: 443
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  tls: true
+  servername: nl4.soshelper.space
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
+    short-id: e06e30590f288e0f
+  network: tcp
