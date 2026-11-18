@@ -1,14 +1,27 @@
 proxies:
-- name: 🇳🇱NL_12|1.5MB/s
+- name: 🇨🇭CH_1|1.5MB/s
+  type: vmess
+  server: 179.43.140.24
+  port: 42831
+  cipher: auto
+  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
+  tls: false
+  alterId: 0
+  network: http
+  http-opts:
+    path: /3x
+    headers:
+      Host: down-cdn.dingtalk.com
+- name: 🇸🇪SE_1|741KB/s
   type: vless
-  server: 104.171.135.229
+  server: 88.216.60.73
   port: 443
-  uuid: Fluffy_VPN-Oth8rOq3
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   tls: true
-  servername: absolute-disaster.org
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
   skip-cert-verify: false
   reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
   network: tcp
