@@ -1,10 +1,27 @@
 proxies:
-- name: 🇺🇸US_1|852KB/s
-  type: anytls
-  server: sdf65h46wr.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
+- name: 🇫🇷FR_1|2.0MB/s
+  type: hysteria
+  server: 62.210.124.132
+  port: 24667
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  protocol: udp
   skip-cert-verify: true
-  sni: images.ctfassets.net
-  udp: true
-  servername: images.ctfassets.net
+  up: 11 Mbps
+  sni: bing.com
+  servername: bing.com
+- name: 🇫🇮FI_1|1.3MB/s
+  type: vless
+  server: 31.77.144.255
+  port: 8444
+  uuid: 95580a09-cce7-4b62-af74-a514083ba9e4
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: qq
+  skip-cert-verify: false
+  reality-opts:
+    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
+    short-id: 635a76c25a4b1820
+  network: tcp
