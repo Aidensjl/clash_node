@@ -71,7 +71,37 @@ proxies:
   port: 18443
   cipher: aes-256-gcm
   password: P
-- name: 🇺🇸 美国 13
+- name: 西班牙
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  servername: 7aa271t.es1.h1clayd.click
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  network: tcp
+- name: 🇩🇪 德国 阿里云
+  type: ss
+  server: 47.254.128.109
+  port: 443
+  cipher: auto
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇬🇧 英国 南岸大学
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸 美国 16
   type: vless
   server: 168.113.253.178
   port: 443
@@ -81,64 +111,6 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: false
   network: tcp
-- name: 🇺🇸 美国 巴西
-  type: hysteria2
-  server: 152.234.245.52
-  port: 443
-  password: 713142c9-ad09-4894-b35c-645423f3f6c9
-  sni: media.embrofree.org
-  servername: media.embrofree.org
-- name: 🇩🇪 德国 阿里云
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: auto
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇩🇪 德国 加拿大+温尼伯大学
-  type: vless
-  server: 142.132.140.143
-  port: 1003
-  uuid: 0e6cd6ca-fba2-4b86-923c-f0a021f7ad15
-  skip-cert-verify: false
-  network: tcp
-- name: 新西兰
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 18
-  type: vless
-  server: 217.69.174.175
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-  network: tcp
-- name: 🇭🇰 香港 葵兴数据中心
-  type: trojan
-  server: sclass-01.catcat321.com
-  port: 20103
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  servername: hk.catxstar.com
-- name: 新西兰
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 新西兰
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 西班牙
   type: vless
   server: 196.196.149.81
@@ -148,17 +120,90 @@ proxies:
   servername: 7aa271t.es1.h1clayd.click
   flow: xtls-rprx-vision
   client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  network: tcp
+- name: 🇺🇸 美国 Xerox
+  type: vless
+  server: 5d0319t.nl7.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  network: tcp
+- name: 新西兰
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 新西兰
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 爱沙尼亚
+  type: vless
+  server: 196.196.148.76
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  servername: 8a2e72t.nl20.h1clayd.shop
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  network: tcp
+- name: 🇭🇰 香港 葵兴数据中心
+  type: trojan
+  server: sclass-01.catcat321.com
+  port: 20103
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  servername: hk.catxstar.com
+- name: 爱沙尼亚
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  network: tcp
+- name: 塞舌尔
+  type: vless
+  server: 196.199.122.2
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  servername: 7aa271t.es1.h1clayd.click
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
   network: tcp
-- name: 新西兰
+- name: 🇩🇪 德国 阿里云
   type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 47.254.167.157
+  port: 443
+  cipher: auto
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 - name: 更新于 1123 00:42 by https://github.com/tssf/fly
   type: vmess
   server: 127.1.1.127
@@ -219,7 +264,7 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- name: 🇺🇸 美国 30
+- name: 🇺🇸 美国 32
   type: vmess
   server: 74.211.102.179
   port: 20001
@@ -360,7 +405,7 @@ proxies:
   uuid: 63ebb6ef-b52a-4321-8b71-e1b2f472abe3
   tls: false
   alterId: 0
-- name: 🇹🇼 台湾 43
+- name: 🇹🇼 台湾 45
   type: vmess
   server: fujrdt.d6f54hd1j.cc
   port: 443
@@ -475,7 +520,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇭🇰 香港 54
+- name: 🇭🇰 香港 56
   type: vmess
   server: 47.83.207.148
   port: 443
@@ -2442,7 +2487,7 @@ proxies:
   obfs: salamander
   obfs-password: v0qq015d7c8zgzu7
   servername: quotes.ali-khamenei.world
-- name: Free_Node_245
+- name: Free_Node_247
   type: hysteria2
   server: 31.76.80.69
   port: 443
@@ -2501,7 +2546,7 @@ proxies:
   password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
   sni: hy.config7x.site
   servername: hy.config7x.site
-- name: 🇩🇪 德国 252
+- name: 🇩🇪 德国 254
   type: hysteria2
   server: vpnje
   port: 443
@@ -2887,33 +2932,12 @@ proxies:
   - http/1.1
   skip-cert-verify: false
   network: tcp
-- name: 🇫🇷 法国 www.v2s.com] EE1
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  client-fingerprint: qq
-  skip-cert-verify: false
-  network: tcp
 - name: 'www.v2s.com] EE1... #1'
   type: vless
   server: 45.86.60.174
   port: 16443
   uuid: 13e541f3-d09d-4633-89df-8513db0ced20
   skip-cert-verify: false
-  network: tcp
-- name: 'www.v2s.com] ES1... #2'
-  type: vless
-  server: 196.199.122.2
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  tls: true
-  servername: 7aa271t.es1.h1clayd.click
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
   network: tcp
 - name: www.v2s.com] FI1
   type: vless
@@ -3662,9 +3686,9 @@ proxies:
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: '意大利 ITA #4'
+- name: IT31.9MB/s
   type: ss
-  server: 202.50.253.36
+  server: 202.50.253.72
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -3680,6 +3704,12 @@ proxies:
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '意大利 ITA #3'
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: '意大利 ITA #2'
   type: ss
   server: 202.50.253.90
@@ -3689,6 +3719,12 @@ proxies:
 - name: 'www.v2s.com] IT1619... #5'
   type: ss
   server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 'www.v2s.com] IT1619... #7'
+  type: ss
+  server: 202.50.253.54
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -3965,7 +4001,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: exploredigitaljobplatformandfindonlinework.com
   servername: exploredigitaljobplatformandfindonlinework.com
-- name: 🇸🇬 新加坡 430
+- name: 🇸🇬 新加坡 432
   type: vless
   server: 139.162.20.241
   port: 443
@@ -3977,7 +4013,7 @@ proxies:
   network: ws
   ws-opts:
     path: /wsflow=
-- name: 🇭🇰 香港 431
+- name: 🇭🇰 香港 433
   type: vless
   server: 116.213.43.43
   port: 11103
@@ -3999,7 +4035,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇹🇼 台湾 433
+- name: 🇹🇼 台湾 435
   type: vless
   server: 116.213.43.43
   port: 11102
@@ -4021,7 +4057,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇺🇸 美国 435
+- name: 🇺🇸 美国 437
   type: vless
   server: 103.119.15.175
   port: 443
@@ -4032,7 +4068,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇩🇪 德国 436
+- name: 🇩🇪 德国 438
   type: vless
   server: 189.24.82.30
   port: 443
@@ -4065,7 +4101,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇬🇧 英国 439
+- name: 🇬🇧 英国 441
   type: vless
   server: 8.208.101.215
   port: 443
@@ -4076,7 +4112,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇯🇵 日本 440
+- name: 🇯🇵 日本 442
   type: vless
   server: 116.213.43.43
   port: 11101
@@ -4098,7 +4134,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇰🇷 韩国 442
+- name: 🇰🇷 韩国 444
   type: vless
   server: 43.108.109.112
   port: 443
@@ -4109,7 +4145,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇹🇭 泰国 443
+- name: 🇹🇭 泰国 445
   type: vless
   server: 47.81.32.116
   port: 443
@@ -4131,7 +4167,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇲🇾 马来西亚 445
+- name: 🇲🇾 马来西亚 447
   type: vless
   server: 47.250.146.252
   port: 443
@@ -4142,7 +4178,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   network: tcp
-- name: 🇮🇩 印尼 446
+- name: 🇮🇩 印尼 448
   type: vless
   server: 147.139.197.200
   port: 443
@@ -4171,7 +4207,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 449
+- name: 🇰🇷 韩国 451
   type: socks5
   server: 121.169.46.116
   port: 1090
@@ -4189,51 +4225,51 @@ proxies:
   - http/1.1
   skip-cert-verify: false
   network: tcp
-- name: 🇺🇸 美国 488
+- name: 🇺🇸 美国 490
   type: socks5
   server: 66.253.2.69
   port: 62000
   username: u_rb1dba2
   password: l1tlrdx52v
-- name: '490'
+- name: '492'
   type: socks5
   server: 94.194.165.96
   port: 62000
   username: QyVdo5ks
   password: lcFa8dTH
-- name: '492'
+- name: '494'
   type: socks5
   server: 72.57.228.30
   port: 62000
   username: UBXich0K
   password: VvUAFi2E
-- name: '498'
+- name: '500'
   type: socks5
   server: 144.225.47.68
   port: 42000
   username: DJy1T0dt
   password: sZnD8GTz
-- name: '505'
+- name: '507'
   type: socks5
   server: 191.7.129.133
   port: 62000
   username: uwrgfkwg
   password: 0mvrt5jb
-- name: 🇸🇬 新加坡 511
+- name: 🇸🇬 新加坡 513
   type: socks5
   server: 103.248.228.166
   port: 5555
-- name: 🇯🇵 日本 514
+- name: 🇯🇵 日本 516
   type: socks5
   server: 8.209.236.192
   port: 1080
   username: '123456'
   password: '123456'
-- name: 🇸🇬 新加坡 515
+- name: 🇸🇬 新加坡 517
   type: http
   server: 128.199.254.13
   port: 9090
-- name: '516'
+- name: '518'
   type: socks5
   server: 91.199.137.149
   port: 2010
@@ -4247,11 +4283,11 @@ proxies:
   obfs: salamander
   obfs-password: aemx2gndpgrt1qau
   servername: 66hk.mateflora.com
-- name: '518'
+- name: '520'
   type: http
   server: 158.247.125.5
   port: 9443
-- name: 🇫🇷 法国 519
+- name: 🇫🇷 法国 521
   type: http
   server: 54.36.150.233
   port: 3128
@@ -4454,7 +4490,7 @@ proxies:
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   sni: i1tr.mateflora.com
   servername: i1tr.mateflora.com
-- name: 🇯🇵 日本 545
+- name: 🇯🇵 日本 547
   type: hysteria2
   server: dg3rb.ianai.it.com
   port: 443
@@ -4503,7 +4539,7 @@ proxies:
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 🇳🇱 荷兰 550
+- name: 🇳🇱 荷兰 552
   type: vless
   server: 196.196.148.63
   port: 443
@@ -4595,7 +4631,7 @@ proxies:
   - h2
   skip-cert-verify: false
   network: tcp
-- name: 🇷🇺 俄罗斯 558
+- name: 🇷🇺 俄罗斯 560
   type: vless
   server: 201.24.116.192
   port: 443
@@ -4819,12 +4855,6 @@ proxies:
     public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
     short-id: 9b60d3
   network: tcp
-- name: 🇩🇪 德国 29
-  type: ss
-  server: 47.254.128.109
-  port: 443
-  cipher: auto
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y%3D
 - name: 🇺🇸 美国 03
   type: vmess
   server: 172.67.190.164
@@ -4898,6 +4928,19 @@ proxies:
 - name: 🇺🇸 美国 72
   type: vless
   server: 196.245.52.187
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+  network: tcp
+- name: 🇺🇸 美国 74
+  type: vless
+  server: 217.69.174.175
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
@@ -5030,19 +5073,6 @@ proxies:
   alpn:
   - h2
   skip-cert-verify: false
-  network: tcp
-- name: 🇳🇱 荷兰 30
-  type: vless
-  server: 196.196.148.85
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
   network: tcp
 - name: 🇳🇱 荷兰 31
   type: vless
@@ -5182,19 +5212,6 @@ proxies:
     public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
     short-id: fa514b83
   network: tcp
-- name: 西班牙 03
-  type: vless
-  server: 196.196.149.80
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  tls: true
-  servername: 38917fx.es1.h1clayd.click
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
-    short-id: d5501b156391e01d
-  network: tcp
 - name: 西班牙 07
   type: vless
   server: 196.196.148.90
@@ -5240,21 +5257,85 @@ proxies:
   reality-opts:
     public-key: eDzVz3bxkv3IoN3BUCa_aA-RicoeG7ACylYSnmS2Pgg
   network: tcp
-- name: 🇸🇬 新加坡 04 s
+- name: 🇬🇧 英国 01 s
   type: vless
-  server: win2loxfde0203.gggrelay.org
-  port: 64006
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 167.99.203.0
+  port: 443
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸 美国 04 s
+  type: vless
+  server: 162.35.101.177
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  servername: www.lamer.com.sg
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: edge
+  skip-cert-verify: false
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+- name: 未知 05 s
+  type: vless
+  server: 136.148.208.221
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  servername: 8a2e72t.nl20.h1clayd.shop
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   skip-cert-verify: false
   reality-opts:
-    public-key: aHbpNgKYJssDDzN0faQYKh9CzzrEnsCRpB4qpMiv5Ug
-    short-id: 49170ca81691d962
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
   network: tcp
-- name: 🇺🇸 美国 15 s
+- name: 🇺🇸 美国 HY206 s
+  type: hysteria2
+  server: 152.234.245.52
+  port: 443
+  password: 713142c9-ad09-4894-b35c-645423f3f6c9
+  sni: media.embrofree.org
+  servername: media.embrofree.org
+- name: 🇩🇪 德国 07 s
+  type: vless
+  server: 31.77.142.19
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: calendarbaseline.lucheeebezlimitnoekino.stream
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 未知 08 s
+  type: vless
+  server: 191.217.244.190
+  port: 443
+  uuid: a086c8e2-7a2f-4265-9518-6d7529106b80
+  tls: true
+  servername: ertgmb.wey-land.net
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  reality-opts:
+    public-key: l6dfeSmhGc7dGLU_PqhPtMbj4_eONm2Sz_S9D8ePFxY
+  network: tcp
+- name: 🇩🇪 德国 09 s
+  type: vless
+  server: chess.com
+  port: 443
+  uuid: ddffa8f4-e108-43ef-a324-a823f535120e
+  tls: true
+  servername: nor.mouse-moj.site
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  skip-cert-verify: false
+  network: tcp
+- name: 🇺🇸 美国 20 s
   type: vless
   server: 104.160.44.254
   port: 443
@@ -5267,54 +5348,4 @@ proxies:
   reality-opts:
     public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
     short-id: 051f20c2344a2dfd
-  network: tcp
-- name: 🇺🇸 美国 16 s
-  type: vless
-  server: 107.172.214.195
-  port: 443
-  uuid: 2af77824-f83d-4f50-9dd0-560bb6e7cd45
-  tls: true
-  servername: academy.nvidia.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  reality-opts:
-    public-key: jK8yu9AMtNQ4J_uKE1inAzJr6V5J4GNK3sAN6nZBbUo
-  network: tcp
-- name: 🇭🇰 香港 17 s
-  type: vless
-  server: 152.175.6.229
-  port: 31884
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: tcp
-- name: 🇺🇸 美国 18 s
-  type: vless
-  server: swedenafteraventura.space
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  tls: true
-  servername: swedenafteraventura.space
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY
-  network: tcp
-- name: 🇸🇬 新加坡 19 s
-  type: vless
-  server: 43.163.112.174
-  port: 443
-  uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
-  tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  reality-opts:
-    public-key: mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg
-    short-id: 0123456789abcdef
   network: tcp
